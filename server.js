@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static("./transformers"));
 app.use(express.json());
-app.use("/", comp)
+// app.use("/", comp)
 
 const port = process.env.PORT || 8080; 
 
