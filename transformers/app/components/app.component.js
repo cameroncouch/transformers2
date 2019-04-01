@@ -1,6 +1,6 @@
 "use strict";
 const comp = {
-    templateUrl:"components/comp.html",
+    templateUrl:"app/components/comp.html",
     controller:[function(){
         const vm = this;
     }]
