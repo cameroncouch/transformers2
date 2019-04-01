@@ -1,0 +1,5 @@
+{
+    "name": "transformers-tcg-dmgctr",
+    "description": "a free to use damage counter for the Transformers TCG by WotC",
+    "image": "heroku/nodejs"
+    }
