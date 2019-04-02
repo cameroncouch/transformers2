@@ -50,6 +50,12 @@ h1 {
 button {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
+    margin: 4%;
+    padding: 2% 4%;
+    border-radius: 2px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 .fa-first-aid {
     color: forestgreen;
@@ -62,7 +68,19 @@ button {
     font-weight: 400;
     background-color: lightgrey;
     text-align: center;
-    margin: 1%;
+    margin: 1% 1%;
     padding: 1%;
     border-radius: 2px;
+}
+.fieldbot p:nth-child(odd) {
+    font-size: 1em;
+    margin: 0;
+    background-color: darkgrey;
+    border-bottom: 1px solid darkslategray;
+    border-radius: 5px 5px 0px 0px;
+}
+.fieldbot p:nth-child(even) {
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0;
 }

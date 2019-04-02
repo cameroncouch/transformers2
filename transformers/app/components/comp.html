@@ -18,7 +18,7 @@
     <div class="field">
         <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
             <p>{{bot.name}}</p>
-            <p>{{bot.wrench}}</p>
+            <p>Health: {{bot.wrench}}</p>
             <button ng-click="$ctrl.mathAdd(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot)"><i class="fas fa-haykal"></i></button>
         </div>
         <button ng-click="$ctrl.clear()">Clear Field</button>
