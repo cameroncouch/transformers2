@@ -84,3 +84,56 @@ button {
     font-size: 2em;
     margin: 0;
 }
+@media only screen and (min-width: 768px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+    }
+    .botlist {
+        display: flex;
+        flex-direction: column;
+        height:50%;
+        overflow-y: scroll;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        background-color: rgb(255, 158, 158);
+    }
+    .field {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        flex-flow: wrap;
+        background-color: grey;
+        height: 100vh;
+    }
+    .fieldbot {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        background-color: lightgrey;
+        text-align: center;
+        margin: 1% 1%;
+        border-radius: 2px;
+    }
+    .fieldbot button {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        width: 100%;
+        margin: 4%;
+        padding: 2% 4%;
+        border-radius: 2px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    .fieldbot button:nth-child(odd):hover {
+        background-color: rgb(151, 255, 147);
+        cursor: pointer;
+    }
+    .fieldbot button:nth-child(even):hover {
+        background-color: rgb(255, 178, 147);
+        cursor: pointer;
+    }
+}
