@@ -27,9 +27,18 @@ h1 {
     padding: 2vh 2vw;
 }
 .hidelist {
-    background-color: lightgrey;
+    background: linear-gradient(to top, rgb(90, 90, 90), rgb(168, 168, 168));
     width: 25px;
-    text-align: center
+    padding: 1% 1%;
+    text-align: center;
+}
+.hidelist p {
+    margin: 1% 1%;
+    padding: 1% 1%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'deceptibots', sans-serif;
+    font-weight: 700;
 }
 .field {
     display: flex;
