@@ -1,1 +1,25 @@
-<p>Hello</p>
+<div class="app">
+    <div class="menu">
+            <h1>Wave 1</h1>
+        <div ng-hide="!$ctrl.clicked" class="botlist">
+            <div ng-repeat="bot in $ctrl.bots1">
+                <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
+            </div>
+        </div>
+        <h1>Wave 2</h1>
+        <div ng-hide="!$ctrl.clicked" class="botlist">
+            <div ng-repeat="bot in $ctrl.bots2">
+                <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
+            </div>
+        </div>
+    </div>
+    <div ng-click="$ctrl.hide()" class="hidelist">← ←</div>
+    <div class="field">
+        <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
+            <p>{{bot.name}}</p>
+            <p>{{bot.wrench}}</p>
+            <button ng-click="$ctrl.mathAdd(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot)"><i class="fas fa-haykal"></i></button>
+        </div>
+        <button ng-click="$ctrl.clear()">Clear Field</button>
+    </div>
+</div>

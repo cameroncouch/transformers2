@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'deceptibots';
+    src: url('deceptibots.ttf');
+}
+.app {
+    display: flex;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+}
+.botlist {
+    display: flex;
+    flex-direction: column;
+    height:50%;
+    overflow-y: scroll;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    background-color: rgb(255, 158, 158);
+}
+h1 {
+    font-family: 'deceptibots', sans-serif;
+    background-color: rgb(255, 56, 56);
+    margin: 0;
+    padding: 2vh 2vw;
+}
+.hidelist {
+    background-color: lightgrey;
+    width: 25px;
+    text-align: center
+}
+.field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: grey;
+    height: 100vh;
+}
+button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+.fa-first-aid {
+    color: forestgreen;
+}
+.fa-haykal {
+    color: darkred;
+}
+.fieldbot {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    background-color: lightgrey;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 2px;
+}
