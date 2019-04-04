@@ -1,5 +1,5 @@
 <div class="app">
-    <div class="menu">
+    <div ng-hide="!$ctrl.clicked" class="menu">
             <h1 ng-hide="!$ctrl.clicked">Wave 1</h1>
         <div ng-hide="!$ctrl.clicked" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
