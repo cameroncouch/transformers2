@@ -106,7 +106,7 @@ h1:nth-of-type(2) {
 button {
     font-family: 'deceptibots', sans-serif;
     font-weight: 700;
-    margin: 4% 1%;
+    margin: 0% 1%;
     padding: 2% 4%;
     border-radius: 2px;
     border: none;
