@@ -19,7 +19,7 @@ const comp = {
                 return;
                 }
             }
-            if (vm.botArr.length < 4) {
+            if (vm.botArr.length < 6) {
             vm.botArr.push(angular.copy(bot));
             vm.healthArr.push(angular.copy(bot.wrench));
             }
@@ -46,10 +46,13 @@ const comp = {
             vm.botArr = [];
             vm.healthArr = [];
         }
+        //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
+
         //collapses/expands the menu element when user clicks the hide bar
         vm.hide = function() {
             vm.clicked = !vm.clicked;
         }
+        //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. vm.combine = function() {}
     }]
 }
 
