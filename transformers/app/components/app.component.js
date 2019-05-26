@@ -13,7 +13,7 @@ const comp = {
         vm.botArr = [];
         //health for each bot in botArr, corresponds with index - this is needed to ensure we can't heal past initial health
         vm.healthArr = [];
-        //when user clicks the add button, add that transformer to the field. Limit 4 bots in the field, no duplicates.
+        //when user clicks the add button, add that transformer to the field. Limit 6 bots in the field, no duplicates.
         vm.add = function(bot) {
             for (let i = 0; i < vm.botArr.length; i++) {
                 if (bot.title === vm.botArr[i].title) {
@@ -43,11 +43,7 @@ const comp = {
             bot.wrench--;
             }
         }
-        // vm.combMin = function(bot) {
-        //     if (vm.combCounter != 0) {
-                
-        //     }
-        // }
+        //when user clicks damage button, increment the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterAdd = function(bot) {
             if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
                 vm.isCombiner = true
@@ -62,6 +58,7 @@ const comp = {
                 }
             }
         }
+        //when user clicks heal button, deccrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
             if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
                 vm.isCombiner = true
@@ -77,7 +74,15 @@ const comp = {
             vm.healthArr = [];
         }
         //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
-
+        vm.remove = function(bot) {
+            for (let i = 0;i < vm.botArr.length;i++) {
+                if(bot.title === vm.botArr[i].title) {
+                vm.botArr.splice(i, 1);
+                vm.healthArr.splice(i, 1);
+                console.log(vm.healthArr);
+                }
+            }
+        }
         //collapses/expands the menu element when user clicks the hide bar
         vm.hide = function() {
             vm.clicked = !vm.clicked;
@@ -141,6 +146,7 @@ const comp = {
                     continue;
                 }
             }
+            //math for combiner minus damage from component bots
             vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;   
         }
     }]

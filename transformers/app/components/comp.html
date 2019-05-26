@@ -19,7 +19,7 @@
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
                 <p>{{bot.name}}</p>
                 <p>Health: {{bot.wrench}}</p>
-                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot)"><i class="fas fa-haykal"></i></button>
+                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot)"><i class="fas fa-haykal"></i></button><button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
             </div>
         <button class="clear" ng-click="$ctrl.clear()">RESTART</button>
         <button class="trash" ng-click="$ctrl.clear()"><i class="far fa-trash-alt"></i></button>

@@ -122,7 +122,10 @@ button:hover {
     color: forestgreen;
 }
 .fa-haykal {
-    color: darkred;
+    color: darkorange;
+}
+.fa-window-close {
+    color: darkred
 }
 .fieldbot {
     font-family: 'Roboto Condensed', sans-serif;
