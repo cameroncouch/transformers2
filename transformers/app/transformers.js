@@ -24,7 +24,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const barragew1 = Transformer('Barrage', 'Merciless Insecticon', '1none', 'Insecticon', 'Ranged', 5, 11, 1, 7, 'Insecticon', 'Alt', '1', 'T06', 'Common');
     const bombshellw1 = Transformer('Bombshell', 'Insecticon Mind-Controller', '1none', 'Insecticon', 'Bombshell', 5, 10, 2, 8, 'Insecticon', 'Alt', '1', 'T07', 'Common');    
     const bumblebeecomw1 = Transformer('Bumblebee (C)', 'Courageous Scout', '1none', '2none', 'Specialist', 6, 10, 2, 9, 'Autobot', 'Alt', '1', 'T08', 'Common');  
-    const bumblebeeSt = Transformer('Bumblebee (T)', 'Brave Warrior', 'Leader', '2none', 'Melee', 4, 9, 2, 6, 'Autobot', 'Alt', '1', 'ST01', 'Rare');
+    const bumblebeeSt = Transformer('Bumblebee (ST)', 'Brave Warrior', 'Leader', '2none', 'Melee', 4, 9, 2, 6, 'Autobot', 'Alt', '1', 'ST01', 'Rare');
     const bumblebeesurarw1 = Transformer('Bumblebee (SR)', 'Legendary Warrior', 'Leader', '2none', 'Melee', 5, 15, 1, 10, 'Autobot', 'Alt', '1', 'T09', 'Super Rare');
     const chopshopw1 = Transformer('Chop Shop', 'Sneaky Insecticon', '1none', 'Insecticon', 'Melee', 4, 9, 1, 6, 'Insecticon', 'Alt', '1', 'T10', 'Uncommon');  
     const chromiaw1 = Transformer('Chromia', 'Special Ops', 'Leader', '2none', 'Specialist', 4, 11, 0, 8, 'Autobot', 'Alt', '1', 'T11', 'Rare');
@@ -50,7 +50,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const nemesisprimew1 = Transformer('Nemesis Prime', 'Dark Clone', '1none', '2none', 'Melee', 7, 16, 2, 12, 'Decepticon', 'Alt', '1', 'T28', 'Super Rare');
     const optimusprimerarw1 = Transformer('Optimus Prime (R)', 'Battlefield Legend', 'Leader', '2none', 'Ranged', 8, 14, 2, 13, 'Autobot', 'Alt', '1', 'T29', 'Rare');
     const optimusprimecomw1 = Transformer('Optimus Prime (C)', 'Freedom Fighter', 'Leader', '2none', 'Melee', 5, 15, 2, 12, 'Autobot', 'Alt', '1', 'T30', 'Rare');
-    const optimusprimeSt = Transformer('Optimus Prime (T)', 'Autobot Leader', 'Leader', '2none', 'Ranged', 3, 10, 2, 7, 'Autobot', 'Alt', '1S', 'ST03', 'Rare');
+    const optimusprimeSt = Transformer('Optimus Prime (ST)', 'Autobot Leader', 'Leader', '2none', 'Ranged', 3, 10, 2, 7, 'Autobot', 'Alt', '1S', 'ST03', 'Rare');
     const prowlw1 = Transformer('Prowl', 'Military Strategist', '1none', '2none', 'Ranged', 4, 9, 2, 6, 'Autobot', 'Alt', '1', 'T31', 'Uncommon');
     const ramjetw1 = Transformer('Ramjet', 'Sky Smasher', '1none', '2none', 'Ranged', 4, 14, 2, 10, 'Decepticon', 'Alt', '1', 'T32', 'Common');
     const ransackw1 = Transformer('Ransack', 'Insecticon Commando', '1none', 'Insecticon', 'Ranged', 0, 8, 3, 7, 'Insecticon', 'Alt', '1', 'T33', 'Uncommon');
@@ -81,7 +81,8 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const blurrw2 = Transformer('Blurr', 'Fastest Bot In The Galaxy', '1none', 'Car', 'Melee', 3, 10, 2, 12, 'Autobot', 'Alt', '2', 'T11', 'Uncommon' );
     const bombshellw2 = Transformer('Bombshell', 'Decepticon Psy Ops', '1none', 'Insecticon', 'Specialist', 1, 15, 1, 11, 'Decepticon', 'Alt', '2', 'T12', 'Rare' );
     const breakdownw2 = Transformer('Breakdown', 'Paranoid Scout', 'Stunticon', 'Car', 'Specialist', 2, 7, 2, 5, 'Decepticon', 'Alt', '2', 'T13', 'Common' );
-    const bumblebeew2 = Transformer('Bumblebee', 'Trusted Lieutenant', 'Leader', 'Car', 'Melee', 5, 14, 1, 10, 'Autobot', 'Alt', '2', 'T14', 'Common' );
+    const bumblebeew2 = Transformer('Bumblebee (C)', 'Trusted Lieutenant', 'Leader', 'Car', 'Melee', 5, 14, 1, 10, 'Autobot', 'Alt', '2', 'T14', 'Common' );
+    const bumblebeestw2 = Transformer('Bumblebee (ST)', 'Least Likely, Most Dangerous', '1none', 'Car', 'Melee', 3, 9, 2, 7, 'Autobot', 'Alt', '2', 'ST01', 'Rare' );
     const deadendw2 = Transformer('Dead End', 'Doomed Loner', 'Stunticon', 'Car', 'Ranged', 2, 7, 2, 5, 'Decepticon', 'Alt', '2', 'T15', 'Common' );
     const dragstripw2 = Transformer('Drag Strip', 'Cuttthroat Warrior', 'Stunticon', 'Car', 'Melee', 3, 7, 2, 5, 'Decepticon', 'Alt', '2', 'T16', 'Common' );
     const veninw2 = Transformer('Venin', 'Insecticon Tyrant', 'Leader', 'Insecticon', 'Ranged', 4, 12, 2, 9, 'Decepticon', 'Alt', '2', 'T17', 'Rare' );
@@ -96,7 +97,8 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const grapplew2 = Transformer('Grapple', 'Autobot Architect', '1none', 'Truck', 'Melee', 5, 12, 2, 12, 'Autobot', 'Alt', '2', 'T26', 'Uncommon' );
     const grimlockw2 = Transformer('Grimlock', 'Powerful Commander', 'Dinobot', 'Leader', 'Melee', 4, 13, 0, 9, 'Autobot', 'Alt', '2', 'T27', 'Rare' );
     const ironhidew2 = Transformer('Ironhide', 'Steadfast Brawler', 'Sentinel', 'Truck', 'Melee', 4, 10, 2, 7, 'Autobot', 'Alt', '2', 'T28', 'Uncommon' );
-    const megatronw2 = Transformer('Megatron', 'Arrogant Ruler', 'Leader', 'Tank', 'Ranged', 3, 14, 3, 10, 'Decepticon', 'Alt', '2', 'T29', 'Common' );
+    const megatronw2 = Transformer('Megatron (C)', 'Arrogant Ruler', 'Leader', 'Tank', 'Ranged', 3, 14, 3, 10, 'Decepticon', 'Alt', '2', 'T29', 'Common' );
+    const megatronstw2 = Transformer('Megatron (ST)', 'Cybertronian Tyrant', '1none', 'Tank', 'Ranged', 2, 10, 2, 7, 'Decepticon', 'Alt', '2', 'T02', 'Rare' );
     const motormasterw2 = Transformer('Motormaster', 'Stunticon Leader', 'Leader', 'Stunticon', 'Truck', 2, 8, 2, 5, 'Decepticon', 'Alt', '2', 'T30', 'Common' );
     const offroadw2 = Transformer('Offroad', 'All-Terrain Soldier', 'Stunticon', 'Truck', 'Melee', 2, 6, 3, 5, 'Decepticon', 'Alt', '2', 'T31', 'Common' );
     const optimusprimew2 = Transformer('Optimus Prime', 'Gleaming Commander', 'Leader', 'Sentinel', 'Melee', 4, 15, 2, 11, 'Autobot', 'Alt', '2', 'T32', 'Uncommon' );
@@ -108,7 +110,8 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const silverboltw2 = Transformer('Silverbolt', 'Aerialbot Leader', 'Aerialbot', 'Plane', 'Ranged', 2, 7, 1, 5, 'Autobot', 'Alt', '2', 'T38', 'Common' );
     const skydivew2 = Transformer('Skydive', 'Air Warfare Specialist', 'Aerialbot', 'Plane', 'Specialist', 3, 8, 2, 5, 'Autobot', 'Alt', '2', 'T39', 'Common' );
     const skywarpw2 = Transformer('Skywarp', 'Teleporting Seeker', '1none', 'Plane', 'Specialist', 4, 13, 1, 10, 'Decepticon', 'Alt', '2', 'T40', 'Rare' );
-    const starscreamw2 = Transformer('Starscream', 'Decepticon King', 'Leader', 'Plane', 'Ranged', 5, 15, 2, 13, 'Decepticon', 'Alt', '2', 'T41', 'Super Rare' );
+    const starscreamw2 = Transformer('Starscream (SR)', 'Decepticon King', 'Leader', 'Plane', 'Ranged', 5, 15, 2, 13, 'Decepticon', 'Alt', '2', 'T41', 'Super Rare' );
+    const starscreamstw2 = Transformer('Starscream (ST)', 'Decepticon Lieutenant', '1none', 'Plane', 'Melee', 3, 7, 1, 5, 'Decepticon', 'Alt', '2', 'T03', 'Rare' );
     const sunstreakerw2 = Transformer('Sunstreaker', 'Bold Warrior', 'Sentinel', 'Car', 'Specialist', 4, 10, 1, 7, 'Autobot', 'Alt', '2', 'T42', 'Uncommon' );
     const thrustw2 = Transformer('Thrust', 'Supersonic Interceptor', '1none', 'Plane', 'Ranged', 3, 11, 3, 9, 'Decepticon', 'Alt', '2', 'T43', 'Uncommon' );
     const toroxw2 = Transformer('Torox', 'Fueler', 'Predacon', '2none', 'Melee', 2, 9, 0, 5, 'Decepticon', 'Alt', '2', 'T44', 'Uncommon' );
@@ -121,7 +124,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const hookw2 = Transformer('Hook', 'Surgical Engineer', 'Constructicon', '2none', 'Ranged', 2, 7, 0, 4, 'Decepticon', 'Alt', '2', 'T02', 'Rare' );
     const bonecrusherw2 = Transformer('Bonecrusher', 'Demolitions', 'Constructicon', '2none', 'Melee', 3, 4, 1, 4, 'Decepticon', 'Alt', '2', 'T01', 'Rare' );
     const omegasupremew2 = Transformer('Omega Supreme', 'Autobot Defense Base', 'Guardian', 'Spaceship', 'Tank', 4, 24, 2, 19, 'Autobot', 'Alt', '2', 'P2', 'Rare' );
-    const windbladeRw2 = Transformer('Windblade (R)', 'Defender of Truth', '1none', 'Plane', 'Ranged', 2, 8, 1, 5, 'Autobot', 'Alt', '2', 'T04', 'Rare' );
+    const windbladestw2 = Transformer('Windblade (ST)', 'Defender of Truth', '1none', 'Plane', 'Ranged', 2, 8, 1, 5, 'Autobot', 'Alt', '2', 'T04', 'Rare' );
     const superionw2 = Transformer('Superion', 'Sky Protector', '1none', 'Aerialbot', 'Ranged', 6, 39, 1, 25, 'Autobot', 'null', '2', 'null', 'null' );
     const predakingw2 = Transformer('Predaking', 'Ferocius Hunter', '1none', 'Predacon', 'Melee', 7, 37, 2, 25, 'Decepticon', 'null', '2', 'null', 'null' );
     const optimusmaximusw2 = Transformer('Optimus Maximus', 'Ultimate Defender', 'Leader', 'Sentinel', 'Ranged', 9, 65, 1, 25, 'Autobot', 'null', '2', 'null', 'null' );
@@ -191,6 +194,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
       bonecrusherw2: bonecrusherw2,
       breakdownw2: breakdownw2,
       bumblebeew2: bumblebeew2,
+      bumblebeestw2: bumblebeestw2,
       deadendw2: deadendw2,
       dirgew2: dirgew2,
       divebombw2: divebombw2,
@@ -205,6 +209,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
       ironhidew2: ironhidew2,
       longhaulw2: longhaulw2,
       megatronw2: megatronw2,
+      megatronstw2: megatronstw2,
       miragew2: miragew2,
       mixmasterw2: mixmasterw2,
       motormasterw2: motormasterw2,
@@ -226,6 +231,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
       snarlw2: snarlw2,
       springerw2: springerw2,
       starscreamw2: starscreamw2,
+      starscreamstw2: starscreamstw2,
       sunstreakerw2: sunstreakerw2,
       swoopw2: swoopw2,
       thrustw2:thrustw2,
@@ -233,7 +239,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
       veninw2: veninw2,
       warpathw2: warpathw2,
       windbladew2: windbladew2,
-      windbladeRw2: windbladeRw2,
+      windbladestw2: windbladestw2,
       superionw2: superionw2,
       predakingw2: predakingw2,
       optimusmaximusw2: optimusmaximusw2,
