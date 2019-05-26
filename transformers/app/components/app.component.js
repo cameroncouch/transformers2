@@ -4,6 +4,8 @@ const comp = {
     controller:['TransformerService', function(TransformerService){
         const vm = this;
         vm.clicked = "false"
+        vm.isCombiner = false
+        vm.combCounter = 0;
         //brings our objects over from transformers.js
         vm.bots1 = mappedTransformers1;
         vm.bots2 = mappedTransformers2;
@@ -41,6 +43,34 @@ const comp = {
             bot.wrench--;
             }
         }
+        // vm.combMin = function(bot) {
+        //     if (vm.combCounter != 0) {
+                
+        //     }
+        // }
+        vm.counterAdd = function(bot) {
+            if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
+                vm.isCombiner = true
+                for(let i = 0; i < vm.botArr.length; i++) {
+                    if(vm.botArr[i].name === bot.name) {
+                        if (bot.wrench < vm.healthArr[i]) {
+                        vm.combCounter++;
+                        console.log(vm.combCounter);
+                        return;
+                        }
+                    }
+                }
+            }
+        }
+        vm.counterMin = function(bot) {
+            if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
+                vm.isCombiner = true
+                if (vm.combCounter !== 0) {
+                    vm.combCounter--
+                    console.log(vm.combCounter);
+                }
+            }
+        }
         //when field clear is clicked, clears botArr and healthArr, blanks the field, and ensures the original bot object data is not mutated
         vm.clear = function() {
             vm.botArr = [];
@@ -52,7 +82,67 @@ const comp = {
         vm.hide = function() {
             vm.clicked = !vm.clicked;
         }
-        //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. vm.combine = function() {}
+        //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. 
+        vm.combine = function() {
+            for (let i = 0; i < vm.botArr.length; i++) {
+                if (vm.botArr[i].type1 === "Sentinel" && vm.botArr[i+1].type1 === "Sentinel" && vm.botArr[i+2].type1 === "Sentinel") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Optimus Maximus has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(optimusmaximusw2);
+                }
+                else if (vm.botArr[i].type1 === "Aerialbot" && vm.botArr[i+1].type1 === "Aerialbot" && vm.botArr[i+2].type1 === "Aerialbot") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Superion has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(superionw2);
+                }
+                else if (vm.botArr[i].type1 === "Stunticon" && vm.botArr[i+1].type1 === "Stunticon" && vm.botArr[i+2].type1 === "Stunticon") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Menasor has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(menasorw2);
+                }
+                else if (vm.botArr[i].type1 === "Predacon" && vm.botArr[i+1].type1 === "Predacon" && vm.botArr[i+2].type1 === "Predacon") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Predaking has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(predakingw2);
+                }
+                else if (vm.botArr[i].type1 === "Dinobot" && vm.botArr[i+1].type1 === "Dinobot" && vm.botArr[i+2].type1 === "Dinobot") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Volcanicus has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(volcanicusw2);
+                }
+                else if (vm.botArr[i].type1 === "Constructicon" && vm.botArr[i+1].type1 === "Constructicon" && vm.botArr[i+2].type1 === "Constructicon") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Devastator has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(devastatorw2);
+                }
+                else if (vm.botArr[i].type1 === "Dreadwing" || vm.botArr[i+1].type1 === "Dreadwing" && vm.botArr[i+2].type1 === "Dreadwing" ) {
+                    vm.botArr = vm.botArr.filter(bot => bot.type1 !== "Dreadwing");
+                    let saveBot = vm.botArr;
+                    vm.healthArr = []
+                    vm.botArr = [];
+                    for (let j = 0; j < saveBot.length; j++) {
+                        vm.add(saveBot[j]);
+                    }
+                    vm.add(dreadwingw2);
+                }
+                else {
+                    continue;
+                }
+            }
+            vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;   
+        }
     }]
 }
 
