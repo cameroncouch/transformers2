@@ -133,6 +133,56 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const devastatorw2 = Transformer('Devastator', 'Towering Warrior', '1none', 'Constructicon', 'Melee', 6, 33, 2, 25, 'Decepticon', 'null', '2', 'null', 'null' );
     const dreadwingw2 = Transformer('Dreadwing', 'Sky Destroyer', 'Dreadwing', 'Plane', 'Ranged', 7, 24, 2, 15, 'Autobot', 'null', '2', 'null', 'null' );
 
+    //Wave 3 Transformers
+    const alphatrionw3 = Transformer('Alpha Trion', 'Cybertronian Sage', '1none', 'Spaceship', 'Ranged', 5, 14, 2, 11, 'Autobot', 'Alt', '3', 'T01', 'Rare' );
+    const elita1w3 = Transformer('C. Elita-1', 'Special Ops - Ranger', 'Leader', 'Car', 'Specialist', 5, 17, 0, 12, 'Autobot', 'Alt', '3', 'T02', 'Rare' );
+    const ironhidew3 = Transformer('C. Ironhide', 'Infantry Body Guard', '1none', 'Truck', 'Ranged', 4, 12, 2, 9, 'Autobot', 'Alt', '3', 'T03', 'Rare' );
+    const starscreamw3 = Transformer('C. Starscream', 'Infantry - Air Commander', '1none', 'Plane', 'Ranged', 4, 16, 2, 12, 'Decepticon', 'Alt', '3', 'T04', 'Rare' );
+    const wheeljackw3 = Transformer('C. Wheeljack', 'Engineering - Scientist', '1none', 'Car', 'Specialist', 5, 12, 1, 9, 'Autobot', 'Alt', '3', 'T05', 'Uncommon' );
+    const megatronw3 = Transformer('G. Megatron', 'Search And Rescue', 'Car', 'Truck', 'Melee', 5, 15, 3, 13, 'Decepticon', 'Alt', '3', 'T06', 'Super Rare' );
+    const optimusprimew3 = Transformer('G. Optimus Prime', 'Infantry Leader', 'Leader', 'Truck', 'Melee', 4, 14, 3, 11, 'Autobot', 'Alt', '3', 'T07', 'Rare' );
+    const prowlw3 = Transformer('M. Prowl', 'Infantry - Strategist', '1none', 'Car', 'Ranged', 4, 14, 2, 10, 'Autobot', 'Alt', '3', 'T08', 'Common' );
+    const shockwavew3 = Transformer('M. Shockwave', 'Applied Sciences - Scientist', 'Leader', 'Spaceship', 'Specialist', 6, 17, 3, 14, 'Decepticon', 'Alt', '3', 'T09', 'Super Rare' );
+    const soundwavew3 = Transformer('M. Soundwave', 'Espionage Spy', 'Leader', 'Spaceship', 'Specialist', 4, 15, 2, 11, 'Decepticon', 'Alt', '3', 'T10', 'Uncommon' );
+    const ultramagnusw3 = Transformer('M. Ultra Magnus', 'Infantry - City Commander', 'Leader', 'Truck', 'Ranged', 5, 17, 1, 12, 'Autobot', 'Alt', '3', 'T11', 'Super Rare' );
+    const arceew3 = Transformer('P. Arcee', 'Special Ops - Warrior', '1none', 'Car', 'Melee', 4, 12, 1, 8, 'Autobot', 'Alt', '3', 'T12', 'Common' );
+    const firedrivew3 = Transformer('P. Firedrive', 'Ground Command - Artillery', '1none', 'Battlemaster', 'Ranged', 3, 10, 0, 7, 'Autobot', 'Alt', '3', 'T13', 'Uncommon' );
+    const flakw3 = Transformer('P. Flak', 'Artillery - Tactics', 'Battle Patrol', 'Tank', 'Ranged', 2, 7, 2, 5, 'Autobot', 'Alt', '3', 'T14', 'Common' );
+    const lionizerw3 = Transformer('P. Lionizer', 'Ground Command - Artillery', '1none', 'Battlemaster', 'Melee', 0, 8, 2, 7, 'Autobot', 'Alt', '3', 'T15', 'Uncommon' );
+    const mudslingerw3 = Transformer('P. Mudslinger', 'Special Ops - Infiltration', 'Offroad Patrol', 'Truck', 'Melee', 3, 7, 1, 5, 'Autobot', 'Alt', '3', 'T16', 'Common' );
+    const pteraxadonw3 = Transformer('P. Pteraxadon', 'Air Command - Artillery', '1none', 'Battlemaster', 'Melee', 3, 9, 0, 6, 'Autobot', 'Alt', '3', 'T17', 'Uncommon' );
+    const redalertw3 = Transformer('P. Red Alert', 'Medical - Medic', '1none', 'Car', 'Melee', 3, 11, 2, 7, 'Decepticon', 'Alt', '3', 'T18', 'Common' );
+    const redheatw3 = Transformer('P. Red Heat', 'Infantry - Emergency Response', 'Rescue Patrol', 'Truck', 'Specialist', 2, 8, 0, 5, 'Autobot', 'Alt', '3', 'T19', 'Common' );
+    const sideswipew3 = Transformer('P. Sideswipe', 'Infantry - Soldier', '1none', 'Car', 'Melee', 2, 11, 1, 8, 'Autobot', 'Alt', '3', 'T20', 'Uncommon' );
+    const stakeoutw3 = Transformer('P. Stakeout', 'Infantry - Communications', 'Rescue Patrol', 'Car', 'Specialist', 3, 5, 0, 4, 'Autobot', 'Alt', '3', 'T21', 'Common' );
+    const topshotw3 = Transformer('P. Top Shot', 'Artillery - Patrol Leader', 'Leader', 'Battle Patrol', 'Tank', 1, 5, 2, 4, 'Autobot', 'Alt', '3', 'T22', 'Common' );
+    const totew3 = Transformer('P. Tote', 'Special Ops - Infiltration', 'Offroad Patrol', 'Truck', 'Melee', 2, 5, 1, 4, 'Autobot', 'Alt', '3', 'T23', 'Common' );
+    const trailbreakerw3 = Transformer('P. Trailbreaker', 'Infantry - Fortification & Defense', '1none', 'Truck', 'Melee', 4, 14, 2, 10, 'Autobot', 'Alt', '3', 'T24', 'Uncommon' );
+    const aimlessw3 = Transformer('R. Aimless', 'Airforce - Weapons', '1none', 'Battlemaster', 'Ranged', 3, 8, 0, 7, 'Decepticon', 'Alt', '3', 'T25', 'Uncommon' );
+    const blowpipew3 = Transformer('R. Blowpipe', 'Airforce - Weapons', '1none', 'Battlemaster', 'Ranged', 2, 7, 1, 5, 'Decepticon', 'Alt', '3', 'T26', 'Common' );
+    const cindersaurw3 = Transformer('R. Cindersaur', 'Black Ops - Demolitions', '1none', 'Firecon', 'Melee', 4, 12, 1, 8, 'Decepticon', 'Alt', '3', 'T27', 'Rare' );
+    const detourw3 = Transformer('R. Detour', 'Infantry - Demolitions', 'Sportscar Patrol', 'Car', 'Specialist', 3, 6, 0, 4, 'Decepticon', 'Alt', '3', 'T28', 'Common' );
+    const flamefeatherw3 = Transformer('R. Flamefeather', 'Black Ops - Soldier', '1none', 'Firecon', 'Ranged', 3, 11, 1, 8, 'Decepticon', 'Alt', '3', 'T29', 'Uncommon' );
+    const ionstormw3 = Transformer('R. Ion Storm', 'Infantry - Rainmaker', '1none', 'Plane', 'Ranged', 7, 14, 3, 12, 'Decepticon', 'Alt', '3', 'T30', 'Common' );
+    const laserbeakw3 = Transformer('R. Laserbeak', 'Espionage - Interrogation', '1none', '2none', 'Spy Patrol', 0, 9, 2, 5, 'Decepticon', 'Alt', '3', 'T31', 'Common' );
+    const needlenosew3 = Transformer('R. Needlenose', 'Airforce - Soldier', '1none', 'Plane', 'Ranged', 3, 11, 1, 8, 'Decepticon', 'Alt', '3', 'T32', 'Rare' );
+    const nightstickw3 = Transformer('R. Nightstick', 'Groundforce - Weapons', '1none', 'Battlemaster', 'Specialist', 2, 6, 1, 6, 'Decepticon', 'Alt', '3', 'T33', 'Uncommon' );
+    const ravagew3 = Transformer('R. Ravage', 'Espionage - Saboteur', '1none', '2none', 'Spy Patrol', 0, 7, 3, 5, 'Decepticon', 'Alt', '3', 'T34', 'Common' );
+    const roadhuggerw3 = Transformer('R. Road Hugger', 'Infantry - Tactics', 'Sportscar Patrol', 'Car', 'Melee', 3, 7, 1, 5, 'Decepticon', 'Alt', '3', 'T35', 'Common' );
+    const runaboutw3 = Transformer('R. Runabout', 'Infantry - Soldier', '1none', 'Car', 'Ranged', 5, 13, 2, 10, 'Decepticon', 'Alt', '3', 'T36', 'Common' );
+    const runamuckw3 = Transformer('R. Runamuck', 'Infantry - Soldier', '1none', 'Car', 'Specialist', 4, 13, 2, 10, 'Decepticon', 'Alt', '3', 'T37', 'Common' );
+    const stormcloudw3 = Transformer('R. Storm Cloud', 'Infantry - Electronic Warfare', 'Airstrike Patrol', 'Plane', 'Ranged', 3, 6, 0, 4, 'Decepticon', 'Alt', '3', 'T38', 'Common' );
+    const triggerhappyw3 = Transformer('R. Trigger Happy', 'Air Force - Gunner', '1none', 'Plane', 'Ranged', 3, 12, 2, 8, 'Decepticon', 'Alt', '2', 'T39', 'Uncommon' );
+    const visperw3 = Transformer('R. Visper', 'Infantry - Patrol Leader', 'Leader', 'Airstrike Patrol', 'Plane', 3, 7, 0, 5, 'Decepticon', 'Alt', '3', 'T40', 'Common' );
+    const chromiaw3 = Transformer('S. Chromia', 'Special Ops - Counterintelligence', '1none', 'Car', 'Specialist', 4, 12, 1, 7, 'Autobot', 'Alt', '3', 'T41', 'Common' );
+    const cogw3 = Transformer('S. Cog', 'Artillery - Mechanic', '1none', 'Weaponizer', 'Ranged', 4, 12, 1, 10, 'Autobot', 'Alt', '3', 'T42', 'Super Rare' );
+    const skrapnelw3 = Transformer('S. Skrapnel', 'Infantry - Electronic Warfare', 'Leader', 'Insecticon', 'Melee', 4, 11, 2, 9, 'Decepticon', 'Alt', '3', 'T44', 'Common' );
+    const skywarpw3 = Transformer('S. Skywarp', 'Black Ops - Seeker', '1none', 'Plane', 'Specialist', 4, 11, 2, 8, 'Decepticon', 'Alt', '3', 'T45', 'Rare' );
+    const sparkstalkerw3 = Transformer('S. Sparkstalker', 'Black Ops - Cryptology', '1none', 'Firecon', 'Melee', 4, 10, 2, 8, 'Decepticon', 'Alt', '3', 'T46', 'Common' );
+    const flamewarw3 = Transformer('S. Flamewar', 'Special Ops - Hunter', '1none', 'Motorcycle', 'Specialist', 4, 10, 0, 7, 'Decepticon', 'Alt', '3', 'T47', 'Uncommon' );
+    const ratchetw3 = Transformer('S. Ratchet', 'Engineering - Rescue & Repair', '1none', 'Truck', 'Specialist', 4, 14, 0, 8, 'Autobot', 'Alt', '3', 'T48', 'Uncommon' );
+    const smashdownw3 = Transformer('P. Smashdown', 'Ground Command - artillery', '1none', 'Battlemaster', 'Melee', 2, 6, 2, 5, 'Autobot', 'Alt', '3', 'P03', 'Rare' );
+    //map objects
     const mappedTransformers1 = {
 		arceew1: arceew1,
 		barragew1: barragew1,
@@ -248,3 +298,54 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
       devastatorw2: devastatorw2,
       dreadwingw2: dreadwingw2
   };
+
+  const mappedTransformers3 = {
+    aimlessw3: aimlessw3,
+    alphatrionw3: alphatrionw3,
+    arceew3: arceew3,
+    blowpipew3: blowpipew3,
+    chromiaw3: chromiaw3,
+    cindersaurw3: cindersaurw3,
+    cogw3: cogw3,
+    detourw3: detourw3,
+    elita1w3: elita1w3,
+    firedrivew3: firedrivew3,
+    flakw3: flakw3,
+    flamefeatherw3: flamefeatherw3,
+    flamewarw3: flamewarw3,
+    ionstormw3: ionstormw3,
+    ironhidew3: ironhidew3,
+    lionizerw3: lionizerw3,
+    laserbeakw3: laserbeakw3,
+    megatronw3: megatronw3,
+    mudslingerw3: mudslingerw3,
+    needlenosew3: needlenosew3,
+    nightstickw3: nightstickw3,
+    optimusprimew3: optimusprimew3,
+    prowlw3: prowlw3,
+    pteraxadonw3: pteraxadonw3,
+    ratchetw3: ratchetw3,
+    ravagew3: ravagew3,
+    redalertw3: redalertw3,
+    redheatw3: redheatw3,
+    roadhuggerw3: roadhuggerw3,
+    runaboutw3: runaboutw3,
+    runamuckw3: runamuckw3,
+    shockwavew3: shockwavew3,
+    sideswipew3: sideswipew3,
+    skrapnelw3: skrapnelw3,
+    skywarpw3: skywarpw3,
+    smashdownw3: smashdownw3,
+    soundwavew3: soundwavew3,
+    sparkstalkerw3: sparkstalkerw3,
+    stakeoutw3: stakeoutw3,
+    starscreamw3: starscreamw3,
+    stormcloudw3: stormcloudw3,
+    topshotw3: topshotw3,
+    totew3: totew3,
+    trailbreakerw3: trailbreakerw3,
+    triggerhappyw3: triggerhappyw3,
+    ultramagnusw3: ultramagnusw3,
+    visperw3: visperw3,
+    wheeljackw3: wheeljackw3
+};

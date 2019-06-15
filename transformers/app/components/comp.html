@@ -12,6 +12,12 @@
                 <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
             </div>
         </div>
+        <h1 ng-hide="!$ctrl.clicked">Wave 3</h1>
+        <div ng-hide="!$ctrl.clicked" class="botlist">
+            <div ng-repeat="bot in $ctrl.bots3">
+                <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
+            </div>
+        </div>
     </div>
     <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><p>< < HIDE</p></div>
     <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><p>CARDS > ></p></div>

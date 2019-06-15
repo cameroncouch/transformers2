@@ -9,6 +9,7 @@ const comp = {
         //brings our objects over from transformers.js
         vm.bots1 = mappedTransformers1;
         vm.bots2 = mappedTransformers2;
+        vm.bots3 = mappedTransformers3;
         //bots in the field are kept here so the data can be mutated separately from the og object
         vm.botArr = [];
         //health for each bot in botArr, corresponds with index - this is needed to ensure we can't heal past initial health
