@@ -14,6 +14,7 @@ const comp = {
         vm.botArr = [];
         //health for each bot in botArr, corresponds with index - this is needed to ensure we can't heal past initial health
         vm.healthArr = [];
+        vm.optMax = [optimusprimew2, prowlw2, sunstreakerw2, miragew2, ironhidew2, hotrodw2];
         //when user clicks the add button, add that transformer to the field. Limit 6 bots in the field, no duplicates.
         vm.add = function(bot) {
             for (let i = 0; i < vm.botArr.length; i++) {
@@ -93,6 +94,18 @@ const comp = {
             for (let i = 0; i < vm.botArr.length; i++) {
                 if (vm.botArr[i].type1 === "Sentinel" && vm.botArr[i+1].type1 === "Sentinel" && vm.botArr[i+2].type1 === "Sentinel") {
                     console.log(vm.botArr[i].name);
+                    // if (vm.botArr[i] === optimusprimew2) {
+                    //     console.log("here");
+                    //    for (let j = 0; j < vm.optMax.length; j++) {
+                    //        console.log("inner loop");
+                    //        if (vm.optMax[j] === optimusprimew2) {
+                    //            vm.optMax.splice(j, 1);
+                    //            console.log(vm.optMax);
+                    //        }
+                    //        else {console.log("here");}
+                    //    }   
+                    // }
+                    // else {console.log("here");}
                     console.log("Optimus Maximus has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
