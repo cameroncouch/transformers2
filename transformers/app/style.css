@@ -9,6 +9,11 @@ body {
     display: flex;
     margin: 0;
 }
+.rss {
+    position: absolute;
+    left: 90%;
+    top: 95%;
+}
 .menu {
     display: flex;
     flex-direction: column;
