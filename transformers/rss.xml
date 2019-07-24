@@ -8,8 +8,8 @@
 <language>en-us</language>
 <copyright>2019</copyright>
 <itunes:explicit>No</itunes:explicit>
-<itunes:category text="Arts">
-    <itunes:category text="Games"/>
+<itunes:category text="Games & Hobbies">
+    <itunes:category text="Other Games"/>
 </itunes:category>
 <image>
 <title>Double Pipcast</title>
@@ -24,8 +24,8 @@
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
-    <itunes:category text="Arts">
-        <itunes:category text="Games"/>
+    <itunes:category text="Games & Hobbies">
+        <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
     <itunes:subtitle>Cam and Dave introduce themselves on the first episode of the Double Pipcast. Cam gives new players a rundown on what the TF TCG is all about!</itunes:subtitle>
@@ -40,8 +40,8 @@
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
-    <itunes:category text="Arts">
-        <itunes:category text="Games"/>
+    <itunes:category text="Games & Hobbies">
+        <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
     <itunes:subtitle>Cam flys solo into SDCC card territory. Touching on Omnibots, Soundwave v Blaster, and Wave 4's covert announcement</itunes:subtitle>
