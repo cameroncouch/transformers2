@@ -7,27 +7,28 @@
 <language>en-us</language>
 <image>
 <title>Double Pipcast</title>
+<link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
 <url>https://transformers-tcg-dmgctr.herokuapp.com/doublepip.png</url>
-<width>250</width>
-<height>250</height>
+<width>144</width>
+<height>144</height>
 </image>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
-    <pubDate>Fri 12 July 2019</pubDate>
+    <pubDate>Fri, 12 July 2019 00:00:00</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
     <category>Trading Card Game</category>
-    <enclosure url="https://transformers-tcg-dmgctr.herokuapp.com/dppipcast_ep_1.mp3" length="75600000" type="audio/mp3">
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/dppipcast_ep_1.mp3" length="75600000" type="audio/mp3">
     </item>
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
-    <pubDate>Sun 21 July 2019</pubDate>
+    <pubDate>Sun, 21 July 2019 00:00:00</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
     <category>Trading Card Game</category>
-    <enclosure url="https://transformers-tcg-dmgctr.herokuapp.com/dppipcast_ep_2.mp3" length="33500000" type="audio/mp3">
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/dppipcast_ep_2.mp3" length="33500000" type="audio/mp3">
     </item>
 </channel>
 </rss>
