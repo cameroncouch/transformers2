@@ -24,14 +24,16 @@
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
-    <itunes:category>Games</itunes:category>
+    <itunes:category text="Arts & Entertainment">
+        <itunes:category text="Games"></itunes:category>
+    </itunes:category>
     <itunes:explicit>No</itunes:explicit>
     <itunes:subtitle>Cam and Dave introduce themselves on the first episode of the Double Pipcast. Cam gives new players a rundown on what the TF TCG is all about!</itunes:subtitle>
     <itunes:summary>Cam and Dave introduce themselves on the first episode of the Double Pipcast. Cam gives new players a rundown on what the TF TCG is all about!</itunes:summary>
     <itunes:duration>00:55:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <category>Trading Card Game</category>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dppipcast_ep_1.mp3" length="75600000" type="audio/mpeg"/>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_1.mp3" length="75600000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
@@ -39,14 +41,16 @@
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
-    <itunes:category>Games</itunes:category>
+    <itunes:category text="Arts & Entertainment">
+        <itunes:category text="Games"></itunes:category>
+    </itunes:category>
     <itunes:explicit>No</itunes:explicit>
     <itunes:subtitle>Cam flys solo into SDCC card territory. Touching on Omnibots, Soundwave v Blaster, and Wave 4's covert announcement</itunes:subtitle>
     <itunes:summary>Cam flys solo into SDCC card territory. Touching on Omnibots, Soundwave v Blaster, and Wave 4's covert announcement</itunes:summary>
     <itunes:duration>00:25:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <category>Trading Card Game</category>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dppipcast_ep_2.mp3" length="33500000" type="audio/mpeg"/>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_2.mp3" length="33500000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
