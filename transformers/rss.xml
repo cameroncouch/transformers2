@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
+<atom:link href="https://transformers-tcg-dmgctr.herokuapp.com/rss.xml" rel="self" type="application/rss+xml" />
 <title>Double Pipcast</title>
 <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
 <description>Podcast</description>
@@ -14,7 +15,7 @@
 </image>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
-    <pubDate>Fri, 12 July 2019 00:00:00 EST</pubDate>
+    <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
@@ -23,7 +24,7 @@
     </item>
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
-    <pubDate>Sun, 21 July 2019 00:00:00 EST</pubDate>
+    <pubDate>Sun, 21 Jul 2019 00:00:00 EST</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
