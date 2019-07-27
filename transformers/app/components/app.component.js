@@ -60,7 +60,7 @@ const comp = {
                 }
             }
         }
-        //when user clicks heal button, deccrement the combinercounter. This counter is used to damage a combiner when it comes into play
+        //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
             if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
                 vm.isCombiner = true
@@ -74,6 +74,7 @@ const comp = {
         vm.clear = function() {
             vm.botArr = [];
             vm.healthArr = [];
+            vm.combCounter = 0;
         }
         //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
         vm.remove = function(bot) {

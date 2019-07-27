@@ -9,10 +9,10 @@ body {
     display: flex;
     margin: 0;
 }
-.rss {
-    position: absolute;
-    left: 90%;
-    top: 95%;
+a {
+ width: max-content;
+ align-self: flex-end;
+ margin: 1%;
 }
 .menu {
     display: flex;
@@ -118,6 +118,10 @@ h1:nth-of-type(3) {
     background: linear-gradient(to bottom,rgba(255,255,255)10%, rgb(224, 224, 224));
     height: 100vh;
 }
+.buttonwrapper{
+    display: flex;
+    flex-direction: column;
+}
 button {
     font-family: 'deceptibots', sans-serif;
     font-weight: 700;
@@ -134,13 +138,13 @@ button:hover {
     color: #fff;
 }
 .fa-first-aid {
-    color: forestgreen;
+    color: rgb(34, 139, 34);
 }
 .fa-haykal {
-    color: darkorange;
+    color: rgb(238, 131, 0);
 }
 .fa-window-close {
-    color: darkred
+    color: rgb(134, 0, 0)
 }
 .fieldbot {
     font-family: 'Roboto Condensed', sans-serif;
@@ -152,12 +156,16 @@ button:hover {
     border-radius: 2px;
     box-shadow: 0px 1px 2px 0px black;
 }
-.fieldbot button:nth-child(odd):hover {
+.fieldbot button:nth-child(3):hover {
     background-color: rgb(151, 255, 147);
     cursor: pointer;
 }
-.fieldbot button:nth-child(even):hover {
-    background-color: rgb(255, 178, 147);
+.fieldbot button:nth-child(4):hover {
+    background-color: rgb(255, 196, 123);
+    cursor: pointer;
+}
+.fieldbot button:nth-child(5):hover {
+    background-color: rgb(250, 170, 176);
     cursor: pointer;
 }
 .fieldbot p:nth-child(odd) {
@@ -176,17 +184,24 @@ button:hover {
     display: none;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .buttonwrapper {
+        margin: 0 30%;
+        width: 33%;
+    }
+    
     .field {
         display: flex;
         flex-direction: row;
         text-align: center;
         align-items: center;
+        flex-wrap: wrap;
         background: linear-gradient(to bottom,rgba(255,255,255)10%, rgb(224, 224, 224));
         height: 100vh;
+        width:100vw;
     }
     
     .fieldbot {
-        height:50%;
+        height:30%;
         width: 20%;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 400;
@@ -205,13 +220,14 @@ button:hover {
     }
     .trash {
         display: inline-block;
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        text-align: center;
-        padding: 1%;
-        margin: 0 3px;
+        margin: 1px;
     }
+    a {
+        width: max-content;
+        position: absolute;
+        top: 85%;
+        left: 91%;
+       }
 }
 @media only screen and (min-width: 1026px) {
 
