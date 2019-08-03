@@ -50,5 +50,21 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_2.mp3" length="33500000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Double Pipcast | Episode 3 | Introducing Aaron - PLaying 1 v 1 Over Audio?</title>
+    <pubDate>Sun, 27 Jul 2019 00:00:00 EST</pubDate>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games & Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Aaron aka BRKNSTR joins the Double Pipcast! We weave in TCG talk in between some casual play!</itunes:subtitle>
+    <itunes:summary>Aaron aka BRKNSTR joins the Double Pipcast! We weave in TCG talk in between some casual play!</itunes:summary>
+    <itunes:duration>00:55:00</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_3.mp3" length="75600000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
