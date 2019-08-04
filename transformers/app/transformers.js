@@ -182,6 +182,9 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const flamewarw3 = Transformer('S. Flamewar', 'Special Ops - Hunter', '1none', 'Motorcycle', 'Specialist', 4, 10, 0, 7, 'Decepticon', 'Alt', '3', 'T47', 'Uncommon' );
     const ratchetw3 = Transformer('S. Ratchet', 'Engineering - Rescue & Repair', '1none', 'Truck', 'Specialist', 4, 14, 0, 8, 'Autobot', 'Alt', '3', 'T48', 'Uncommon' );
     const smashdownw3 = Transformer('P. Smashdown', 'Ground Command - artillery', '1none', 'Battlemaster', 'Melee', 2, 6, 2, 5, 'Autobot', 'Alt', '3', 'P03', 'Rare' );
+    const overdrivew3 = Transformer('S. Overdrive', 'Special Ops - Strategist', 'Leader', 'Omnibot', 'Car', 3, 12, 1, 9, 'Autobot', 'Alt', '3', 'T03', 'Rare' );
+    const downshiftw3 = Transformer('P. Downshift', 'Special Ops - Security Agent', '1none', 'Omnibot', 'Ranged', 4, 11, 1, 8, 'Autobot', 'Alt', '3', 'T02', 'Rare' );
+    const camshaftw3 = Transformer('P. Camshaft', 'Special Ops - Scout', 'Omnibot', 'Car', 'Specialist', 3, 11, 1, 8, 'Autobot', 'Alt', '3', 'T03', 'Rare' );
     //map objects
     const mappedTransformers1 = {
 		arceew1: arceew1,
@@ -304,10 +307,12 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     alphatrionw3: alphatrionw3,
     arceew3: arceew3,
     blowpipew3: blowpipew3,
+    camshaftw3: camshaftw3,
     chromiaw3: chromiaw3,
     cindersaurw3: cindersaurw3,
     cogw3: cogw3,
     detourw3: detourw3,
+    downshiftw3: downshiftw3,
     elita1w3: elita1w3,
     firedrivew3: firedrivew3,
     flakw3: flakw3,
@@ -322,6 +327,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     needlenosew3: needlenosew3,
     nightstickw3: nightstickw3,
     optimusprimew3: optimusprimew3,
+    overdrivew3: overdrivew3,
     prowlw3: prowlw3,
     pteraxadonw3: pteraxadonw3,
     ratchetw3: ratchetw3,
