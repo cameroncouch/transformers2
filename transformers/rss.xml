@@ -23,6 +23,7 @@
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
     <itunes:category text="Games & Hobbies">
@@ -39,6 +40,7 @@
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
     <pubDate>Sun, 21 Jul 2019 00:00:00 EST</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
     <itunes:category text="Games & Hobbies">
@@ -55,6 +57,7 @@
     <title>Double Pipcast | Episode 3 | Introducing Aaron - Playing 1 v 1 Over Audio?</title>
     <pubDate>Sun, 27 Jul 2019 00:00:00 EST</pubDate>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
     </description>
     <itunes:category text="Games & Hobbies">
@@ -66,6 +69,23 @@
     <itunes:duration>00:55:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_3.mp3" length="75600000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Double Pipcast | Episode 4 | Trippin' over Trypticon</title>
+    <pubDate>Sun, 27 Jul 2019 00:00:00 EST</pubDate>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games & Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>WotC announces Wave 4 - Trypticon is for big spenders - Loot Crate delivering damaged goods? Cam is left to his own devices, and talks about what's new in the world of the Transformers TCG</itunes:subtitle>
+    <itunes:summary>WotC announces Wave 4 - Trypticon is for big spenders - Loot Crate delivering damaged goods? Cam is left to his own devices, and talks about what's new in the world of the Transformers TCG</itunes:summary>
+    <itunes:duration>00:25:00</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_4.mp3" length="30000000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
