@@ -4,7 +4,9 @@
 <atom:link href="https://transformers-tcg-dmgctr.herokuapp.com/rss.xml" rel="self" type="application/rss+xml" />
 <title>Double Pipcast</title>
 <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+<itunes:author>Double Pipcast</itunes:author>
 <description>Double Pipcast is a show dedicated to everything "Transformers TCG"</description>
+<itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
 <language>en-us</language>
 <copyright>2019</copyright>
 <itunes:explicit>No</itunes:explicit>
@@ -18,10 +20,11 @@
 <width>144</width>
 <height>144</height>
 </image>
-<itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+<lastBuildDate>Sun, 4 Aug 2019 00:00:00 EST</lastBuildDate>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
+    <itunes:episode>1</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
@@ -39,6 +42,7 @@
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
     <pubDate>Sun, 21 Jul 2019 00:00:00 EST</pubDate>
+    <itunes:episode>2</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
@@ -56,6 +60,7 @@
     <item>
     <title>Double Pipcast | Episode 3 | Introducing Aaron - Playing 1 v 1 Over Audio?</title>
     <pubDate>Sun, 27 Jul 2019 00:00:00 EST</pubDate>
+    <itunes:episode>3</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
@@ -73,6 +78,7 @@
     <item>
     <title>Double Pipcast | Episode 4 | Trippin' over Trypticon</title>
     <pubDate>Sun, 4 Aug 2019 00:00:00 EST</pubDate>
+    <itunes:episode>4</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
     <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
