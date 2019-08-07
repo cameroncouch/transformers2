@@ -68,7 +68,7 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const wheeljackw1 = Transformer('Wheeljack', 'Weapons Inventor', '1none', '2none', 'Melee', 5, 13, 1, 9, 'Autobot', 'Alt', '1', 'T40', 'Uncommon');
 
     //Wave 2 Transformers
-    const acidstormw2 = Transformer('Acid Storm', 'Toxic Terror', '1none', 'Plane', 'Ranged', 3, 8, 0, 6, 'Decepticon', 'Alt', '2', 'T01', 'Rare' );
+    const acidstormw2 = Transformer('Acid Storm', 'Toxic Terror', '1none', 'Plane', 'Ranged', 3, 10, 0, 6, 'Decepticon', 'Alt', '2', 'T01', 'Rare' );
     const airraidw2 = Transformer('Air Raid', 'Fearless Flyer', 'Aerialbot', 'Plane', 'Ranged', 3, 8, 0, 5, 'Autobot', 'Alt', '2', 'T02', 'Common' );
     const alphabravow2 = Transformer('Alpha Bravo', 'Airborne Special Ops', 'Aerialbot', 'Plane', 'Ranged', 2, 8, 1, 5, 'Autobot', 'Alt', '2', 'T03', 'Common' );
     const hotrodw2 = Transformer('Hot Rod', 'Impulsive Fighter', 'Sentinel', 'Car', 'Ranged', 4, 10, 2, 6, 'Autobot', 'Alt', '2', 'T04', 'Uncommon' );
