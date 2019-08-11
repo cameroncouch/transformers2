@@ -106,8 +106,8 @@
         <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:subtitle>The drip feed for Wave 4 Siege II reveals is real. The team at TF TCG dropped two reveals last week with Ratbat and Hotrod. Cam trys his hand at amateur sound effects for bumpers, and introduces a new segment called "Let's Talk A Bot It"</itunes:subtitle>
-    <itunes:summary>The drip feed for Wave 4 Siege II reveals is real. The team at TF TCG dropped two reveals last week with Ratbat and Hotrod. Cam trys his hand at amateur sound effects for bumpers, and introduces a new segment called "Let's Talk A Bot It"</itunes:summary>
+    <itunes:subtitle>The drip feed for Wave 4 Siege II reveals is real. The team at TF TCG dropped two reveals last week with Ratbat and Hotrod. Cam tries his hand at amateur sound effects for bumpers, and introduces a new segment called "Let's Talk A Bot It"</itunes:subtitle>
+    <itunes:summary>The drip feed for Wave 4 Siege II reveals is real. The team at TF TCG dropped two reveals last week with Ratbat and Hotrod. Cam tries his hand at amateur sound effects for bumpers, and introduces a new segment called "Let's Talk A Bot It"</itunes:summary>
     <itunes:duration>00:17:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_5.mp3" length="30000000" type="audio/mpeg"/>
