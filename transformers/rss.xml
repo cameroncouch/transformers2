@@ -112,5 +112,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_5.mp3" length="30000000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Double Pipcast | Episode 6 | Interview with WotC's Drew Nolosco</title>
+    <pubDate>Fri, 23 Aug 2019 00:00:00 EST</pubDate>
+    <itunes:episode>6</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam interviews Global Brand Manager of the Transformers Trading Card Game, Drew Nolosco. We touch on Drew's history in the gaming industry, the TF TCG development process, and what's the future holds for the game. Take a peak behind the energon curtain!</itunes:subtitle>
+    <itunes:summary>Cam interviews Global Brand Manager of the Transformers Trading Card Game, Drew Nolosco. We touch on Drew's history in the gaming industry, the TF TCG development process, and what's the future holds for the game. Take a peak behind the energon curtain!</itunes:summary>
+    <itunes:duration>00:56:00</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
