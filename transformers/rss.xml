@@ -6,6 +6,7 @@
 <title>Double Pipcast</title>
 <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
 <itunes:author>Double Pipcast</itunes:author>
+<itunes:email>DoublePipcast@gmail.com</itunes:email>
 <description>Double Pipcast is a show dedicated to everything "Transformers TCG"</description>
 <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
 <language>en-us</language>
