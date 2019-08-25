@@ -6,7 +6,6 @@
 <title>Double Pipcast</title>
 <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
 <itunes:author>Double Pipcast</itunes:author>
-<itunes:email>DoublePipcast@gmail.com</itunes:email>
 <description>Double Pipcast is a show dedicated to everything "Transformers TCG"</description>
 <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
 <language>en-us</language>
@@ -25,8 +24,6 @@
 <lastBuildDate>Fri, 23 Aug 2019 00:00:00 EST</lastBuildDate>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
-    <itunes:author>Double Pipcast</itunes:author>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>1</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -46,10 +43,6 @@
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
     <itunes:author>Double Pipcast</itunes:author>
-    <itunes:owner>
-    <itunes:name>Double Pipcast</itunes:name>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
-    </itunes:owner>
     <pubDate>Sun, 21 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>2</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -68,8 +61,6 @@
     </item>
     <item>
     <title>Double Pipcast | Episode 3 | Introducing Aaron - Playing 1 v 1 Over Audio?</title>
-    <itunes:author>Double Pipcast</itunes:author>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
     <pubDate>Sat, 27 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>3</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -88,8 +79,6 @@
     </item>
     <item>
     <title>Double Pipcast | Episode 4 | Trippin' over Trypticon</title>
-    <itunes:author>Double Pipcast</itunes:author>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
     <pubDate>Sun, 4 Aug 2019 00:00:00 EST</pubDate>
     <itunes:episode>4</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -108,8 +97,6 @@
     </item>
     <item>
     <title>Double Pipcast | Episode 5 | Ratrod and Hotbat</title>
-    <itunes:author>Double Pipcast</itunes:author>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
     <pubDate>Sun, 11 Aug 2019 00:00:00 EST</pubDate>
     <itunes:episode>5</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -128,8 +115,6 @@
     </item>
     <item>
     <title>Double Pipcast | Episode 6 | Interview with WotC's Drew Nolosco</title>
-    <itunes:author>Double Pipcast</itunes:author>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
     <pubDate>Fri, 23 Aug 2019 00:00:00 EST</pubDate>
     <itunes:episode>6</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -147,4 +132,8 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
     </item>
 </channel>
+<itunes:owner>
+    <itunes:name>Double Pipcast</itunes:name>
+    <itunes:email>DoublePipcast@gmail.com</itunes:email>
+</itunes:owner>
 </rss>
