@@ -46,7 +46,10 @@
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
     <itunes:author>Double Pipcast</itunes:author>
+    <itunes:owner>
+    <itunes:name>Double Pipcast</itunes:name>
     <itunes:email>DoublePipcast@gmail.com</itunes:email>
+    </itunes:owner>
     <pubDate>Sun, 21 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>2</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -67,7 +70,7 @@
     <title>Double Pipcast | Episode 3 | Introducing Aaron - Playing 1 v 1 Over Audio?</title>
     <itunes:author>Double Pipcast</itunes:author>
     <itunes:email>DoublePipcast@gmail.com</itunes:email>
-    <pubDate>Sun, 27 Jul 2019 00:00:00 EST</pubDate>
+    <pubDate>Sat, 27 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>3</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
     <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
