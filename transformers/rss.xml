@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-
+<itunes:owner>
+    <itunes:name>Double Pipcast</itunes:name>
+    <itunes:email>DoublePipcast@gmail.com</itunes:email>
+</itunes:owner>
 <atom:link href="https://transformers-tcg-dmgctr.herokuapp.com/rss.xml" rel="self" type="application/rss+xml" />
 <title>Double Pipcast</title>
 <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -132,8 +135,4 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
     </item>
 </channel>
-<itunes:owner>
-    <itunes:name>Double Pipcast</itunes:name>
-    <itunes:email>DoublePipcast@gmail.com</itunes:email>
-</itunes:owner>
 </rss>
