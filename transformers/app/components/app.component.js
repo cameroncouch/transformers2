@@ -3,8 +3,9 @@ const comp = {
     templateUrl:"app/components/comp.html",
     controller:['TransformerService', function(TransformerService){
         const vm = this;
-        vm.clicked = "false"
-        vm.isCombiner = false
+        vm.clicked = 'false';
+        vm.podcastmodal = false;
+        vm.isCombiner = false;
         vm.combCounter = 0;
         //brings our objects over from transformers.js
         vm.bots1 = mappedTransformers1;
@@ -89,6 +90,14 @@ const comp = {
         //collapses/expands the menu element when user clicks the hide bar
         vm.hide = function() {
             vm.clicked = !vm.clicked;
+        }
+        vm.show = function() {
+            if (vm.podcastmodal == false) {
+                vm.podcastmodal = true
+            }
+            else if (vm.podcastmodal == true) {
+                vm.podcastmodal = false;
+            }
         }
         //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. 
         vm.combine = function() {
