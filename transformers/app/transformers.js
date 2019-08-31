@@ -184,7 +184,15 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     const smashdownw3 = Transformer('P. Smashdown', 'Ground Command - artillery', '1none', 'Battlemaster', 'Melee', 2, 6, 2, 5, 'Autobot', 'Alt', '3', 'P03', 'Rare' );
     const overdrivew3 = Transformer('S. Overdrive', 'Special Ops - Strategist', 'Leader', 'Omnibot', 'Car', 3, 12, 1, 9, 'Autobot', 'Alt', '3', 'T03', 'Rare' );
     const downshiftw3 = Transformer('P. Downshift', 'Special Ops - Security Agent', '1none', 'Omnibot', 'Ranged', 4, 11, 1, 8, 'Autobot', 'Alt', '3', 'T02', 'Rare' );
-    const camshaftw3 = Transformer('P. Camshaft', 'Special Ops - Scout', 'Omnibot', 'Car', 'Specialist', 3, 11, 1, 8, 'Autobot', 'Alt', '3', 'T03', 'Rare' );
+    const camshaftw3 = Transformer('P. Camshaft', 'Special Ops - Scout', 'Omnibot', 'Car', 'Specialist', 3, 11, 1, 8, 'Autobot', 'Alt', '3', 'T01', 'Rare' );
+    const soundwaveSRw3 = Transformer('Soundwave', 'Communications', '1none', 'Leader', 'Specialist', 4, 15, 2, 10, 'Decepticon', 'Alt', 'Blaster vs Soundwave', 'T05', 'Super Rare' );
+    const buzzsaww3 = Transformer('Buzzsaw', 'Spy', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Decepticon', 'Alt', 'Blaster vs Soundwave', 'T06', 'Rare' );
+    const frenzyw3 = Transformer('Frenzy', 'Warrior', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Decepticon', 'Alt', 'Blaster vs Soundwave', 'T07', 'Rare' );
+    const ravageRw3 = Transformer('Ravage', 'Saboteur', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Decepticon', 'Alt', 'Blaster vs Soundwave', 'T08', 'Rare' );
+    const ramhornw3 = Transformer('Ramhorn', 'Warrior', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Autobot', 'Alt', 'Blaster vs Soundwave', 'T03', 'Rare' );
+    const steeljaww3 = Transformer('Steeljaw', 'Tracker', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Autobot', 'Alt', 'Blaster vs Soundwave', 'T04', 'Rare' );
+    const ejectw3 = Transformer('Eject', 'Electronic Surveillance', '1none', '2none', 'Mini-Cassette', 0, 9, 1, 5, 'Autobot', 'Alt', 'Blaster vs Soundwave', 'T02', 'Rare' );
+    const blasterw3 = Transformer('Blaster', 'Communications', '1none', '2none', 'Mini-Cassette', 0, 14, 2, 10, 'Autobot', 'Alt', 'Blaster vs Soundwave', 'T01', 'Super Rare' );
     //map objects
     const mappedTransformers1 = {
 		arceew1: arceew1,
@@ -306,18 +314,22 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     aimlessw3: aimlessw3,
     alphatrionw3: alphatrionw3,
     arceew3: arceew3,
+    blasterw3:blasterw3,
     blowpipew3: blowpipew3,
+    buzzsaww3:buzzsaww3,
     camshaftw3: camshaftw3,
     chromiaw3: chromiaw3,
     cindersaurw3: cindersaurw3,
     cogw3: cogw3,
     detourw3: detourw3,
     downshiftw3: downshiftw3,
+    ejectw3: ejectw3,
     elita1w3: elita1w3,
     firedrivew3: firedrivew3,
     flakw3: flakw3,
     flamefeatherw3: flamefeatherw3,
     flamewarw3: flamewarw3,
+    frenzyw3: frenzyw3,
     ionstormw3: ionstormw3,
     ironhidew3: ironhidew3,
     lionizerw3: lionizerw3,
@@ -330,8 +342,10 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     overdrivew3: overdrivew3,
     prowlw3: prowlw3,
     pteraxadonw3: pteraxadonw3,
+    ramhornw3: ramhornw3,
     ratchetw3: ratchetw3,
     ravagew3: ravagew3,
+    ravageRw3: ravageRw3,
     redalertw3: redalertw3,
     redheatw3: redheatw3,
     roadhuggerw3: roadhuggerw3,
@@ -343,9 +357,11 @@ const Transformer = (name, title, type1, type2, type3, sword, wrench, shield, st
     skywarpw3: skywarpw3,
     smashdownw3: smashdownw3,
     soundwavew3: soundwavew3,
+    soundwaveSRw3: soundwaveSRw3,
     sparkstalkerw3: sparkstalkerw3,
     stakeoutw3: stakeoutw3,
     starscreamw3: starscreamw3,
+    steeljaww3:steeljaww3,
     stormcloudw3: stormcloudw3,
     topshotw3: topshotw3,
     totew3: totew3,
