@@ -101,21 +101,18 @@ const comp = {
         }
         //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. 
         vm.combine = function() {
-            for (let i = 0; i < vm.botArr.length; i++) {
+            for (let i = 0; i <= vm.botArr.length; i++) {
                 if (vm.botArr[i].type1 === "Sentinel" && vm.botArr[i+1].type1 === "Sentinel" && vm.botArr[i+2].type1 === "Sentinel") {
                     console.log(vm.botArr[i].name);
-                    // if (vm.botArr[i] === optimusprimew2) {
-                    //     console.log("here");
-                    //    for (let j = 0; j < vm.optMax.length; j++) {
-                    //        console.log("inner loop");
-                    //        if (vm.optMax[j] === optimusprimew2) {
-                    //            vm.optMax.splice(j, 1);
-                    //            console.log(vm.optMax);
-                    //        }
-                    //        else {console.log("here");}
-                    //    }   
-                    // }
-                    // else {console.log("here");}
+                    for (let j = vm.optMax.length; vm.optMax.length >= vm.botArr.length; j--) {
+                        console.log("inner loop");
+                        console.log(vm.optMax);
+                        console.log(vm.optMax.length);
+                        console.log(j);
+                        console.log(i);
+                        console.log(vm.botArr[j - vm.botArr.length -1].name);
+                        
+                    }   
                     console.log("Optimus Maximus has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];

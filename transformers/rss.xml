@@ -134,5 +134,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Double Pipcast | Episode 7 | The Secret of Omega Supreme?</title>
+    <pubDate>Mon, 2 Sep 2019 00:00:00 EST</pubDate>
+    <itunes:episode>7</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about, and what cards lend themselves to making him less meh?</itunes:subtitle>
+    <itunes:summary>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about, and what cards lend themselves to making him less meh?</itunes:summary>
+    <itunes:duration>00:50:00</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_7.mp3" length="50000000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
