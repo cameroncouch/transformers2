@@ -30,7 +30,7 @@
             <section class="buttonwrapper">
                 <button class="clear" ng-click="$ctrl.clear()">RESTART</button>
                 <button class="trash" ng-click="$ctrl.clear()"><i class="far fa-trash-alt"></i></button>
-                <button ng-click="$ctrl.combine()">Combine</button>
+                <button ng-click="$ctrl.combine(); $ctrl.optMaxCombine()">Combine</button>
                 <button ng-click="$ctrl.show()">Podcast</button>
             </section>
             <section class='podcastmodal' ng-show="$ctrl.podcastmodal">

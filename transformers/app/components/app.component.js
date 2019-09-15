@@ -76,6 +76,7 @@ const comp = {
             vm.botArr = [];
             vm.healthArr = [];
             vm.combCounter = 0;
+            vm.optMax = optMaxTemp;
         }
         //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
         vm.remove = function(bot) {
@@ -99,26 +100,37 @@ const comp = {
                 vm.podcastmodal = false;
             }
         }
+        //function for combining Sentinel characters only, due to the special way in which they combine a separate function is needed
+        vm.optMaxCombine = function() {
+            let optMaxTemp = vm.optMax;
+            for (let i = 0; i <= vm.botArr.length; i++) {
+                if (vm.botArr[i].type1 == "Sentinel" && vm.botArr[i+1].type1 == "Sentinel" && vm.botArr[i+2].type1 == "Sentinel") {
+                    for (let j = vm.optMax.length -1; j <= vm.optMax.length; j--) {
+                        if (vm.optMax.length == vm.botArr.length) {
+                            let optMaxDeadBotHealth = vm.optMax[0].wrench + vm.optMax[1].wrench + vm.optMax[2].wrench;
+                            vm.botArr = [];
+                            vm.healthArr = [];
+                            vm.add(optimusmaximusw2);
+                            vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
+                            vm.botArr[vm.botArr.length - 1].wrench -= optMaxDeadBotHealth;
+                            break;
+                        }
+                        else if (vm.botArr[i].name == vm.optMax[j].name) {
+                            vm.optMax.splice(j, 1);  
+                        }
+                        else {i++;j++;}
+                    }
+                }
+            }
+        }
         //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. 
         vm.combine = function() {
             for (let i = 0; i <= vm.botArr.length; i++) {
-                if (vm.botArr[i].type1 === "Sentinel" && vm.botArr[i+1].type1 === "Sentinel" && vm.botArr[i+2].type1 === "Sentinel") {
-                    console.log(vm.botArr[i].name);
-                    for (let j = vm.optMax.length; vm.optMax.length >= vm.botArr.length; j--) {
-                        console.log("inner loop");
-                        console.log(vm.optMax);
-                        console.log(vm.optMax.length);
-                        console.log(j);
-                        console.log(i);
-                        console.log(vm.botArr[j - vm.botArr.length -1].name);
-                        
-                    }   
-                    console.log("Optimus Maximus has been formed");
-                    vm.botArr = [];
-                    vm.healthArr = [];
-                    vm.add(optimusmaximusw2);
-                }
-                else if (vm.botArr[i].type1 === "Aerialbot" && vm.botArr[i+1].type1 === "Aerialbot" && vm.botArr[i+2].type1 === "Aerialbot") {
+               if  (vm.botArr[i].type1 === "Sentinel" && vm.botArr[i+1].type1 === "Sentinel" && vm.botArr[i+2].type1 === "Sentinel") {
+                   console.log("break");
+                   break;
+               }
+               else if (vm.botArr[i].type1 === "Aerialbot" && vm.botArr[i+1].type1 === "Aerialbot" && vm.botArr[i+2].type1 === "Aerialbot") {
                     console.log(vm.botArr[i].name);
                     console.log("Superion has been formed");
                     vm.botArr = [];
