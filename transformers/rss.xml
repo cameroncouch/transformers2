@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Fri, 23 Aug 2019 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Mon, 16 Sep 2019 00:00:00 EST</lastBuildDate>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -146,11 +146,29 @@
         <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:subtitle>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about, and what cards lend themselves to making him less meh?</itunes:subtitle>
-    <itunes:summary>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about, and what cards lend themselves to making him less meh?</itunes:summary>
+    <itunes:subtitle>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about and what cards lend themselves to making him less meh?</itunes:subtitle>
+    <itunes:summary>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about and what cards lend themselves to making him less meh?</itunes:summary>
     <itunes:duration>00:50:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_7.mp3" length="50000000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Double Pipcast | Episode 8 | Talking Siege II - Introducing Shawn!</title>
+    <pubDate>Mon, 16 Sep 2019 00:00:00 EST</pubDate>
+    <itunes:episode>8</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Introducing a new member to the Double Pipcast crew, Shawn! Shawn and Cam talk about Siege II bots, Shawn's 30 years of TCG experience, and the Energon Invitational in December.</itunes:subtitle>
+    <itunes:summary>Introducing a new member to the Double Pipcast crew, Shawn! Shawn and Cam talk about Siege II bots, Shawn's 30 years of TCG experience, and the Energon Invitational in December.</itunes:summary>
+    <itunes:duration>00:49:30</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_8.mp3" length="49000000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
