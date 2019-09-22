@@ -313,17 +313,7 @@ button:hover {
         padding: 1%;
         border-radius: 2px;
     }
-    .clear {
-        display: none;
-        width: 50px;
-        text-align: center;
-        padding: 1%;
-        margin: 1%;
-    }
-    .trash {
-        display: inline-block;
-        margin: 1px;
-    }
+    
     
     a {
         width: max-content;
