@@ -188,5 +188,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_9.mp3" length="58550000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Double Pipcast | Episode 10 | Mercenaries Shown @ NYCC</title>
+    <pubDate>Sun, 22 Sep 2019 00:00:00 EST</pubDate>
+    <itunes:episode>9</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam touches on the exciting reveal of a new faction in Transformers: The Trading Card Game. Submit your questions for Drew Nolosco of WotC for episode 11 of the Double Pipcast @DPipcast</itunes:subtitle>
+    <itunes:summary>Cam touches on the exciting reveal of a new faction in Transformers: The Trading Card Game. Submit your questions for Drew Nolosco of WotC for episode 11 of the Double Pipcast @DPipcast</itunes:summary>
+    <itunes:duration>00:17:34</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_10.mp3" length="17340000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
