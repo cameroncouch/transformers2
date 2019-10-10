@@ -206,5 +206,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_10_new.mp3" length="17340000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Double Pipcast | Episode 11 | WotC Drew Interviewin' 2: Electric Boogaloo</title>
+    <pubDate>Wed, 9 Oct 2019 00:00:00 EST</pubDate>
+    <itunes:episode>11</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Drew Nolosco, Global Brand Manager of the Transformers Trading Card Game returns! We talk about Siege II, the Energon Invitational at PAX Unplugged, and recycling!</itunes:subtitle>
+    <itunes:summary>Drew Nolosco, Global Brand Manager of the Transformers Trading Card Game returns! We talk about Siege II, the Energon Invitational at PAX Unplugged, and recycling!</itunes:summary>
+    <itunes:duration>00:58:53</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_11.mp3" length="58530000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
