@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Sun, 22 Sep 2019 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Sun, 20 Oct 2019 00:00:00 EST</lastBuildDate>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -223,6 +223,24 @@
     <itunes:duration>00:58:53</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_11.mp3" length="58530000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Double Pipcast | Episode 12 | Suppress the Press</title>
+    <pubDate>Sun, 20 Oct 2019 00:00:00 EST</pubDate>
+    <itunes:episode>12</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam, Brandon and Shawn celebrate the ban of Press The Advantage! The crew also talks about some of the new characters announced in the past week.</itunes:subtitle>
+    <itunes:summary>Cam, Brandon and Shawn celebrate the ban of Press The Advantage! The crew also talks about some of the new characters announced in the past week.</itunes:summary>
+    <itunes:duration>00:58:53</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_12.mp3" length="53450000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
