@@ -48,7 +48,7 @@ const comp = {
         }
         //when user clicks damage button, increment the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterAdd = function(bot) {
-            if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
+            if (bot.type1 === "Aerialbot" || bot.type1 === "Constructicon" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Stunticon") {
                 vm.isCombiner = true
                 for(let i = 0; i < vm.botArr.length; i++) {
                     if(vm.botArr[i].name === bot.name) {
@@ -63,7 +63,7 @@ const comp = {
         }
         //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
-            if (bot.type1 === "Aerialbot" || bot.type1 === "Construction" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Destructicon") {
+            if (bot.type1 === "Aerialbot" || bot.type1 === "Constructicon" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Stunticon") {
                 vm.isCombiner = true
                 if (vm.combCounter !== 0) {
                     vm.combCounter--
@@ -76,7 +76,6 @@ const comp = {
             vm.botArr = [];
             vm.healthArr = [];
             vm.combCounter = 0;
-            vm.optMax = optMaxTemp;
         }
         //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
         vm.remove = function(bot) {
@@ -102,10 +101,10 @@ const comp = {
         }
         //function for combining Sentinel characters only, due to the special way in which they combine a separate function is needed
         vm.optMaxCombine = function() {
-            let optMaxTemp = vm.optMax;
             for (let i = 0; i <= vm.botArr.length; i++) {
                 if (vm.botArr[i].type1 == "Sentinel" && vm.botArr[i+1].type1 == "Sentinel" && vm.botArr[i+2].type1 == "Sentinel") {
                     for (let j = vm.optMax.length -1; j <= vm.optMax.length; j--) {
+                        console.log(i);
                         if (vm.optMax.length == vm.botArr.length) {
                             let optMaxDeadBotHealth = vm.optMax[0].wrench + vm.optMax[1].wrench + vm.optMax[2].wrench;
                             vm.botArr = [];
@@ -116,11 +115,14 @@ const comp = {
                             break;
                         }
                         else if (vm.botArr[i].name == vm.optMax[j].name) {
-                            vm.optMax.splice(j, 1);  
+                            console.log(vm.botArr[i].name);
+                            vm.optMax.splice(j, 1);
+                            console.log(vm.optMax);  
                         }
                         else {i++;j++;}
                     }
                 }
+                break;
             }
         }
         //function for combining all "combiner" characters based on type value. onclick if Sentinel/Aerialbot/Constructicon etc. clear board, add respective combiner, and minus combiner health by damage dealt to previous uncombined characters. Will need a damage counter that increments in the background. Combined bot +- damage counted. 
