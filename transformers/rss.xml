@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Sun, 3 Nov 2019 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Sun, 17 Nov 2019 00:00:00 EST</lastBuildDate>
     <!-- <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -257,6 +257,24 @@
     <itunes:subtitle>Cam, Brandon and Shawn discuss the necessity of bad cards, and the week-long tease of a new mystery TF TCG product</itunes:subtitle>
     <itunes:summary>Cam, Brandon and Shawn discuss the necessity of bad cards, and the week-long tease of a new mystery TF TCG product</itunes:summary>
     <itunes:duration>00:40:58</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_13.mp3" length="40580000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Double Pipcast | Episode 14 | Energon Edition</title>
+    <pubDate>Sun, 17 Nov 2019 00:00:00 EST</pubDate>
+    <itunes:episode>14</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter<a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam, Brandon and Shawn discuss the ENERGON EDITION and the first full week of play post-Siege II launch</itunes:subtitle>
+    <itunes:summary>Cam, Brandon and Shawn discuss the ENERGON EDITION and the first full week of play post-Siege II launch</itunes:summary>
+    <itunes:duration>00:35:34</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_13.mp3" length="40580000" type="audio/mpeg"/>
     </item>
