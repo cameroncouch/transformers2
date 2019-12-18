@@ -308,8 +308,8 @@
         <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:subtitle>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors.</itunes:subtitle>
-    <itunes:summary>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors.</itunes:summary>
+    <itunes:subtitle>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors. Check out zoeshouserescue.com, a charity that Vector Sigma is supporting!</itunes:subtitle>
+    <itunes:summary>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors. Check out www.zoeshouserescue.com, an animal welfare group and charity that Vector Sigma is supporting!</itunes:summary>
     <itunes:duration>00:24:56</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_16.mp3" length="24560000" type="audio/mpeg"/>
