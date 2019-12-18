@@ -63,6 +63,7 @@ const comp = {
         }
         //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
+            
             if (bot.type1 === "Aerialbot" || bot.type1 === "Constructicon" || bot.type1 === "Dreadwing" || bot.type1 === "Sentinel" || bot.type1 === "Dinobot" || bot.type1 === "Predacon" || bot.type1 === "Stunticon") {
                 vm.isCombiner = true
                 if (vm.combCounter !== 0) {
@@ -167,7 +168,7 @@ const comp = {
                     vm.healthArr = [];
                     vm.add(devastatorw2);
                 }
-                else if (vm.botArr[i].type1 === "Dreadwing" || vm.botArr[i+1].type1 === "Dreadwing" && vm.botArr[i+2].type1 === "Dreadwing" ) {
+                else if (vm.botArr[i].type1 === "Dreadwing" && vm.botArr[i+1].type1 === "Dreadwing" || vm.botArr[i+2].type1 === "Dreadwing" ) {
                     vm.botArr = vm.botArr.filter(bot => bot.type1 !== "Dreadwing");
                     let saveBot = vm.botArr;
                     vm.healthArr = []
@@ -176,13 +177,13 @@ const comp = {
                         vm.add(saveBot[j]);
                     }
                     vm.add(dreadwingw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;  
                 }
                 else {
                     continue;
                 }
-            }
-            //math for combiner minus damage from component bots
-            vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;   
+            } 
         }
     }]
 }

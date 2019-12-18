@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Mon, 02 Dec 2019 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Tue, 17 Dec 2019 00:00:00 EST</lastBuildDate>
     <!-- <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -295,6 +295,24 @@
     <itunes:duration>00:41:23</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_15.mp3" length="41230000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Double Pipcast | Episode 16 | Interview with Dan Arnold</title>
+    <pubDate>Tue, 17 Dec 2019 00:00:00 EST</pubDate>
+    <itunes:episode>16</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors.</itunes:subtitle>
+    <itunes:summary>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors.</itunes:summary>
+    <itunes:duration>00:24:56</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_16.mp3" length="24560000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
