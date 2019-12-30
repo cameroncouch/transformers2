@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Tue, 17 Dec 2019 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Sun, 29 Dec 2019 00:00:00 EST</lastBuildDate>
     <!-- <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -117,7 +117,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_5.mp3" length="30000000" type="audio/mpeg"/>
     </item> -->
     <item>
-    <title>Double Pipcast | Episode 6 | Interview with WotC's Drew Nolosco</title>
+    <title>Episode 6 | Interview with WotC's Drew Nolosco</title>
     <pubDate>Fri, 23 Aug 2019 00:00:00 EST</pubDate>
     <itunes:episode>6</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -135,7 +135,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 7 | The Secret of Omega Supreme?</title>
+    <title>Episode 7 | The Secret of Omega Supreme?</title>
     <pubDate>Mon, 2 Sep 2019 00:00:00 EST</pubDate>
     <itunes:episode>7</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -153,7 +153,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_7.mp3" length="50000000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 8 | Talking Siege II - Introducing Shawn!</title>
+    <title>Episode 8 | Talking Siege II - Introducing Shawn!</title>
     <pubDate>Mon, 16 Sep 2019 00:00:00 EST</pubDate>
     <itunes:episode>8</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -171,7 +171,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_8.mp3" length="49000000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 9 | Weaponizers in Siege II! - Introducing Brandon!</title>
+    <title>Episode 9 | Weaponizers in Siege II! - Introducing Brandon!</title>
     <pubDate>Sun, 22 Sep 2019 00:00:00 EST</pubDate>
     <itunes:episode>9</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -189,7 +189,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_9.mp3" length="58550000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 10 | Mercenaries Shown @ NYCC</title>
+    <title>Episode 10 | Mercenaries Shown @ NYCC</title>
     <pubDate>Sun, 6 Oct 2019 00:00:00 EST</pubDate>
     <itunes:episode>10</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -207,7 +207,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_10_new.mp3" length="17340000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 11 | WotC Drew Interviewin' 2: Electric Boogaloo</title>
+    <title>Episode 11 | WotC Drew Interviewin' 2: Electric Boogaloo</title>
     <pubDate>Wed, 9 Oct 2019 00:00:00 EST</pubDate>
     <itunes:episode>11</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -225,7 +225,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_11.mp3" length="58530000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 12 | Suppress the Press</title>
+    <title>Episode 12 | Suppress the Press</title>
     <pubDate>Sun, 20 Oct 2019 00:00:00 EST</pubDate>
     <itunes:episode>12</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -243,7 +243,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_12.mp3" length="53450000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 13 | Energon Edition</title>
+    <title>Episode 13 | Energon Edition</title>
     <pubDate>Sun, 3 Nov 2019 00:00:00 EST</pubDate>
     <itunes:episode>13</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -261,7 +261,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_13.mp3" length="40580000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 14 | Energon Edition Pt. 2</title>
+    <title>Episode 14 | Energon Edition Pt. 2</title>
     <pubDate>Sun, 17 Nov 2019 00:00:00 EST</pubDate>
     <itunes:episode>14</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -279,7 +279,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_14.mp3" length="35340000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 15 | Multiple Missions</title>
+    <title>Episode 15 | Multiple Missions</title>
     <pubDate>Mon, 02 Dec 2019 00:00:00 EST</pubDate>
     <itunes:episode>15</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -297,7 +297,7 @@
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_15.mp3" length="41230000" type="audio/mpeg"/>
     </item>
     <item>
-    <title>Double Pipcast | Episode 16 | Interview with Dan Arnold</title>
+    <title>Episode 16 | Interview with Dan Arnold</title>
     <pubDate>Tue, 17 Dec 2019 00:00:00 EST</pubDate>
     <itunes:episode>16</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -313,6 +313,24 @@
     <itunes:duration>00:24:56</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_16.mp3" length="24560000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Episode 17 | Interview with Steffon Pinckney</title>
+    <pubDate>Sun, 29 Dec 2019 00:00:00 EST</pubDate>
+    <itunes:episode>17</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam is joined by the Steffon Pinckney, winner of the TF TCG tournament at Origins 2019, and PPG Ohio 2019! Check out Steffon's channel DEF TF and look forward to his upcoming podcast "Champ Camp", where all of the past TF TCG champs come to chat!</itunes:subtitle>
+    <itunes:summary>Cam is joined by the Steffon Pinckney, winner of the TF TCG tournament at Origins 2019, and PPG Ohio 2019! Check out Steffon's channel DEF TF and look forward to his upcoming podcast "Champ Camp", where all of the past TF TCG champs come to chat!</itunes:summary>
+    <itunes:duration>00:28:30</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_17.mp3" length="28300000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
