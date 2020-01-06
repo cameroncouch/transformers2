@@ -177,14 +177,21 @@ const comp = {
                         vm.add(saveBot[j]);
                     }
                     vm.add(dreadwingw2);
-                    //math for combiner minus damage from component bots
-                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;  
+                   
                 }
                 else {
                     continue;
                 }
+                 //math for combiner minus damage from component bots
+                 vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;  
             } 
         }
+        // vm.transformersGet = function (num) {
+        //     TransformerService.getTF(num);
+        //     vm.bots1 = TransformerService.tfdbresults;
+        //     console.log(vm.bots1);
+        // }
+        // vm.transformersGet();
     }]
 }
 

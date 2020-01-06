@@ -1,0 +1,6 @@
+- When a user clicks on Wave X, pass X from the front end to the back end, and grab all bots from table CHARACTERS_WAVE_X
+- Hook all damage, healing, add, remove, combine functions up to new data source
+- Add all rows to respective tables
+
+- Bot lists should start out collapsed, when a user clicks on a Wave X header, the bot list should expand with the data from the get request. Clicking again should collapse the list (get req should not fire again, should print bots based on stored promise)
+

@@ -1,6 +1,6 @@
 <div class="app">
     <div ng-hide="!$ctrl.clicked" class="menu">
-            <h1 ng-hide="!$ctrl.clicked">Wave 1</h1>
+            <h1 ng-click="$ctrl.transformersGet(1)" ng-hide="!$ctrl.clicked">Wave 1</h1>
         <div ng-hide="!$ctrl.clicked" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
                 <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
@@ -32,6 +32,7 @@
                 <button class="trash" ng-click="$ctrl.clear()"><i class="far fa-trash-alt"></i></button>
                 <button ng-click="$ctrl.combine(); $ctrl.optMaxCombine()">Combine</button>
                 <button ng-click="$ctrl.show()">Podcast</button>
+                <!-- <button ng-click="$ctrl.transformersGet()">GET REQ</button> -->
             </section>
             <section class='podcastmodal' ng-show="$ctrl.podcastmodal">
                     <i class="fas fa-times" ng-click="$ctrl.show()"></i>

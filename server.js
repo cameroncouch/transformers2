@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
+const routes = require('./route');
 
-app.use(express.static("./transformers"));
+app.use(express.static("./public"));
 app.use(express.json());
-// app.use("/", comp)
+app.use("/", routes);
 
 const port = process.env.PORT || 8080; 
 
