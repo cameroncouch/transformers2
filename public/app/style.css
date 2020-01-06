@@ -26,7 +26,14 @@ a {
     max-height: 110vh;
     width: 12em;
 }
-
+.hint {
+    font-family: 'deceptibots', sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #333333;
+    margin: 0;
+    padding: 2vh 2vw;
+}
 .botlist {
     display: flex;
     flex-direction: column;
@@ -67,6 +74,7 @@ a {
     background: #4e4e4e;
   }
 h1:nth-of-type(1) {
+    cursor: pointer;
     font-family: 'deceptibots', sans-serif;
     text-align: center;
     background-color: rgb(255, 255, 255);
@@ -77,9 +85,10 @@ h1:nth-of-type(1) {
     padding: 2vh 2vw;
 }
 h1:nth-of-type(2) {
+    cursor: pointer;
     font-family: 'deceptibots', sans-serif;
     text-align: center;
-    background-color: #000;
+    background-color: #333;
     color: #ea1926;
     border: 2px solid #ea1926;
     border-radius: 1px;
@@ -87,9 +96,10 @@ h1:nth-of-type(2) {
     padding: 2vh 2vw;
 }
 h1:nth-of-type(3) {
+    cursor: pointer;
     font-family: 'deceptibots', sans-serif;
     text-align: center;
-    background-color: #000;
+    background-color: #333;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 1px;

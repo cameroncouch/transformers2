@@ -1,23 +1,24 @@
 <div class="app">
     <div ng-hide="!$ctrl.clicked" class="menu">
-            <h1 ng-click="$ctrl.transformersGet(1)" ng-hide="!$ctrl.clicked">Wave 1</h1>
-        <div ng-hide="!$ctrl.clicked" class="botlist">
+        <h1 ng-click="$ctrl.transformersGet(1);$ctrl.hideBots(0)" >Wave 1</h1>
+        <div ng-show="$ctrl.clickedBots[0]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
                 <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
             </div>
         </div>
-        <h1 ng-hide="!$ctrl.clicked">Wave 2</h1>
-        <div ng-hide="!$ctrl.clicked" class="botlist">
+        <h1 ng-click="$ctrl.hideBots(1)">Wave 2</h1>
+        <div ng-show="$ctrl.clickedBots[1]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots2">
                 <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
             </div>
         </div>
-        <h1 ng-hide="!$ctrl.clicked">Wave 3</h1>
-        <div ng-hide="!$ctrl.clicked" class="botlist">
+        <h1 ng-click="$ctrl.hideBots(2)">Wave 3</h1>
+        <div ng-show="$ctrl.clickedBots[2]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots3">
                 <p>{{bot.name}} <button ng-click="$ctrl.add(bot)">Add</button></p>
             </div>
         </div>
+        <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2]" class="hint">Click above to choose a bot..</p>
     </div>
     <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><p>< < HIDE</p></div>
     <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><p>CARDS > ></p></div>
@@ -25,7 +26,7 @@
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
                 <p>{{bot.name}}</p>
                 <p>Health: {{bot.wrench}}</p>
-                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot)"><i class="fas fa-haykal"></i></button><button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
+                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot)"><i class="fas fa-haykal"></i></button><button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
             </div>
             <section class="buttonwrapper">
                 <button class="clear" ng-click="$ctrl.clear()">RESTART</button>

@@ -3,10 +3,12 @@ const comp = {
     templateUrl:"app/components/comp.html",
     controller:['TransformerService', function(TransformerService){
         const vm = this;
-        vm.clicked = 'false';
+        vm.clicked = true;
+        vm.clickedBots = [false, false, false]
         vm.podcastmodal = false;
         vm.isCombiner = false;
         vm.combCounter = 0;
+        vm.dreadCounter = 0;
         //brings our objects over from transformers.js
         vm.bots1 = mappedTransformers1;
         vm.bots2 = mappedTransformers2;
@@ -55,7 +57,6 @@ const comp = {
                         if (bot.wrench < vm.healthArr[i]) {
                         vm.combCounter++;
                         console.log(vm.combCounter);
-                        return;
                         }
                     }
                 }
@@ -69,6 +70,28 @@ const comp = {
                 if (vm.combCounter !== 0) {
                     vm.combCounter--
                     console.log(vm.combCounter);
+                }
+            }
+        }
+        vm.dreadAdd = function(bot) {
+            if (bot.type1 === "Dreadwing") {
+                vm.isCombiner = true
+                for(let i = 0; i < vm.botArr.length; i++) {
+                    if(vm.botArr[i].name === bot.name) {
+                        if (bot.wrench < vm.healthArr[i]) {
+                        vm.dreadCounter++;
+                        }
+                    }
+                }
+            }
+        }
+        //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
+        vm.dreadMin = function(bot) {
+            
+            if (bot.type1 === "Dreadwing") {
+                vm.isCombiner = true
+                if (vm.dreadCounter !== 0) {
+                    vm.dreadCounter--;
                 }
             }
         }
@@ -91,6 +114,14 @@ const comp = {
         //collapses/expands the menu element when user clicks the hide bar
         vm.hide = function() {
             vm.clicked = !vm.clicked;
+        }
+        vm.hideBots = function(num) {
+            if (vm.clickedBots[num] == false) {
+                vm.clickedBots[num] = true
+            }
+            else if (vm.clickedBots[num] == true) {
+                vm.clickedBots[num] = false;
+            }
         }
         vm.show = function() {
             if (vm.podcastmodal == false) {
@@ -139,6 +170,8 @@ const comp = {
                     vm.botArr = [];
                     vm.healthArr = [];
                     vm.add(superionw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
                 }
                 else if (vm.botArr[i].type1 === "Stunticon" && vm.botArr[i+1].type1 === "Stunticon" && vm.botArr[i+2].type1 === "Stunticon") {
                     console.log(vm.botArr[i].name);
@@ -146,6 +179,8 @@ const comp = {
                     vm.botArr = [];
                     vm.healthArr = [];
                     vm.add(menasorw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
                 }
                 else if (vm.botArr[i].type1 === "Predacon" && vm.botArr[i+1].type1 === "Predacon" && vm.botArr[i+2].type1 === "Predacon") {
                     console.log(vm.botArr[i].name);
@@ -153,6 +188,8 @@ const comp = {
                     vm.botArr = [];
                     vm.healthArr = [];
                     vm.add(predakingw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
                 }
                 else if (vm.botArr[i].type1 === "Dinobot" && vm.botArr[i+1].type1 === "Dinobot" && vm.botArr[i+2].type1 === "Dinobot") {
                     console.log(vm.botArr[i].name);
@@ -160,6 +197,8 @@ const comp = {
                     vm.botArr = [];
                     vm.healthArr = [];
                     vm.add(volcanicusw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
                 }
                 else if (vm.botArr[i].type1 === "Constructicon" && vm.botArr[i+1].type1 === "Constructicon" && vm.botArr[i+2].type1 === "Constructicon") {
                     console.log(vm.botArr[i].name);
@@ -167,6 +206,8 @@ const comp = {
                     vm.botArr = [];
                     vm.healthArr = [];
                     vm.add(devastatorw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;
                 }
                 else if (vm.botArr[i].type1 === "Dreadwing" && vm.botArr[i+1].type1 === "Dreadwing" || vm.botArr[i+2].type1 === "Dreadwing" ) {
                     vm.botArr = vm.botArr.filter(bot => bot.type1 !== "Dreadwing");
@@ -177,13 +218,13 @@ const comp = {
                         vm.add(saveBot[j]);
                     }
                     vm.add(dreadwingw2);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].wrench -= vm.dreadCounter;
                    
                 }
                 else {
                     continue;
-                }
-                 //math for combiner minus damage from component bots
-                 vm.botArr[vm.botArr.length - 1].wrench -= vm.combCounter;  
+                }  
             } 
         }
         // vm.transformersGet = function (num) {
