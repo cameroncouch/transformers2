@@ -183,6 +183,7 @@ h1:nth-of-type(4) {
 button {
     font-family: 'deceptibots', sans-serif;
     font-weight: 700;
+    text-align: center;
     margin: 0% 1%;
     padding: 2% 4%;
     border-radius: 2px;
@@ -205,38 +206,44 @@ button:hover {
     color: rgb(134, 0, 0)
 }
 .fieldbot {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     background-color: transparent;
     text-align: center;
     margin: 0 1% 1% 1%;
-    padding: 1%;
     border-radius: 2px;
     box-shadow: 0px 1px 2px 0px black;
+}
+.health {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.fieldbot button {
+    margin: 0;
+}
+.fieldbot button:nth-child(1):hover {
+    background-color: rgb(255, 196, 123);
+    cursor: pointer;
+}
+.health button:hover {
+    background-color: rgb(250, 170, 176) !important;
+    cursor: pointer;
 }
 .fieldbot button:nth-child(3):hover {
     background-color: rgb(151, 255, 147);
     cursor: pointer;
 }
-.fieldbot button:nth-child(4):hover {
-    background-color: rgb(255, 196, 123);
-    cursor: pointer;
-}
-.fieldbot button:nth-child(5):hover {
-    background-color: rgb(250, 170, 176);
-    cursor: pointer;
-}
 .fieldbot p:nth-child(odd) {
     font-size: 1em;
     margin: 0;
-    background-color: darkgrey;
-    border-bottom: 1px solid darkslategray;
-    border-radius: 5px 5px 0px 0px;
 }
 .fieldbot p:nth-child(even) {
     font-weight: 700;
-    font-size: 2em;
-    margin: 0;
+    font-size: 1em;
 }
 .trash {
     display: none;

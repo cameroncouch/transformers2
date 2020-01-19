@@ -30,9 +30,13 @@
     <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><p>CARDS > ></p></div>
     <div class="field">
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
-                <p>{{bot.name}}</p>
-                <p>Health: {{bot.health}}</p>
-                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot)"><i class="fas fa-first-aid"></i></button><button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot)"><i class="fas fa-haykal"></i></button><button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
+                <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot)"><i class="fas fa-haykal"></i></button>
+                <section class="health">
+                    <p>{{bot.name}}</p>
+                    <p>Health: {{bot.health}}</p>
+                    <button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
+                </section>
+                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot)"><i class="fas fa-first-aid"></i></button>
             </div>
             <section class="buttonwrapper">
                 <button class="clear" ng-click="$ctrl.clear()">RESTART</button>
