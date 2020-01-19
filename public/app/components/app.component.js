@@ -271,7 +271,7 @@ const comp = {
                     console.log("Omega Supreme has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots4[29]);
+                    vm.add(vm.bots4[28]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
@@ -318,6 +318,7 @@ const comp = {
             TransformerService.getTF4();
             vm.bots4 = TransformerService.tfdbresults4;
             }
+            console.log(vm.bots4);
         }
     }]
 }
