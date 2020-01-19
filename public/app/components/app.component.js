@@ -262,7 +262,7 @@ const comp = {
                     console.log("Skytread has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots4[43]);
+                    vm.add(vm.bots4[42]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
