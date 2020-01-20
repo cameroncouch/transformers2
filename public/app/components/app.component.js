@@ -9,6 +9,7 @@ const comp = {
         vm.isCombiner = false;
         vm.combCounter = 0;
         vm.dreadCounter = 0;
+        vm.skyCounter = 0;
         //brings our objects over from transformers.js
         vm.bots1 = undefined;
         vm.bots2 = undefined;
@@ -128,6 +129,27 @@ const comp = {
                 }
             }
         }
+        vm.skyAdd = function(bot) {
+            if (bot.attr4alt === "Skytread") {
+                vm.isCombiner = true
+                for(let i = 0; i < vm.botArr.length; i++) {
+                    if(vm.botArr[i].name === bot.name) {
+                        if (bot.health < vm.healthArr[i]) {
+                        vm.skyCounter++;
+                        }
+                    }
+                }
+            }
+        }
+        //when user clicks heal button, decrement the dreadCounter, specific for Dreadwing since he can have buddies on the team
+        vm.skyMin = function(bot) {
+            if (bot.attr4alt === "Skytread") {
+                vm.isCombiner = true
+                if (vm.skyCounter !== 0) {
+                    vm.skyCounter--;
+                }
+            }
+        }
         //when field clear is clicked, clears botArr and healthArr, blanks the field, re-instantiates optMax and ensures the original bot object data is not mutated
         vm.clear = function() {
             vm.botArr = [];
@@ -135,6 +157,8 @@ const comp = {
             optMax = [vm.bots2[52], vm.bots2[38], vm.bots2[36], vm.bots2[29], vm.bots2[24], vm.bots2[23]];
             volCan = [vm.bots2[47], vm.bots2[48], vm.bots2[49], vm.bots2[54], vm.bots2[21]];
             vm.combCounter = 0;
+            vm.dreadCounter = 0;
+            vm.skyCounter = 0;
         }
         //function that clears one bot from the field, either in cases of defeat or mistakenly adding. vm.clearBot = function() {}
         vm.remove = function(bot) {
@@ -253,29 +277,11 @@ const comp = {
                     console.log("Devastator has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots2[55]);
+                    vm.add(vm.bots2[13]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
-                else if (vm.botArr[i].attr4alt === "Skytread" && vm.botArr[i+1].attr4alt === "Skytread" || vm.botArr[i+2].attr4alt === "Skytread") {
-                    console.log(vm.botArr[i].name);
-                    console.log("Skytread has been formed");
-                    vm.botArr = [];
-                    vm.healthArr = [];
-                    vm.add(vm.bots4[42]);
-                    //math for combiner minus damage from component bots
-                    vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
-                }
-                else if (vm.botArr[i].attr4alt === "Omega Supreme" && vm.botArr[i+1].attr4alt === "Omega Supreme" && vm.botArr[i+2].attr4alt === "Omega Supreme") {
-                    console.log(vm.botArr[i].name);
-                    console.log("Omega Supreme has been formed");
-                    vm.botArr = [];
-                    vm.healthArr = [];
-                    vm.add(vm.bots4[28]);
-                    //math for combiner minus damage from component bots
-                    vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
-                }
-                else if (vm.botArr[i].attr4 === "Dreadwing" && vm.botArr[i+1].attr4 === "Dreadwing" || vm.botArr[i+2].attr4 === "Dreadwing" ) {
+                else if (vm.botArr[i].attr4 === "Dreadwing" && vm.botArr[i+1].attr4 === "Dreadwing" || vm.botArr[i+2].attr4 === "Dreadwing") {
                     vm.botArr = vm.botArr.filter(bot => bot.attr4 !== "Dreadwing");
                     let saveBot = vm.botArr;
                     vm.healthArr = []
@@ -288,6 +294,29 @@ const comp = {
                     vm.botArr[vm.botArr.length - 1].health -= vm.dreadCounter;
                    
                 }
+                else if (vm.botArr[i].attr4alt === "Skytread" && vm.botArr[i+1].attr4alt === "Skytread" && vm.botArr[i+2].attr4alt === "Skytread") {
+                    vm.botArr = vm.botArr.filter(bot => bot.attr4alt !== "Skytread");
+                    let saveBot = vm.botArr;
+                    vm.healthArr = []
+                    vm.botArr = [];
+                    for (let j = 0; j < saveBot.length; j++) {
+                        vm.add(saveBot[j]);
+                    }
+                    vm.add(vm.bots4[42]);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].health -= vm.skyCounter;
+                   
+                }
+                else if (vm.botArr[i].attr4alt === "Omega Supreme" && vm.botArr[i+1].attr4alt === "Omega Supreme" && vm.botArr[i+2].attr4alt === "Omega Supreme") {
+                    console.log(vm.botArr[i].name);
+                    console.log("Omega Supreme has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(vm.bots4[28]);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
+                }
+                
                 else {
                     continue;
                 }  
@@ -306,6 +335,7 @@ const comp = {
             optMax = [vm.bots2[52], vm.bots2[38], vm.bots2[36], vm.bots2[29], vm.bots2[24], vm.bots2[23]];
             volCan = [vm.bots2[47], vm.bots2[48], vm.bots2[49], vm.bots2[54], vm.bots2[21]];
             }
+            console.log(vm.bots2);
         }
         vm.transformersGet3 = function (num) {
             if (vm.bots3 == undefined) {

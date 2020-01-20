@@ -23,7 +23,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-height: 110vh;
+    max-height: 100vh;
     width: 12em;
 }
 .hint {
@@ -219,11 +219,16 @@ button:hover {
 }
 .health {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
+    width: 55%;
+}
+.health button {
+    width: auto !important;
 }
 .fieldbot button {
     margin: 0;
+    width: max-content;
 }
 .fieldbot button:nth-child(1):hover {
     background-color: rgb(255, 196, 123);
@@ -245,8 +250,19 @@ button:hover {
     font-weight: 700;
     font-size: 1em;
 }
+.healthnum {
+    color: #ea1926;
+}
 .trash {
     display: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px){
+    .fieldbot p:nth-child(odd) {
+        font-size: .75em;
+    }
+    .fieldbot p:nth-child(even) {
+        font-size: .75em;
+    }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width:1024px) {
     .podcastmodal {
@@ -319,6 +335,9 @@ button:hover {
         width: 140px;
         height: 40px;
     }
+    .menu {
+        max-height: 100vh;
+    }
     .field {
         display: flex;
         flex-direction: row;
@@ -326,13 +345,12 @@ button:hover {
         align-items: center;
         flex-wrap: wrap;
         background: linear-gradient(to bottom,rgba(255,255,255)10%, rgb(224, 224, 224));
-        height: 100vh;
         width:100vw;
     }
     
     .fieldbot {
         height:30%;
-        width: 20%;
+        width: 30%;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 400;
         background-color: lightgrey;
