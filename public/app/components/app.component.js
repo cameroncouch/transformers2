@@ -281,7 +281,7 @@ const comp = {
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
-                else if (vm.botArr[i].attr4 === "Dreadwing" && vm.botArr[i+1].attr4 === "Dreadwing" || vm.botArr[i+2].attr4 === "Dreadwing") {
+                else if (vm.botArr[i].attr4 === "Dreadwing" && vm.botArr[i+1].attr4 === "Dreadwing") {
                     vm.botArr = vm.botArr.filter(bot => bot.attr4 !== "Dreadwing");
                     let saveBot = vm.botArr;
                     vm.healthArr = []
@@ -294,7 +294,7 @@ const comp = {
                     vm.botArr[vm.botArr.length - 1].health -= vm.dreadCounter;
                    
                 }
-                else if (vm.botArr[i].attr4alt === "Skytread" && vm.botArr[i+1].attr4alt === "Skytread" && vm.botArr[i+2].attr4alt === "Skytread") {
+                else if (vm.botArr[i].attr4alt === "Skytread" && vm.botArr[i+1].attr4alt === "Skytread") {
                     vm.botArr = vm.botArr.filter(bot => bot.attr4alt !== "Skytread");
                     let saveBot = vm.botArr;
                     vm.healthArr = []

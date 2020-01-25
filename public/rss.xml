@@ -24,8 +24,8 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Sun, 29 Dec 2019 00:00:00 EST</lastBuildDate>
-    <!-- <item>
+<lastBuildDate>Sat, 25 Jan 2020 00:00:00 EST</lastBuildDate>
+    <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
     <itunes:episode>1</itunes:episode>
@@ -41,7 +41,7 @@
     <itunes:summary>Cam and Dave introduce themselves on the first episode of the Double Pipcast. Cam gives new players a rundown on what the TF TCG is all about!</itunes:summary>
     <itunes:duration>00:55:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_1.mp3" length="75600000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_1.mp3" length="75600000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Double Pipcast | Episode 2 | SDCC Cards!</title>
@@ -60,7 +60,7 @@
     <itunes:summary>Cam flys solo into SDCC card territory. Touching on Omnibots, Soundwave v Blaster, and Wave 4's covert announcement</itunes:summary>
     <itunes:duration>00:25:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_2.mp3" length="33500000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_2.mp3" length="33500000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Double Pipcast | Episode 3 | Introducing Aaron - Playing 1 v 1 Over Audio?</title>
@@ -78,7 +78,7 @@
     <itunes:summary>Aaron aka BRKNSTR joins the Double Pipcast! We weave in TCG talk in between some casual play!</itunes:summary>
     <itunes:duration>00:55:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_3.mp3" length="75600000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_3.mp3" length="75600000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Double Pipcast | Episode 4 | Trippin' over Trypticon</title>
@@ -96,7 +96,7 @@
     <itunes:summary>WotC announces Wave 4 - Trypticon is for big spenders - Loot Crate delivering damaged goods? Cam is left to his own devices, and talks about what's new in the world of the Transformers TCG</itunes:summary>
     <itunes:duration>00:25:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_4.mp3" length="30000000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_4.mp3" length="30000000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Double Pipcast | Episode 5 | Ratrod and Hotbat</title>
@@ -114,8 +114,8 @@
     <itunes:summary>The drip feed for Wave 4 Siege II reveals is real. The team at TF TCG dropped two reveals last week with Ratbat and Hotrod. Cam tries his hand at amateur sound effects for bumpers, and introduces a new segment called "Let's Talk A Bot It"</itunes:summary>
     <itunes:duration>00:17:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_5.mp3" length="30000000" type="audio/mpeg"/>
-    </item> -->
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_5.mp3" length="30000000" type="audio/mpeg"/>
+    </item>
     <item>
     <title>Episode 6 | Interview with WotC's Drew Nolosco</title>
     <pubDate>Fri, 23 Aug 2019 00:00:00 EST</pubDate>
@@ -132,7 +132,7 @@
     <itunes:summary>Cam interviews Global Brand Manager of the Transformers Trading Card Game, Drew Nolosco. We touch on Drew's history in the gaming industry, the TF TCG development process, and what the future holds for the game. Take a peek behind the energon curtain!</itunes:summary>
     <itunes:duration>00:56:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_6.mp3" length="56000000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 7 | The Secret of Omega Supreme?</title>
@@ -150,7 +150,7 @@
     <itunes:summary>Cam dives into the biggest promo card the Transformers TCG has seen, Omega Supreme. What's this card about and what cards lend themselves to making him less meh?</itunes:summary>
     <itunes:duration>00:50:00</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_7.mp3" length="50000000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_7.mp3" length="50000000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 8 | Talking Siege II - Introducing Shawn!</title>
@@ -168,7 +168,7 @@
     <itunes:summary>Introducing a new member to the Double Pipcast crew, Shawn! Shawn and Cam talk about Siege II bots, Shawn's 30 years of TCG experience, and the Energon Invitational in December.</itunes:summary>
     <itunes:duration>00:49:30</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_8.mp3" length="49000000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_8.mp3" length="49000000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 9 | Weaponizers in Siege II! - Introducing Brandon!</title>
@@ -186,7 +186,7 @@
     <itunes:summary>Introducing a new member to the Double Pipcast crew, Brandon! Brandon dives into his experience as an owner/operator of a local game store, plus our thoughts on Weaponizer Six-Gun and Brunt!</itunes:summary>
     <itunes:duration>00:58:55</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_9.mp3" length="58550000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_9.mp3" length="58550000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 10 | Mercenaries Shown @ NYCC</title>
@@ -204,7 +204,7 @@
     <itunes:summary>Cam touches on the exciting reveal of a new faction in Transformers: The Trading Card Game. Submit your questions for Drew Nolosco of WotC for episode 11 of the Double Pipcast @DPipcast</itunes:summary>
     <itunes:duration>00:17:34</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_10_new.mp3" length="17340000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_10.mp3" length="17340000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 11 | WotC Drew Interviewin' 2: Electric Boogaloo</title>
@@ -222,7 +222,7 @@
     <itunes:summary>Drew Nolosco, Global Brand Manager of the Transformers Trading Card Game returns! We talk about Siege II, the Energon Invitational at PAX Unplugged, and recycling!</itunes:summary>
     <itunes:duration>00:58:53</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_11.mp3" length="58530000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_11.mp3" length="58530000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 12 | Suppress the Press</title>
@@ -240,7 +240,7 @@
     <itunes:summary>Cam, Brandon and Shawn celebrate the ban of Press The Advantage! The crew also talks about some of the new characters announced in the past week.</itunes:summary>
     <itunes:duration>00:58:53</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_12.mp3" length="53450000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_12.mp3" length="53450000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 13 | Energon Edition</title>
@@ -258,7 +258,7 @@
     <itunes:summary>Cam, Brandon and Shawn discuss the necessity of bad cards, and the week-long tease of a new mystery TF TCG product</itunes:summary>
     <itunes:duration>00:40:58</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_13.mp3" length="40580000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_13.mp3" length="40580000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 14 | Energon Edition Pt. 2</title>
@@ -276,7 +276,7 @@
     <itunes:summary>Cam, Brandon and Shawn discuss the ENERGON EDITION and the first full week of play post-Siege II launch</itunes:summary>
     <itunes:duration>00:35:34</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_14.mp3" length="35340000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_14.mp3" length="35340000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 15 | Multiple Missions</title>
@@ -294,7 +294,7 @@
     <itunes:summary>Brandon hosts &amp; the crew discusses how a competitive environment can compound a TCG barrier-to-entry. Another card bites the dust with the most recent ban.</itunes:summary>
     <itunes:duration>00:41:23</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_15.mp3" length="41230000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_15.mp3" length="41230000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 16 | Interview with Dan Arnold</title>
@@ -312,7 +312,7 @@
     <itunes:summary>Cam is joined by the Champion of the 2019 Transformers Trading Card Game Energon Invitational! Dan talks best practices for new players and hardened competitors. Check out www.zoeshouserescue.com, an animal welfare group and charity that Vector Sigma is supporting!</itunes:summary>
     <itunes:duration>00:24:56</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_16.mp3" length="24560000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_16.mp3" length="24560000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 17 | Interview with Steffon Pinckney</title>
@@ -326,11 +326,47 @@
         <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:subtitle>Cam is joined by the Steffon Pinckney, winner of the TF TCG tournament at Origins 2019, and PPG Ohio 2019! Check out Steffon's channel DEF TF and look forward to his upcoming podcast "Champ Camp", where all of the past TF TCG champs come to chat!</itunes:subtitle>
+    <itunes:subtitle>Cam is joined by Steffon Pinckney, winner of the TF TCG tournament at Origins 2019, and PPG Ohio 2019! Check out Steffon's channel DEF TF and look forward to his upcoming podcast "Champ Camp", where all of the past TF TCG champs come to chat!</itunes:subtitle>
     <itunes:summary>Cam is joined by the Steffon Pinckney, winner of the TF TCG tournament at Origins 2019, and PPG Ohio 2019! Check out Steffon's channel DEF TF and look forward to his upcoming podcast "Champ Camp", where all of the past TF TCG champs come to chat!</itunes:summary>
     <itunes:duration>00:28:30</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="http://transformers-tcg-dmgctr.herokuapp.com/podcast/dbpipcast_ep_17.mp3" length="28300000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_17.mp3" length="28300000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Episode 18 | Interview with Kevin Allen</title>
+    <pubDate>Sat, 25 Jan 2020 00:00:00 EST</pubDate>
+    <itunes:episode>18</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam is joined by Kevin Allen, winner of the TF TCG tournament at Gen Con 2019! We discuss the 2019 Energon Invitational, building decks based off of your favorite characters / play style, and having FUN!</itunes:subtitle>
+    <itunes:summary>Cam is joined by Kevin Allen, winner of the TF TCG tournament at Gen Con 2019! We discuss the 2019 Energon Invitational, building decks based off of your favorite characters / play style, and having FUN!</itunes:summary>
+    <itunes:duration>00:36:20</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_18.mp3" length="36200000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Episode 19 | We're Back! 2019 Recap</title>
+    <pubDate>Sat, 25 Jan 2020 00:00:00 EST</pubDate>
+    <itunes:episode>19</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam, Brandon, and Shawn are back together for the first episode of 2020! Foil battle cards, and a recap of 2019!</itunes:subtitle>
+    <itunes:summary>Cam, Brandon, and Shawn are back together for the first episode of 2020! Foil battle cards, and a recap of 2019!</itunes:summary>
+    <itunes:duration>00:41:16</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_19.mp3" length="41160000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
