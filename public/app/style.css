@@ -7,6 +7,7 @@
     font-size: 1em;
     color:#ea1926;
 }
+
 body {
     margin: 0;
 }
@@ -37,7 +38,7 @@ a {
 .botlist {
     display: flex;
     flex-direction: column;
-    height:50%;
+    max-height:65%;
     overflow-y: scroll;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
@@ -47,7 +48,7 @@ a {
     margin: 1% 1%;
     border-bottom:1px dotted rgb(102, 102, 102);
 }
-.botlist button {
+.botlist i {
     float: right;
     margin: 0;
     padding: 1px 5px;
@@ -73,6 +74,9 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background: #4e4e4e;
   }
+h1 {
+    font-weight: 300;
+}
 h1:nth-of-type(1) {
     cursor: pointer;
     font-family: 'deceptibots', sans-serif;
@@ -80,7 +84,6 @@ h1:nth-of-type(1) {
     background-color: rgb(255, 255, 255);
     color: #ea1926;
     border: 2px solid #ea1926;
-    border-radius: 1px;
     margin: 0;
     padding: 2vh 2vw;
 }
@@ -91,7 +94,6 @@ h1:nth-of-type(2) {
     background-color: #333;
     color: #ea1926;
     border: 2px solid #ea1926;
-    border-radius: 1px;
     margin: 0;
     padding: 2vh 2vw;
 }
@@ -102,7 +104,6 @@ h1:nth-of-type(3) {
     background-color: #333;
     color: #ffffff;
     border: 2px solid #ffffff;
-    border-radius: 1px;
     margin: 0;
     padding: 2vh 2vw;
 }
@@ -113,7 +114,6 @@ h1:nth-of-type(4) {
     background-color: #fff;
     color: #333;
     border: 2px solid #333;
-    border-radius: 1px;
     margin: 0;
     padding: 2vh 2vw;
 }
@@ -136,7 +136,7 @@ h1:nth-of-type(4) {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-family: 'deceptibots', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
 }
 .field {
     display: flex;
@@ -156,8 +156,28 @@ h1:nth-of-type(4) {
     position: absolute;
     left: 50%;
     top: 25%;
+    padding: 1em;
+}
+.help {
+    text-align: center;
+    width: 25%;
+    height: max-content;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    position: absolute;
+    left: 50vw;
+    top: 15%;
     box-shadow: 0px 0px 5px 0px #000;
     padding: 1em;
+}
+.help p {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    width: 90%;
+    font-size: 1em;
+}
+.help i {
+    width: max-content;
 }
 .fa-times {
     position: absolute;
@@ -168,6 +188,10 @@ h1:nth-of-type(4) {
 .buttonwrapper{
     display: flex;
     flex-direction: column;
+}
+.buttonwrapper i {
+    text-align: center;
+    margin: .5em 0;
 }
 .podcastimg {
     margin: 1em;
@@ -182,24 +206,19 @@ h1:nth-of-type(4) {
 }
 button {
     font-family: 'deceptibots', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
     margin: 0% 1%;
     padding: 2% 4%;
     border-radius: 2px;
+    background-color: transparent;
     border: none;
-    background-color: white;
     cursor: pointer;
-    box-shadow: 0px 1px 2px 0px black;
-}
-button:hover {
-    background-color: #ea1926;
-    color: #fff;
 }
 .fa-first-aid {
     color: rgb(34, 139, 34);
 }
-.fa-haykal {
+.fa-car-crash {
     color: rgb(238, 131, 0);
 }
 .fa-window-close {
@@ -210,7 +229,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     background-color: transparent;
     text-align: center;
     margin: 0 1% 1% 1%;
@@ -279,9 +298,12 @@ button:hover {
         padding: 1em;
         z-index: 4;
     }
+    .help {
+        z-index: 4;
+    }
     .fa-times {
         position: absolute;
-        left: 91%;
+        left: 82%;
         top: 3%;
         cursor: pointer;
     }
@@ -359,8 +381,12 @@ button:hover {
         padding: 1%;
         border-radius: 2px;
     }
-    
-    
+    .fa-times {
+        position: absolute;
+        left: 85%;
+        top: 3%;
+        cursor: pointer;
+    }
     a {
         width: max-content;
         position: absolute;
@@ -383,7 +409,7 @@ button:hover {
     .botlist {
         display: flex;
         flex-direction: column;
-        height:50%;
+        max-height:65%;
         overflow-y: scroll;
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: 300;
@@ -399,7 +425,7 @@ button:hover {
     }
     .fieldbot {
         font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
+        font-weight: 300;
         background-color: lightgrey;
         text-align: center;
         margin: 1% 1%;
@@ -407,21 +433,18 @@ button:hover {
     }
     .fieldbot button {
         font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 700;
+        font-weight: 300;
         width: 100%;
         margin: 4% 0%;
         padding: 2% 4%;
         border-radius: 2px;
         border: none;
-        background-color: white;
         cursor: pointer;
     }
     .fieldbot button:nth-child(odd):hover {
-        background-color: rgb(151, 255, 147);
         cursor: pointer;
     }
     .fieldbot button:nth-child(even):hover {
-        background-color: rgb(255, 178, 147);
         cursor: pointer;
     }
     .trash {

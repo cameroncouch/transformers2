@@ -6,6 +6,7 @@ const comp = {
         vm.clicked = true;
         vm.clickedBots = [false, false, false, false]
         vm.podcastmodal = false;
+        vm.helpmodal = false;
         vm.isCombiner = false;
         vm.combCounter = 0;
         vm.dreadCounter = 0;
@@ -188,6 +189,14 @@ const comp = {
             }
             else if (vm.podcastmodal == true) {
                 vm.podcastmodal = false;
+            }
+        }
+        vm.showHelp = function() {
+            if (vm.helpmodal == false) {
+                vm.helpmodal = true
+            }
+            else if (vm.helpmodal == true) {
+                vm.helpmodal = false;
             }
         }
         //function for combining Sentinel characters only, due to the special way in which they combine a separate function is needed
