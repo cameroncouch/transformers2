@@ -1,1 +1,15 @@
-<section class="main header"><img src="/transformers/podcast/doublepip.png"></section>
+<p>Price Checker</p>
+<input type=text ng-model="query">
+<button ng-click="$ctrl.getCard(query);">GET</button>
+
+<section>
+    <p>{{$ctrl.card.name}}</p>
+    <img src="{{$ctrl.card.imageUrl}}">
+</section>
+
+<section>
+    <p>Low: ${{$ctrl.price.lowPrice}}</p>
+    <p>Mid: ${{$ctrl.price.midPrice}}</p>
+    <p>High: ${{$ctrl.price.highPrice}}</p>
+    <p>Market: ${{$ctrl.price.marketPrice}}</p>
+</section>

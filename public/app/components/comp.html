@@ -38,14 +38,14 @@
                 </section>
                 <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
             </div>
+
             <section class="buttonwrapper">
                 <i ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
                 <i ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
                 <i ng-click="$ctrl.showHelp()" class="fas fa-question-circle"></i>
                 <i ng-click="$ctrl.show()" class="fas fa-podcast"></i>
-                
-                <!-- <button ng-click="$ctrl.transformersGet()">GET REQ</button> -->
             </section>
+
             <section class='podcastmodal' ng-show="$ctrl.podcastmodal">
                     <i class="fas fa-times" ng-click="$ctrl.show()"></i>
                 <section class="buttonwrapper podcast">
@@ -59,6 +59,7 @@
                     
                 </section>
             </section>
+
             <section  class="help" ng-show="$ctrl.helpmodal">
                 <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
                 <i class="fas fa-first-aid"></i><p> Heal Transformer</p>
@@ -66,6 +67,8 @@
                 <i class="fas fa-window-close"></i><p> Remove Transformer</p>
                 <i class="clear fas fa-undo-alt"></i><p> Restart</p>
                 <i class="fas fa-compress-arrows-alt"></i><p> Combine</p>
+                <!-- <a href="#!/comp2">Price A Card</a> -->
             </section>
+
     </div>
 </div>

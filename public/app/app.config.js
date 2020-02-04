@@ -3,7 +3,7 @@ angular.module('App').config(['$routeProvider', function($routeProvider){
     .when('/', {
         template: "<comp></comp>"
     })
-    .when('/podcast', {
-        template: "<podcast></podcast>"
+    .when('/comp2', {
+        template: "<comp2></comp2>"
     });
 }]);

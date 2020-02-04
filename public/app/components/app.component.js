@@ -11,11 +11,11 @@ const comp = {
         vm.combCounter = 0;
         vm.dreadCounter = 0;
         vm.skyCounter = 0;
-        //brings our objects over from transformers.js
         vm.bots1 = undefined;
         vm.bots2 = undefined;
         vm.bots3 = undefined;
         vm.bots4 = undefined;
+        
         var optMax = undefined;
         var volCan = undefined;
         //bots in the field are kept here so the data can be mutated separately from the og object
@@ -344,7 +344,6 @@ const comp = {
             optMax = [vm.bots2[52], vm.bots2[38], vm.bots2[36], vm.bots2[29], vm.bots2[24], vm.bots2[23]];
             volCan = [vm.bots2[47], vm.bots2[48], vm.bots2[49], vm.bots2[54], vm.bots2[21]];
             }
-            console.log(vm.bots2);
         }
         vm.transformersGet3 = function (num) {
             if (vm.bots3 == undefined) {
@@ -357,10 +356,9 @@ const comp = {
             TransformerService.getTF4();
             vm.bots4 = TransformerService.tfdbresults4;
             }
-            console.log(vm.bots4);
         }
+        
     }]
 }
-
 
 angular.module('App').component('comp', comp);
