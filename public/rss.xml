@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Sat, 25 Jan 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Wednesday, 5 Feb 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Double Pipcast | Episode 1 | Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -204,7 +204,7 @@
     <itunes:summary>Cam touches on the exciting reveal of a new faction in Transformers: The Trading Card Game. Submit your questions for Drew Nolosco of WotC for episode 11 of the Double Pipcast @DPipcast</itunes:summary>
     <itunes:duration>00:17:34</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
-    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_10.mp3" length="17340000" type="audio/mpeg"/>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_10_new.mp3" length="17340000" type="audio/mpeg"/>
     </item>
     <item>
     <title>Episode 11 | WotC Drew Interviewin' 2: Electric Boogaloo</title>
@@ -367,6 +367,24 @@
     <itunes:duration>00:41:16</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_19.mp3" length="41160000" type="audio/mpeg"/>
+    </item>
+        <item>
+    <title>Episode 20 | Titan Masters Attack! PPG Orlando Experience</title>
+    <pubDate>Wed, 5 Feb 2020 00:00:00 EST</pubDate>
+    <itunes:episode>20</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>WotC announces Wave 5 of the Transformers TCG! We talk about ALL the juicy info that was came from this week's reveal. Brandon also shares with us his experience from the first major TF TCG event of 2020.</itunes:subtitle>
+    <itunes:summary>WotC announces Wave 5 of the Transformers TCG! We talk about ALL the juicy info that was came from this week's reveal. Brandon also shares with us his experience from the first major TF TCG event of 2020.</itunes:summary>
+    <itunes:duration>00:41:28</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_20.mp3" length="41280000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
