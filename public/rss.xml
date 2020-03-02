@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Wednesday, 5 Feb 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Monday, 2 Mar 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -387,7 +387,7 @@
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_20.mp3" length="41380000" type="audio/mpeg"/>
     </item>
         <item>
-    <title>Interview with Competive Player David B. - All2Easy HIJACKS the Pipcast - </title>
+    <title>Interview with Competive Player David B. - All2Easy HIJACKS the Pipcast</title>
     <pubDate>Sun, 16 Feb 2020 00:00:00 EST</pubDate>
     <itunes:episode>21</itunes:episode>
     <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
@@ -398,11 +398,29 @@
         <itunes:category text="Other Games"/>
     </itunes:category>
     <itunes:explicit>No</itunes:explicit>
-    <itunes:subtitle>Team All2Easy drop a secret action HIJACK and drop this interview with competitive Transformers TCG player David B. They do a deep dive on the Demolisher, Barrage, Lionizer, Vanguard Orange/Black deck!</itunes:subtitle>
-    <itunes:summary>Team All2Easy drop a secret action HIJACK and drop this interview with competitive Transformers TCG player David B. They do a deep dive on the Demolisher, Barrage, Lionizer, Vanguard Orange/Black deck!</itunes:summary>
+    <itunes:subtitle>Team All2Easy play a secret action HIJACK and drop this interview with competitive Transformers TCG player David B. They do a deep dive on the Demolisher, Barrage, Lionizer, Vanguard Orange/Black deck!</itunes:subtitle>
+    <itunes:summary>Team All2Easy play a secret action HIJACK and drop this interview with competitive Transformers TCG player David B. They do a deep dive on the Demolisher, Barrage, Lionizer, Vanguard Orange/Black deck!</itunes:summary>
     <itunes:duration>00:33:14</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_21.mp3" length="33140000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Titan Masters Attac.. But They Also Protec</title>
+    <pubDate>Mon, 2 Mar 2020 00:00:00 EST</pubDate>
+    <itunes:episode>22</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>The crew assembles to talk about all of the new Titan Masters Attack info! New mechanics, new battle cards, new characters. So much content we couldn't fit it in one episode!</itunes:subtitle>
+    <itunes:summary>The crew assembles to talk about all of the new Titan Masters Attack info! New mechanics, new battle cards, new characters. So much content we couldn't fit it in one episode!</itunes:summary>
+    <itunes:duration>00:36:34</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_22.mp3" length="36340000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
