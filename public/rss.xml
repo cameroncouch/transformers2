@@ -422,5 +422,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_22.mp3" length="36340000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>TOP Titan Masters!</title>
+    <pubDate>Mon, 16 Mar 2020 00:00:00 EST</pubDate>
+    <itunes:episode>23</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Wreckers, Dinobots, Specialists OH MY! Cam and crew assemble to talk about their most anticipated characters from Titan Masters Attack, wave 5 of the Transformers TCG. Also, will the current crisis affect TF TCG events?</itunes:subtitle>
+    <itunes:summary>Wreckers, Dinobots, Specialists OH MY! Cam and crew assemble to talk about their most anticipated characters from Titan Masters Attack, wave 5 of the Transformers TCG. Also, will the current crisis affect TF TCG events?</itunes:summary>
+    <itunes:duration>00:33:34</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_23.mp3" length="33340000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss>
