@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Monday, 16 Mar 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Tuesday, 17 Mar 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -439,6 +439,24 @@
     <itunes:duration>00:33:34</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_23.mp3" length="33340000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Talking with Wizards Drew: The Threequel</title>
+    <pubDate>Tue, 17 Mar 2020 00:00:00 EST</pubDate>
+    <itunes:episode>23</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Drew returns to the Double Pipcast to divulge more of Wizards of the Coast's runic secrets! How else do you explain Strategems!?</itunes:subtitle>
+    <itunes:summary>Drew returns to the Double Pipcast to divulge more of Wizards of the Coast's runic secrets! How else do you explain Strategems!?</itunes:summary>
+    <itunes:duration>00:32:26</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_24.mp3" length="32260000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss>
