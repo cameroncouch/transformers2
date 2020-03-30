@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Thursday, 27 Mar 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Monday, 30 Mar 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -476,5 +476,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_25.mp3" length="42250000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>HEADS UP! It's Optimus and Megatron!</title>
+    <pubDate>Mon, 30 Mar 2020 00:00:00 EST</pubDate>
+    <itunes:episode>26</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Our longest episode yet! We talk about the delay of Titan Masters Attack, and the reveal of series staples Optimus Prime and Megatron.</itunes:subtitle>
+    <itunes:summary>Our longest episode yet! We talk about the delay of Titan Masters Attack, and the reveal of series staples Optimus Prime and Megatron.</itunes:summary>
+    <itunes:duration>01:01:56</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_26.mp3" length="61056000" type="audio/mpeg"/>
+    </item>
 </channel>
-</rss>
+</rss> 
