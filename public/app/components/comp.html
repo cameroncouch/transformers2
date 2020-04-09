@@ -1,24 +1,24 @@
 <div class="app" ng-init="$ctrl.transformersGet();$ctrl.transformersGet3();$ctrl.transformersGet4();$ctrl.transformersGet2();">
     <div ng-hide="!$ctrl.clicked" class="menu">
-        <h1 ng-click="$ctrl.transformersGet(1);$ctrl.hideBots(0)" >Wave 1</h1>
+        <h1 ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
         <div ng-show="$ctrl.clickedBots[0]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.transformersGet2(2);$ctrl.hideBots(1)">Wave 2</h1>
+        <h1 ng-click="$ctrl.hideBots(1)">Wave 2</h1>
         <div ng-show="$ctrl.clickedBots[1]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots2">
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.transformersGet3(3);$ctrl.hideBots(2)">Wave 3</h1>
+        <h1 ng-click="$ctrl.hideBots(2)">Wave 3</h1>
         <div ng-show="$ctrl.clickedBots[2]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots3">
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.transformersGet4(4);$ctrl.hideBots(3)">Wave 4</h1>
+        <h1 ng-click="$ctrl.hideBots(3)">Wave 4</h1>
         <div ng-show="$ctrl.clickedBots[3]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots4">
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
@@ -43,10 +43,12 @@
                 <i ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
                 <i ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
                 <i ng-click="$ctrl.showHelp()" class="fas fa-question-circle"></i>
-                <i ng-click="$ctrl.show()" class="fas fa-podcast"></i>
+                <i ng-click="$ctrl.show();" class="fas fa-podcast"></i>
+                <i ng-click="$ctrl.showPrice();$ctrl.sendBots();" class="fas fa-search-dollar"></i>
             </section>
 
-            <section class='podcastmodal' ng-show="$ctrl.podcastmodal">
+            <section class='podcast modal' ng-show="$ctrl.podcastmodal">
+                
                     <i class="fas fa-times" ng-click="$ctrl.show()"></i>
                 <section class="buttonwrapper podcast">
                     <p class="podcastfont">Listen to the Double Pipcast!</p>
@@ -60,14 +62,16 @@
                 </section>
             </section>
 
-            <section  class="help" ng-show="$ctrl.helpmodal">
+            <comp2 ng-show="$ctrl.pricemodal" class="modal"></comp2>
+
+            <section class="help modal" ng-show="$ctrl.helpmodal">
                 <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
                 <i class="fas fa-first-aid"></i><p> Heal Transformer</p>
                 <i class="fas fa-car-crash"></i><p> Damage Transformer</p>
                 <i class="fas fa-window-close"></i><p> Remove Transformer</p>
                 <i class="clear fas fa-undo-alt"></i><p> Restart</p>
                 <i class="fas fa-compress-arrows-alt"></i><p> Combine</p>
-                <!-- <a href="#!/comp2">Price A Card</a> -->
+                <i class="fas fa-search-dollar"></i><p>Price A Card</p>
             </section>
 
     </div>

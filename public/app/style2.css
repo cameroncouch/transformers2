@@ -1,8 +1,28 @@
-.main .header {
-    height: 20%;
+.price {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.price p {
+    margin: .25em;
+}
+.price button {
+    background-color:#ea1926;
+    color: white;
+    margin: 1%;
+}
+.waveSelect select {
     width: 100%;
 }
-.main .header img {
-    width: inherit;
-    height: inherit;
+
+.botSelect select {
+    width: 100%;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.prices p {
+    margin: .25em 0;
 }

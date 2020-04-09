@@ -45,7 +45,6 @@ function TransformerService($http, $location) {
         });
       };
       self.getCard = (query) => {
-        console.log(query);
         return $http({
           method:"GET",
           url: `http://api.tcgplayer.com/v1.32.0/catalog/products?categoryId=57&productName=${query}`,
@@ -53,7 +52,6 @@ function TransformerService($http, $location) {
             'Authorization': 'Bearer BYXMqcPCRCPthjntXlTXZOQFohJQeKfyXftajBYjvngwGwVapT4Lbu3XmhBhTJ-2XoljGLFyHJYWa4yHqGZqWm8aliXLd7-21qcT2p-sJE1p1C3KFyviRPxBgdkfUm3XYLcK5Rpdste3LT7fXYGEmRSSPIUkBEMYOyKnH7FgG1WOj1brL8Ua3-H6ZwPGQ1Q3NSVIEUQDXrG3rBOKU4ICd_bqMwlkxu3GN7pYN9Ip3i0xXDyTFD2jKTivaQHmHqG09qS-NLbALOpS_04FBxa0sDjHcsYAwZrOD630eldrzRdHuNJR630G6_Z7lMiDrBF1F_mSdQ'
           },
         }).then((response) => {
-          console.log(response);
           self.card = response.data.results[0];
           return self.card;
         });
@@ -68,7 +66,6 @@ function TransformerService($http, $location) {
           },
         }).then((response) => {
           self.pricing = response;
-          console.log(response);
           return self.pricing;
         });
       };
