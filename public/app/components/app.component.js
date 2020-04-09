@@ -1,12 +1,13 @@
 "use strict";
 const comp = {
     templateUrl:"app/components/comp.html",
-    controller:['TransformerService', function(TransformerService){
+    controller:['TransformerService', 'PricingService','$rootScope', function(TransformerService, PricingService,$rootScope){
         const vm = this;
         vm.clicked = true;
         vm.clickedBots = [false, false, false, false]
         vm.podcastmodal = false;
         vm.helpmodal = false;
+        vm.pricemodal = false;
         vm.isCombiner = false;
         vm.combCounter = 0;
         vm.dreadCounter = 0;
@@ -15,14 +16,14 @@ const comp = {
         vm.bots2 = undefined;
         vm.bots3 = undefined;
         vm.bots4 = undefined;
-        
+        vm.wave;
         var optMax = undefined;
         var volCan = undefined;
         //bots in the field are kept here so the data can be mutated separately from the og object
         vm.botArr = [];
         //health for each bot in botArr, corresponds with index - this is needed to ensure we can't heal past initial health
         vm.healthArr = [];
-
+        
         //when user clicks the add button, add that transformer to the field. Limit 6 bots in the field, no duplicates.
         vm.add = function(bot) {
             for (let i = 0; i < vm.botArr.length; i++) {
@@ -155,8 +156,8 @@ const comp = {
         vm.clear = function() {
             vm.botArr = [];
             vm.healthArr = [];
-            optMax = [vm.bots2[52], vm.bots2[38], vm.bots2[36], vm.bots2[29], vm.bots2[24], vm.bots2[23]];
-            volCan = [vm.bots2[47], vm.bots2[48], vm.bots2[49], vm.bots2[54], vm.bots2[21]];
+            optMax = [vm.bots2[53], vm.bots2[37], vm.bots2[39], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
+            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[55], vm.bots2[21]];
             vm.combCounter = 0;
             vm.dreadCounter = 0;
             vm.skyCounter = 0;
@@ -184,6 +185,8 @@ const comp = {
             }
         }
         vm.show = function() {
+            vm.helpmodal = vm.helpmodal ? !vm.helpmodal : vm.helpmodal;
+            vm.pricemodal = vm.pricemodal ? !vm.pricemodal : vm.pricemodal;
             if (vm.podcastmodal == false) {
                 vm.podcastmodal = true
             }
@@ -192,11 +195,21 @@ const comp = {
             }
         }
         vm.showHelp = function() {
+            vm.pricemodal = vm.pricemodal ? !vm.pricemodal : vm.pricemodal;
+            vm.podcastmodal = vm.podcastmodal ? !vm.podcastmodal : vm.podcastmodal;
             if (vm.helpmodal == false) {
                 vm.helpmodal = true
             }
             else if (vm.helpmodal == true) {
                 vm.helpmodal = false;
+            }
+        }
+        vm.showPrice = function() {
+            if (vm.pricemodal == false) {
+                vm.pricemodal = true
+            }
+            else if (vm.pricemodal == true) {
+                vm.pricemodal = false;
             }
         }
         //function for combining Sentinel characters only, due to the special way in which they combine a separate function is needed
@@ -209,7 +222,7 @@ const comp = {
                             let optMaxDeadBotHealth = optMax[0].health + optMax[1].health + optMax[2].health;
                             vm.botArr = [];
                             vm.healthArr = [];
-                            vm.add(vm.bots2[35]);
+                            vm.add(vm.bots2[36]);
                             vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                             vm.botArr[vm.botArr.length - 1].health -= optMaxDeadBotHealth;
                             break;
@@ -231,7 +244,7 @@ const comp = {
                             let volCanDeadBotHealth = volCan[0].health + volCan[1].health;
                             vm.botArr = [];
                             vm.healthArr = [];
-                            vm.add(vm.bots2[58]);
+                            vm.add(vm.bots2[59]);
                             vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                             vm.botArr[vm.botArr.length - 1].health -= volCanDeadBotHealth;
                             break;
@@ -255,7 +268,7 @@ const comp = {
                     console.log("Superion has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots2[52]);
+                    vm.add(vm.bots2[54]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                     console.log(vm.combCounter);
@@ -265,7 +278,7 @@ const comp = {
                     console.log("Menasor has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots2[57]);
+                    vm.add(vm.bots2[29]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
@@ -274,7 +287,7 @@ const comp = {
                     console.log("Predaking has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots2[61]);
+                    vm.add(vm.bots2[38]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
@@ -311,7 +324,7 @@ const comp = {
                     for (let j = 0; j < saveBot.length; j++) {
                         vm.add(saveBot[j]);
                     }
-                    vm.add(vm.bots4[42]);
+                    vm.add(vm.bots4[40]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.skyCounter;
                    
@@ -321,7 +334,7 @@ const comp = {
                     console.log("Omega Supreme has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots4[28]);
+                    vm.add(vm.bots4[4]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
@@ -331,33 +344,41 @@ const comp = {
                 }  
             } 
         }
-        vm.transformersGet = function (num) {
+        vm.transformersGet = async () => {
             if (vm.bots1 == undefined) {
-            TransformerService.getTF(num);
+            await TransformerService.getTF();
             vm.bots1 = TransformerService.tfdbresults;
             }
         }
-        vm.transformersGet2 = function () {
+        vm.transformersGet2 = async () => {
             if (vm.bots2 == undefined) {
-            TransformerService.getTF2();
+            await TransformerService.getTF2();
             vm.bots2 = TransformerService.tfdbresults2;
-            optMax = [vm.bots2[52], vm.bots2[38], vm.bots2[36], vm.bots2[29], vm.bots2[24], vm.bots2[23]];
-            volCan = [vm.bots2[47], vm.bots2[48], vm.bots2[49], vm.bots2[54], vm.bots2[21]];
+            optMax = [vm.bots2[53], vm.bots2[37], vm.bots2[39], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
+            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[55], vm.bots2[21]];
             }
         }
-        vm.transformersGet3 = function (num) {
+        vm.transformersGet3 = async () => {
             if (vm.bots3 == undefined) {
-            TransformerService.getTF3();
+            await TransformerService.getTF3();
             vm.bots3 = TransformerService.tfdbresults3;
             }
         }
-        vm.transformersGet4 = function (num) {
+        vm.transformersGet4 = async () => {
             if (vm.bots4 == undefined) {
-            TransformerService.getTF4();
+            await TransformerService.getTF4();
             vm.bots4 = TransformerService.tfdbresults4;
             }
         }
-        
+        $rootScope.$on('comp2ToComp1', (event,data) => {
+            console.log(data);
+            vm.pricemodal = data;
+        })
+        vm.sendBots = () => {
+            vm.helpmodal = vm.helpmodal ? !vm.helpmodal : vm.helpmodal;
+            vm.podcastmodal = vm.podcastmodal ? !vm.podcastmodal : vm.podcastmodal;
+            $rootScope.$broadcast('comp1ToComp2', [vm.bots1,vm.bots2,vm.bots3,vm.bots4,vm.pricemodal,vm.helpmodal,vm.podcastmodal]);
+        }
     }]
 }
 

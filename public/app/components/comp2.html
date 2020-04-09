@@ -1,15 +1,44 @@
-<p>Price Checker</p>
-<input type=text ng-model="query">
-<button ng-click="$ctrl.getCard(query);">GET</button>
+<section class="price">
+    <i class="fas fa-times" ng-click="$ctrl.showPrice()"></i>
+    <section>
+        <p>Price Checker</p>
+    </section>
 
-<section>
-    <p>{{$ctrl.card.name}}</p>
-    <img src="{{$ctrl.card.imageUrl}}">
-</section>
+    <section class="waveSelect">
+        <select ng-model="wave">
+            <option value="" disabled selected hidden>Select Set</option>
+            <option>Wave 1</option>
+            <option>Wave 2</option>
+            <option>Wave 3</option>
+            <option>Wave 4</option>
+        </select>
+    </section>
 
-<section>
-    <p>Low: ${{$ctrl.price.lowPrice}}</p>
-    <p>Mid: ${{$ctrl.price.midPrice}}</p>
-    <p>High: ${{$ctrl.price.highPrice}}</p>
-    <p>Market: ${{$ctrl.price.marketPrice}}</p>
+    <section class="botSelect">
+        <select ng-model="query" ng-show="wave === 'Wave 1'">
+            <option ng-repeat="bot in $ctrl.bots1">{{bot.name}} {{bot.title}}</option>
+        </select>
+        <select ng-model="query" ng-show="wave === 'Wave 2'">
+            <option ng-repeat="bot in $ctrl.bots2">{{bot.name}} {{bot.title}}</option>
+        </select>
+        <select ng-model="query" ng-show="wave === 'Wave 3'">
+            <option ng-repeat="bot in $ctrl.bots3">{{bot.name}} {{bot.title}}</option>
+        </select>
+        <select ng-model="query" ng-show="wave === 'Wave 4'">
+            <option ng-repeat="bot in $ctrl.bots4">{{bot.name}} {{bot.title}}</option>
+        </select>
+        <button ng-click="$ctrl.getCard(query);">SEARCH</button>
+    </section>
+
+    <section class="cardInfo">
+        <p>{{$ctrl.card.name}}</p>
+        <img src="{{$ctrl.card.imageUrl}}">
+    </section>
+
+    <section class="prices">
+        <p>Low: ${{$ctrl.price.lowPrice}}</p>
+        <p>Mid: ${{$ctrl.price.midPrice}}</p>
+        <p>High: ${{$ctrl.price.highPrice}}</p>
+        <p>Market: ${{$ctrl.price.marketPrice}}</p>
+    </section>
 </section>

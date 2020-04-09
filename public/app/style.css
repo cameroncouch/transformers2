@@ -25,7 +25,7 @@ a {
     flex-direction: column;
     min-height: 100vh;
     max-height: 100vh;
-    width: 12em;
+    width: 15em;
 }
 .hint {
     font-family: 'deceptibots', sans-serif;
@@ -147,7 +147,7 @@ h1:nth-of-type(4) {
     max-height: 110vh;
 }
 
-.podcastmodal {
+.modal {
     text-align: center;
     width: 25%;
     height: max-content;
@@ -284,7 +284,7 @@ button {
     }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width:1024px) {
-    .podcastmodal {
+    .modal {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -338,12 +338,12 @@ button {
         margin: 0 30%;
         width: 33%;
     }
-    .podcastmodal {
+    .modal {
         display: flex;
         align-items: center;
         top: 1%;
     }
-    .podcastmodal div {
+    .modal div {
         width: max-content;
         align-self: center;
     }
@@ -449,7 +449,7 @@ button {
     .trash {
         display: none;
     }
-    .podcastmodal {
+    .modal {
         left: 40%;
     }
     .podcastfont {
