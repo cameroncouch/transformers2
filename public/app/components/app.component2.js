@@ -35,7 +35,6 @@ const comp2 = {
             $rootScope.$broadcast('comp2ToComp1', vm.pricemodal);
         }
         $rootScope.$on('comp1ToComp2', (event,data) => {
-            console.log(data);
                 vm.bots1 = data[0];
                 vm.bots2 = data[1];
                 vm.bots3 = data[2];
