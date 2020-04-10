@@ -14,7 +14,7 @@ function PricingService($http, $location) {
       }).then((response) => {
         self.card = response.data.results[0];
         return self.card;
-      });
+      }).catch(error => console.log(error));
     };
 
     self.getPrice = (sku) => {
@@ -27,7 +27,7 @@ function PricingService($http, $location) {
       }).then((response) => {
         self.pricing = response.data.results[0];
         return self.pricing;
-      });
+      }).catch(error => console.log(error));;
     };
   }
 

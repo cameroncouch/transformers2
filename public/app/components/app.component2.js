@@ -17,8 +17,10 @@ const comp2 = {
         }
 
         vm.setCard = async (val) => {
+            if (PricingService.card) {
             await vm.getPrice(PricingService.card.productId).then(vm.card = val).catch((error) => console.log(error));
             return vm.card;
+            }
         }
 
         vm.getPrice = async (sku) => {
