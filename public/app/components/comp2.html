@@ -35,10 +35,18 @@
         <img src="{{$ctrl.card.imageUrl}}">
     </section>
 
-    <section class="prices">
-        <p>Low: ${{$ctrl.price.lowPrice}}</p>
-        <p>Mid: ${{$ctrl.price.midPrice}}</p>
-        <p>High: ${{$ctrl.price.highPrice}}</p>
-        <p>Market: ${{$ctrl.price.marketPrice}}</p>
-    </section>
+    <table class="prices">
+        <tr>
+            <td><i class="fas fa-arrow-down"></i></td>
+            <td><i class="fas fa-minus"></i></td>
+            <td><i class="fas fa-arrow-up"></i></td>
+            <td><i class="fas fa-chart-line"></i></td>
+        </tr>
+        <tr>
+            <td>${{$ctrl.price.lowPrice}}</td>
+            <td>${{$ctrl.price.midPrice}}</td>
+            <td>${{$ctrl.price.highPrice}}</td>
+            <td>${{$ctrl.price.marketPrice}}</td>
+        </tr>
+    </table>
 </section>

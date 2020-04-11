@@ -33,7 +33,7 @@
                 <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
                 <section class="health">
                     <p>{{bot.name}}</p>
-                    <p>Health: <span class="healthnum">{{bot.health}}</span></p>
+                    <i class="far fa-heart"><span class="healthnum">{{bot.health}}</span></i>
                     <button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
                 </section>
                 <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
@@ -66,12 +66,22 @@
 
             <section class="help modal" ng-show="$ctrl.helpmodal">
                 <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
-                <i class="fas fa-first-aid"></i><p> Heal Transformer</p>
-                <i class="fas fa-car-crash"></i><p> Damage Transformer</p>
-                <i class="fas fa-window-close"></i><p> Remove Transformer</p>
-                <i class="clear fas fa-undo-alt"></i><p> Restart</p>
-                <i class="fas fa-compress-arrows-alt"></i><p> Combine</p>
-                <i class="fas fa-search-dollar"></i><p>Price A Card</p>
+                <section class="helpIcons">
+                    <i class="fas fa-first-aid"></i>
+                    <i class="fas fa-car-crash"></i>
+                    <i class="fas fa-window-close"></i>
+                    <i class="clear fas fa-undo-alt"></i>
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <i class="fas fa-search-dollar"></i>
+                </section>
+                <section class="helpP">
+                    <p>Heal</p>
+                    <p>Damage</p>
+                    <p>Remove</p>
+                    <p>Restart</p>
+                    <p>Combine</p>
+                    <p>Price Checker</p>
+                </section>
             </section>
 
     </div>

@@ -155,11 +155,14 @@ h1:nth-of-type(4) {
     border-radius: 2px;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 15%;
     padding: 1em;
 }
 .help {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    justify-content: space-evenly;
     width: 25%;
     height: max-content;
     background-color: #FFFFFF;
@@ -170,10 +173,23 @@ h1:nth-of-type(4) {
     box-shadow: 0px 0px 5px 0px #000;
     padding: 1em;
 }
+.helpP {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.helpIcons {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: max-content;
+}
 .help p {
     font-family: 'Roboto Condensed', sans-serif;
     display: inline-block;
+    text-align: left;
     width: 90%;
+    margin: 0;
     font-size: 1em;
 }
 .help i {
@@ -215,6 +231,21 @@ button {
     border: none;
     cursor: pointer;
 }
+
+i.far.fa-heart {
+    display: flex;
+    justify-content: center;
+    color: #ea1926;
+    font-size: 1.5em;
+}
+
+i span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fa-first-aid, .fa-car-crash, .fa-window-close {
+    font-size: 1.25em;
+}
 .fa-first-aid {
     color: rgb(34, 139, 34);
 }
@@ -229,7 +260,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     background-color: transparent;
     text-align: center;
     margin: 0 1% 1% 1%;
@@ -276,9 +307,7 @@ button {
     display: none;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px){
-    .fieldbot p:nth-child(odd) {
-        font-size: .75em;
-    }
+
     .fieldbot p:nth-child(even) {
         font-size: .75em;
     }
@@ -300,6 +329,8 @@ button {
     }
     .help {
         z-index: 4;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     .fa-times {
         position: absolute;

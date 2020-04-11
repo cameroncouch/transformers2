@@ -21,8 +21,20 @@
 
 .prices {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
 }
 .prices p {
     margin: .25em 0;
+}
+.fa-arrow-up {
+    color: rgb(34, 139, 34);
+}
+.fa-minus {
+    color: rgb(238, 131, 0);
+}
+.fa-arrow-down {
+    color: rgb(134, 0, 0)
+}
+.fa-chart-line {
+    color: rgb(103, 0, 134)
 }
