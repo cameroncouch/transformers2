@@ -24,7 +24,7 @@
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2]|| $ctrl.clickedBots[3]" class="hint">Click above to choose a bot..</p>
+        <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2] || $ctrl.clickedBots[3] || $ctrl.clicked" class="hint">Click above to choose a bot..</p>
     </div>
     <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
     <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>

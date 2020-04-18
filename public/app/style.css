@@ -50,6 +50,7 @@ i {
     color: #333333;
     margin: 0;
     padding: 2vh 2vw;
+    min-width: 0;
 }
 .botlist {
     display: flex;
@@ -249,7 +250,7 @@ i.far.fa-heart {
 .buttonwrapper {
     display: flex;
     flex-direction: column;
-    height: max-content;
+    max-height: max-content;
     width: 100vw;
     align-items: center;
     position: absolute;
@@ -267,7 +268,7 @@ i.far.fa-heart {
     transition: ease-in-out 1s;
 }
 .grow2 i, .shrink2 i {
-    padding-top: 1em;
+    padding: 2em 0 2em 0;
 }
 .shrink2 {
     height: 0em;
@@ -435,7 +436,6 @@ i span {
         flex-direction: column;
         min-height: 100vh;
         max-height: 100vh;
-        width: 15em;
         transition: ease-in-out 1s;
     }
     .shrink {
@@ -492,7 +492,6 @@ i span {
     }
     .field {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         flex: 1;
         background: linear-gradient(to bottom,rgba(255,255,255)10%, rgb(224, 224, 224));
