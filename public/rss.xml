@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Monday, 30 Mar 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Saturday, 18 Apr 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -493,6 +493,24 @@
     <itunes:duration>01:01:56</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_26.mp3" length="61056000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Odds &amp; Ends</title>
+    <pubDate>Sat, 18 Apr 2020 00:00:00 EST</pubDate>
+    <itunes:episode>27</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>The crew talks about the math behind sticking with a 40-card deck, with no actual scholarly research to back it up. Also discussed, some of the new battle-cards from Titan Masters Attack!</itunes:subtitle>
+    <itunes:summary>The crew talks about the math behind sticking with a 40-card deck, with no actual scholarly research to back it up. Also discussed, some of the new battle-cards from Titan Masters Attack!</itunes:summary>
+    <itunes:duration>00:58:36</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_27.mp3" length="58360000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss> 
