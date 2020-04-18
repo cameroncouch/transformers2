@@ -16,6 +16,8 @@ const comp = {
         vm.bots2 = undefined;
         vm.bots3 = undefined;
         vm.bots4 = undefined;
+        vm.morph = 'shrink';
+        vm.morph2 = 'grow2'
         vm.wave;
         var optMax = undefined;
         var volCan = undefined;
@@ -174,10 +176,29 @@ const comp = {
         }
         //collapses/expands the menu element when user clicks the hide bar
         vm.hide = function() {
+            if(vm.morph === 'shrink') {
+                vm.morph = 'grow';
+            }
+            else {
+                vm.morph = 'shrink'
+            }
             vm.clicked = !vm.clicked;
         }
+        vm.hideButtons = function() {
+            if(vm.morph2 === 'shrink2') {
+                vm.morph2 = 'grow2';
+            }
+            else {
+                vm.morph2 = 'shrink2'
+            }
+        }
         vm.hideBots = function(num) {
-            if (vm.clickedBots[num] == false) {
+            if(num == undefined) {
+                for(var i = 0; i < vm.clickedBots.length; i++) {
+                    vm.clickedBots[i] = false;
+                }
+            }
+            else if (vm.clickedBots[num] == false) {
                 vm.clickedBots[num] = true
             }
             else if (vm.clickedBots[num] == true) {

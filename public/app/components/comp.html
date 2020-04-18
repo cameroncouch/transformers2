@@ -1,5 +1,5 @@
 <div class="app" ng-init="$ctrl.transformersGet();$ctrl.transformersGet3();$ctrl.transformersGet4();$ctrl.transformersGet2();">
-    <div ng-hide="!$ctrl.clicked" class="menu">
+    <div ng-class="$ctrl.morph">
         <h1 ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
         <div ng-show="$ctrl.clickedBots[0]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
@@ -27,7 +27,7 @@
         <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2]|| $ctrl.clickedBots[3]" class="hint">Click above to choose a bot..</p>
     </div>
     <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
-    <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
+    <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
     <div class="field">
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
                 <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
@@ -38,51 +38,53 @@
                 </section>
                 <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
             </div>
-
-            <section class="buttonwrapper">
-                <i ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
-                <i ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
-                <i ng-click="$ctrl.showHelp()" class="fas fa-question-circle"></i>
-                <i ng-click="$ctrl.show();" class="fas fa-podcast"></i>
-                <i ng-click="$ctrl.showPrice();$ctrl.sendBots();" class="fas fa-search-dollar"></i>
-            </section>
-
-            <section class='podcast modal' ng-show="$ctrl.podcastmodal">
-                
-                    <i class="fas fa-times" ng-click="$ctrl.show()"></i>
-                <section class="podcast">
-                    <p class="podcastfont">Listen to the Double Pipcast!</p>
-                    <img class="podcastimg" src="./podcast/doublepip.png">
-                    
-                    <div>
-                        <a href="https://podcasts.apple.com/us/podcast/double-pipcast/id1474073672?mt=2&app=podcast" style="display:block;width:100%;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-08-23T00:00:00Z&kind=podcast&bubble=podcasts) no-repeat;width:168px;height:40px;align-self: center"></a>
-                        <a href='https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&amp;isi=691797987&amp;ius=googleplaymusic&amp;apn=com.google.android.music&amp;link=https://play.google.com/music/m/Ijlt3c6s6fddbru6azbj35x5vk4?t%3DDouble_Pipcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16' rel='nofollow' target="_blank"><img class="google" alt='Listen on Google Play Music' src='https://play.google.com/intl/en_us/badges-music/images/badges/en_badge_web_music.png'/></a>
-                    </div>
-                    
-                </section>
-            </section>
-
-            <comp2 ng-show="$ctrl.pricemodal" class="modal"></comp2>
-
-            <section class="help modal" ng-show="$ctrl.helpmodal">
-                <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
-                <section class="helpIcons">
-                    <i class="fas fa-first-aid"></i>
-                    <i class="fas fa-car-crash"></i>
-                    <i class="fas fa-window-close"></i>
-                    <i class="clear fas fa-undo-alt"></i>
-                    <i class="fas fa-compress-arrows-alt"></i>
-                    <i class="fas fa-search-dollar"></i>
-                </section>
-                <section class="helpP">
-                    <p>Heal</p>
-                    <p>Damage</p>
-                    <p>Remove</p>
-                    <p>Restart</p>
-                    <p>Combine</p>
-                    <p>Price Checker</p>
-                </section>
-            </section>
-
     </div>
+
+    <section class="buttonwrapper">
+        <i ng-click="$ctrl.hideButtons()" class="fas fa-ellipsis-h"></i>
+        <section ng-class="$ctrl.morph2">
+            <i ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
+            <i ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
+            <i ng-click="$ctrl.showHelp()" class="fas fa-question-circle"></i>
+            <i ng-click="$ctrl.show();" class="fas fa-podcast"></i>
+            <i ng-click="$ctrl.showPrice();$ctrl.sendBots();" class="fas fa-search-dollar"></i>
+        </section>
+    </section>
+    
+    <section class='podcast modal' ng-show="$ctrl.podcastmodal">
+                
+        <i class="fas fa-times" ng-click="$ctrl.show()"></i>
+        <section class="podcast">
+            <p class="podcastfont">Listen to the Double Pipcast!</p>
+            <img class="podcastimg" src="./podcast/doublepip.png">
+            
+            <div>
+                <a href="https://podcasts.apple.com/us/podcast/double-pipcast/id1474073672?mt=2&app=podcast" style="display:block;width:100%;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-08-23T00:00:00Z&kind=podcast&bubble=podcasts) no-repeat;width:168px;height:40px;align-self: center"></a>
+                <a href='https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&amp;isi=691797987&amp;ius=googleplaymusic&amp;apn=com.google.android.music&amp;link=https://play.google.com/music/m/Ijlt3c6s6fddbru6azbj35x5vk4?t%3DDouble_Pipcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16' rel='nofollow' target="_blank"><img class="google" alt='Listen on Google Play Music' src='https://play.google.com/intl/en_us/badges-music/images/badges/en_badge_web_music.png'/></a>
+            </div>
+            
+        </section>
+    </section>
+
+    <comp2 ng-show="$ctrl.pricemodal" class="modal"></comp2>
+
+    <section class="help modal" ng-show="$ctrl.helpmodal">
+        <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
+        <section class="helpIcons">
+            <i class="fas fa-first-aid"></i>
+            <i class="fas fa-car-crash"></i>
+            <i class="fas fa-window-close"></i>
+            <i class="clear fas fa-undo-alt"></i>
+            <i class="fas fa-compress-arrows-alt"></i>
+            <i class="fas fa-search-dollar"></i>
+        </section>
+        <section class="helpP">
+            <p>Heal</p>
+            <p>Damage</p>
+            <p>Remove</p>
+            <p>Restart</p>
+            <p>Combine</p>
+            <p>Price Checker</p>
+        </section>
+    </section>
 </div>
