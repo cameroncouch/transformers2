@@ -160,7 +160,7 @@ h1:nth-of-type(4) {
     flex-direction: column;
     background: linear-gradient(to bottom,rgba(255,255,255)10%, rgb(224, 224, 224));
     min-height: 100vh;
-    max-height: 110vh;
+    max-height: 100vh;
 }
 
 .modal {
