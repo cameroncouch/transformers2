@@ -253,19 +253,21 @@ i.far.fa-heart {
     width: 100vw;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    top: 90%;
 }
 .grow2 {
-    height: 3em;
+    height: 5em;
     display: flex;
     justify-content: space-around;
     width: 100vw;
     z-index: 999;
-    align-items: center;
     background-color: #333;
     color: #FFF;
     bottom: 0;
     transition: ease-in-out 1s;
+}
+.grow2 i {
+    padding-top: 1em;
 }
 .shrink2 {
     height: 0em;
@@ -277,7 +279,7 @@ i.far.fa-heart {
     align-items: center;
     background-color: #333;
     color: #FFF;
-    bottom: 0;
+    top:110%;
     transition: ease-in-out 1s;
 }
 i span {
