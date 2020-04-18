@@ -253,7 +253,7 @@ i.far.fa-heart {
     width: 100vw;
     align-items: center;
     position: absolute;
-    top: 90%;
+    bottom: 0;
 }
 .grow2 {
     height: 5em;
@@ -266,7 +266,7 @@ i.far.fa-heart {
     bottom: 0;
     transition: ease-in-out 1s;
 }
-.grow2 i {
+.grow2 i, .shrink2 i {
     padding-top: 1em;
 }
 .shrink2 {
@@ -276,7 +276,6 @@ i.far.fa-heart {
     justify-content: space-around;
     width: 100vw;
     z-index: 999;
-    align-items: center;
     background-color: #333;
     color: #FFF;
     top:110%;
