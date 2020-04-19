@@ -253,7 +253,8 @@ i.far.fa-heart {
     max-height: max-content;
     width: 100vw;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     bottom: 0;
 }
 .grow2 {
