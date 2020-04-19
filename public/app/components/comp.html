@@ -33,7 +33,11 @@
                 <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
                 <section class="health">
                     <p>{{bot.name}}</p>
-                    <i class="far fa-heart"><span class="healthnum">{{bot.health}}</span></i>
+                        <section class="subHealth">
+                            <!-- <span class="healthsym" ng-click="$ctrl.upgradeHealthMin(bot)">-</span> -->
+                            <i class="far fa-heart"><span class="healthnum">{{bot.health}}</span></i>
+                            <!-- <span class="healthsym" ng-click="$ctrl.upgradeHealthAdd(bot)">+</span> -->
+                        </section>
                     <button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
                 </section>
                 <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
@@ -73,6 +77,7 @@
         <section class="helpIcons">
             <i class="fas fa-first-aid"></i>
             <i class="fas fa-car-crash"></i>
+            <!-- <span>- / +</span> -->
             <i class="fas fa-window-close"></i>
             <i class="clear fas fa-undo-alt"></i>
             <i class="fas fa-compress-arrows-alt"></i>
@@ -81,6 +86,7 @@
         <section class="helpP">
             <p>Heal</p>
             <p>Damage</p>
+            <!-- <p>Max. Health</p> -->
             <p>Remove</p>
             <p>Restart</p>
             <p>Combine</p>

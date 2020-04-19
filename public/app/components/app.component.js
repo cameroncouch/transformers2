@@ -12,6 +12,7 @@ const comp = {
         vm.combCounter = 0;
         vm.dreadCounter = 0;
         vm.skyCounter = 0;
+        vm.upgradeHealth = 0;
         vm.bots1 = undefined;
         vm.bots2 = undefined;
         vm.bots3 = undefined;
@@ -82,10 +83,28 @@ const comp = {
         }
         //when user clicks the damage button, this will subtract 1 from the bot health w/o going under 0
         vm.mathMin = function(bot) {
-            if(bot.health != 0) {
+            if(bot.health > 0) {
             bot.health--;
             }
         }
+        // vm.upgradeHealthAdd = function(bot) {
+        //     ++vm.upgradeHealth;
+        //     for(let i = 0; i < vm.botArr.length; i++) {
+        //         if(vm.botArr[i].name === bot.name) {
+        //             ++vm.healthArr[i];
+        //             ++bot.health;
+        //         }
+        //     }
+        // }
+        // vm.upgradeHealthMin = function(bot) {
+        //     --vm.upgradeHealth;
+        //     for(let i = 0; i < vm.botArr.length; i++) {
+        //         if(vm.botArr[i].name === bot.name) {
+        //             --vm.healthArr[i];
+        //             --bot.health;
+        //         }
+        //     }
+        // }
         //when user clicks damage button, increment the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterAdd = function(bot) {
             if (bot.attr4 === "Aerialbot" || bot.attr4 === "Constructicon" || bot.attr4 === "Dreadwing" || bot.attr4 === "Sentinel" || bot.attr4 === "Dinobot" || bot.attr4 === "Predacon" || bot.attr4 === "Stunticon" || bot.attr4alt === "Omega Supreme" || bot.attr4alt === "Skytread") {
@@ -102,7 +121,6 @@ const comp = {
         }
         //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
-            
             if (bot.attr4 === "Aerialbot" || bot.attr4 === "Constructicon" || bot.attr4 === "Dreadwing" || bot.attr4 === "Sentinel" || bot.attr4 === "Dinobot" || bot.attr4 === "Predacon" || bot.attr4 === "Stunticon" || bot.attr4alt === "Omega Supreme" || bot.attr4alt === "Skytread") {
                 vm.isCombiner = true
                 if (vm.combCounter !== 0) {
@@ -125,7 +143,6 @@ const comp = {
         }
         //when user clicks heal button, decrement the dreadCounter, specific for Dreadwing since he can have buddies on the team
         vm.dreadMin = function(bot) {
-            
             if (bot.attr4 === "Dreadwing") {
                 vm.isCombiner = true
                 if (vm.dreadCounter !== 0) {

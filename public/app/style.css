@@ -327,6 +327,14 @@ i span {
     flex-direction: column;
     width: 55%;
 }
+.subHealth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subHealth span {
+    font-weight: 700;
+}
 .health button {
     width: auto !important;
 }
@@ -353,6 +361,9 @@ i span {
 .fieldbot p:nth-child(even) {
     font-weight: 700;
     font-size: 1em;
+}
+.healthsym {
+
 }
 .healthnum {
     color: #ea1926;
