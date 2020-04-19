@@ -175,8 +175,8 @@ const comp = {
         vm.clear = function() {
             vm.botArr = [];
             vm.healthArr = [];
-            optMax = [vm.bots2[53], vm.bots2[37], vm.bots2[39], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
-            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[55], vm.bots2[21]];
+            optMax = [vm.bots2[54], vm.bots2[39], vm.bots2[37], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
+            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[56], vm.bots2[21]];
             vm.combCounter = 0;
             vm.dreadCounter = 0;
             vm.skyCounter = 0;
@@ -282,7 +282,7 @@ const comp = {
                             let volCanDeadBotHealth = volCan[0].health + volCan[1].health;
                             vm.botArr = [];
                             vm.healthArr = [];
-                            vm.add(vm.bots2[59]);
+                            vm.add(vm.bots2[60]);
                             vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                             vm.botArr[vm.botArr.length - 1].health -= volCanDeadBotHealth;
                             break;
@@ -306,7 +306,7 @@ const comp = {
                     console.log("Superion has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
-                    vm.add(vm.bots2[54]);
+                    vm.add(vm.bots2[55]);
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                     console.log(vm.combCounter);
@@ -392,8 +392,9 @@ const comp = {
             if (vm.bots2 == undefined) {
             await TransformerService.getTF2();
             vm.bots2 = TransformerService.tfdbresults2;
-            optMax = [vm.bots2[53], vm.bots2[37], vm.bots2[39], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
-            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[55], vm.bots2[21]];
+            console.log(vm.bots2);
+            optMax = [vm.bots2[54], vm.bots2[39], vm.bots2[37], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
+            volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[56], vm.bots2[21]];
             }
         }
         vm.transformersGet3 = async () => {
