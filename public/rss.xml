@@ -512,5 +512,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_27.mp3" length="58360000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Waiting for Titan Masters</title>
+    <pubDate>Thur, 7 May 2020 00:00:00 EST</pubDate>
+    <itunes:episode>28</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>The crew continues to discuss the delayed release of Titan Masters Attack, the fifth release of the Transformers TCG, and visual merchandising</itunes:subtitle>
+    <itunes:summary>The crew continues to discuss the delayed release of Titan Masters Attack, the fifth release of the Transformers TCG, and visual merchandising</itunes:summary>
+    <itunes:duration>00:47:15</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_28.mp3" length="47150000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss> 
