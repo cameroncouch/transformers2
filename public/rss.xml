@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Thursday, 7 May 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Monday, 18 May 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -529,6 +529,24 @@
     <itunes:duration>00:47:15</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_28.mp3" length="47150000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>Off-Topic Hot Takes (Mostly)</title>
+    <pubDate>Mon, 18 May 2020 00:00:00 EST</pubDate>
+    <itunes:episode>29</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Get to know the Pipcast crew's take on DLC in Video Games, because why not? We also introduce a new segment where we argue about hot takes in the Transformers TCG</itunes:subtitle>
+    <itunes:summary>Get to know the Pipcast crew's take on DLC in Video Games, because why not? We also introduce a new segment where we argue about hot takes in the Transformers TCG</itunes:summary>
+    <itunes:duration>01:10:18</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_29.mp3" length="61018000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss> 
