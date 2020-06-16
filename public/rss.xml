@@ -566,5 +566,23 @@
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_30.mp3" length="58119000" type="audio/mpeg"/>
     </item>
+    <item>
+    <title>Titan Masters Attack Reactions - Two Weeks Out</title>
+    <pubDate>Tue, 16 Jun 2020 00:00:00 EST</pubDate>
+    <itunes:episode>31</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Speak out against racism, Black Lives Matter. The crew assembles to discuss their experience with Titan Masters Attack, and the most recent Rules Roundup!</itunes:subtitle>
+    <itunes:summary>Speak out against racism, Black Lives Matter. The crew assembles to discuss their experience with Titan Masters Attack, and the most recent Rules Roundup!</itunes:summary>
+    <itunes:duration>00:56:41</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_31.mp3" length="56410000" type="audio/mpeg"/>
+    </item>
 </channel>
 </rss> 
