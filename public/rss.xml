@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Tue, 16 Jun 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Sun, 28 Jun 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -583,6 +583,24 @@
     <itunes:duration>00:56:41</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_31.mp3" length="56410000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>JANK!</title>
+    <pubDate>Sun, 28 Jun 2020 00:00:00 EST</pubDate>
+    <itunes:episode>32</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>Cam vanquished the annoying beep! The team takes a recent Twitter discussion about JANK to the Pipcast!</itunes:subtitle>
+    <itunes:summary>Cam vanquished the annoying beep! The team takes a recent Twitter discussion about JANK to the Pipcast!</itunes:summary>
+    <itunes:duration>00:44:07</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_32.mp3" length="44070000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss> 
