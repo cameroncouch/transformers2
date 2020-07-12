@@ -9,7 +9,7 @@ function PricingService($http, $location) {
         method:"GET",
         url: `https://api.tcgplayer.com/v1.32.0/catalog/products?categoryId=57&productName=${query}`,
         headers: {
-          'Authorization': 'Bearer oc-GMWUAdIaCdeK-WUkRDmISwKS0o8PYF_TS2uxCxWZbK_O9U6OcuBp_6gqp8faMqSGsDyEviQCpPUvTD8qCApeHZ1DEV-Hct-TWrCd_kJPW8C4c0nYDQkDb34ybYDP_foadWcrp6cdMdeNbf88omwlWbe9eBYXLYRNe5y4ZxQsSwzu5P0cFLbL_Vl75BTu-IQ23ymIbZpDSNqsHddTTEg6bTa5fL34iVZXugB-Pj3DA26JqrDiwoCegJWnnjR4VFe0Kga2v0r00QZzFZkawLvRAUkeIVmqSqmhClg1JFsgcLqbM62A1wmX-Ye3cYYDqpKIy1A'
+          'Authorization': 'Bearer Fus-pqShHuHrxwFKIxdLEVMzfhpdqEoNb6LOSe8ktjMyP91oa_-gNEzCCRKqgLwDSHxrElUusiYFRDNQt0oOhrr3MYONUZz5EJGn6DzMsY2uklUPfiuSWC_kcdDDzUS8gGMzDbRlObsTeW9n4csTnOc8uaQGbM1KH1OKaufUeTiDwTCwsUrDb3Pu0-dBKdQxAi82HgX4aP_Mml7VlRIHQHYyg7VV1mtx-GIXe-I6atVPsVcjGNichFDW98l7MOs0sZuS5HtUvu2Ly-yvVqAnnwNMOAFqIc5CWLAV43LSQeFI1CNe5K7Qj8Unj-q8FDaANCS_gw'
         },
       }).then((response) => {
         self.card = response.data.results[0];
@@ -22,7 +22,7 @@ function PricingService($http, $location) {
         method:"GET",
         url: `https://api.tcgplayer.com/v1.32.0/pricing/product/${sku}`,
         headers: {
-          'Authorization': 'Bearer oc-GMWUAdIaCdeK-WUkRDmISwKS0o8PYF_TS2uxCxWZbK_O9U6OcuBp_6gqp8faMqSGsDyEviQCpPUvTD8qCApeHZ1DEV-Hct-TWrCd_kJPW8C4c0nYDQkDb34ybYDP_foadWcrp6cdMdeNbf88omwlWbe9eBYXLYRNe5y4ZxQsSwzu5P0cFLbL_Vl75BTu-IQ23ymIbZpDSNqsHddTTEg6bTa5fL34iVZXugB-Pj3DA26JqrDiwoCegJWnnjR4VFe0Kga2v0r00QZzFZkawLvRAUkeIVmqSqmhClg1JFsgcLqbM62A1wmX-Ye3cYYDqpKIy1A'
+          'Authorization': 'Bearer Fus-pqShHuHrxwFKIxdLEVMzfhpdqEoNb6LOSe8ktjMyP91oa_-gNEzCCRKqgLwDSHxrElUusiYFRDNQt0oOhrr3MYONUZz5EJGn6DzMsY2uklUPfiuSWC_kcdDDzUS8gGMzDbRlObsTeW9n4csTnOc8uaQGbM1KH1OKaufUeTiDwTCwsUrDb3Pu0-dBKdQxAi82HgX4aP_Mml7VlRIHQHYyg7VV1mtx-GIXe-I6atVPsVcjGNichFDW98l7MOs0sZuS5HtUvu2Ly-yvVqAnnwNMOAFqIc5CWLAV43LSQeFI1CNe5K7Qj8Unj-q8FDaANCS_gw'
         },
       }).then((response) => {
         self.pricing = response.data.results[0];
