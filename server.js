@@ -3,7 +3,6 @@ const app = express();
 const routes = require('./route');
 const { response } = require('express');
 const https = require('https');
-require('dotenv').config();
 
 app.use(express.static("./public"));
 app.use(express.json());
