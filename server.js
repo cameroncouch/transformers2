@@ -20,7 +20,6 @@ var cardSku;
 const options1 = {
     host: cardUrl,
     path: `/v1.32.0/catalog/products?categoryId=57&productName=${cardName}`,
-    port: 443,
     headers: {
         Authorization: `Bearer ${bearer}`
     }
@@ -28,7 +27,6 @@ const options1 = {
 const options2 = {
     host: cardUrl,
     path: `/v1.32.0/pricing/product/${cardSku}`,
-    port: 443,
     headers: {
         Authorization: `Bearer ${bearer}`
     }
@@ -42,6 +40,7 @@ app.get('/cardName/:name', async (req,res) => {
         });
         response.on('end', () => {
             console.log(response);
+            return response;
         });
     }).on('error', (error) => {
         console.log(error);
@@ -56,6 +55,7 @@ app.get('/cardPrice/:sku', async (req,res) => {
         });
         response.on('end', () => {
             console.log(response);
+            return response;
         });
     }).on('error', (error) => {
         console.log(error);
