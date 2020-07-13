@@ -13,7 +13,7 @@ const port = process.env.PORT || 8080;
 app.listen(port, _ => console.log("Server is running on port 8080"));
 
 const bearer = process.env.BEARER
-const cardUrl = `api.tcgplayer.com`
+const cardUrl = `https://api.tcgplayer.com`
 var cardName;
 var cardSku;
 
