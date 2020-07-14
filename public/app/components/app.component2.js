@@ -12,11 +12,13 @@ const comp2 = {
         }
 
         vm.getCard = async (query) => {
+            debugger;
             query = vm.regExReplace(query);
             await PricingService.getCard(query).then(() => vm.setCard(PricingService.card));
         }
 
         vm.setCard = async (val) => {
+            console.log(PricingService.card);
             if (PricingService.card) {
             await vm.getPrice(PricingService.card.productId).then(vm.card = val).catch((error) => console.log(error));
             return vm.card;
@@ -24,6 +26,7 @@ const comp2 = {
         }
 
         vm.getPrice = async (sku) => {
+            console.log(sku);
             await PricingService.getPrice(sku).then(() => vm.setPrice(PricingService.pricing)).catch((error) => console.log(error));
             let id = sku;
             return id;

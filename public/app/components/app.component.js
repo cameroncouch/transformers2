@@ -392,7 +392,6 @@ const comp = {
             if (vm.bots2 == undefined) {
             await TransformerService.getTF2();
             vm.bots2 = TransformerService.tfdbresults2;
-            console.log(vm.bots2);
             optMax = [vm.bots2[54], vm.bots2[39], vm.bots2[37], vm.bots2[30], vm.bots2[24], vm.bots2[25]];
             volCan = [vm.bots2[48], vm.bots2[49], vm.bots2[50], vm.bots2[56], vm.bots2[21]];
             }

@@ -4,12 +4,11 @@ function PricingService($http, $location) {
     const self = this;
 
     self.getCard = (query) => {
-      console.log(query);
-      return $http({
+       return $http({
         method:"GET",
         url: `/cardName/${query}`,
       }).then((response) => {
-        self.card = response.data.results[0];
+        self.card = response.data.results[0]
         return self.card;
       }).catch(error => console.log(error));
     };
@@ -19,7 +18,7 @@ function PricingService($http, $location) {
         method:"GET",
         url: `/cardPrice/${sku}`,
       }).then((response) => {
-        self.pricing = response.data.results[0];
+        self.pricing = response.data.results[1];
         return self.pricing;
       }).catch(error => console.log(error));;
     };
