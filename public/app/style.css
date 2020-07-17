@@ -118,7 +118,7 @@ h1:nth-of-type(3) {
     cursor: pointer;
     font-family: 'deceptibots', sans-serif;
     text-align: center;
-    background-color: #d5d5d5;
+    background-color: #333;
     color: #ffffff;
     border: 2px solid #ffffff;
     margin: 0;
@@ -139,7 +139,7 @@ h1:nth-of-type(5) {
     font-family: 'deceptibots', sans-serif;
     text-align: center;
     background-color: #333;
-    color: #a8a8a8;
+    color: #d5d5d5;
     border: 2px solid #ea1926;
     margin: 0;
     padding: 2vh 2vw;
