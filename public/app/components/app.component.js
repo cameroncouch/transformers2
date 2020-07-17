@@ -345,8 +345,6 @@ const comp = {
                 else if(vm.botArr[i].attr4alt == 'Sky Shadow' && vm.botArr[i+1].attr4alt == 'Sky Shadow') {
                     vm.botArr = vm.botArr.filter(bot => bot.attr4alt !== "Sky Shadow");
                     let saveBot = vm.botArr;
-                    console.log(vm.botArr[i].name);
-                    console.log("Sky Shadow has been formed");
                     vm.botArr = [];
                     vm.healthArr = [];
                     for (let j = 0; j < saveBot.length; j++) {
