@@ -11,6 +11,7 @@
             <option>Wave 2</option>
             <option>Wave 3</option>
             <option>Wave 4</option>
+            <option>Wave 5</option>
         </select>
     </section>
 
@@ -27,6 +28,9 @@
         <select ng-model="query" ng-show="wave === 'Wave 4'">
             <option ng-repeat="bot in $ctrl.bots4">{{bot.name}} {{bot.title}}</option>
         </select>
+        <select ng-model="query" ng-show="wave === 'Wave 5'">
+            <option ng-repeat="bot in $ctrl.bots5">{{bot.name}} {{bot.title}}</option>
+        </select>
         <button ng-click="$ctrl.getCard(query);">SEARCH</button>
     </section>
 
@@ -35,18 +39,18 @@
         <img src="{{$ctrl.card.imageUrl}}">
     </section>
 
-    <table class="prices">
-        <tr>
-            <td><i class="fas fa-arrow-down"></i></td>
-            <td><i class="fas fa-minus"></i></td>
-            <td><i class="fas fa-arrow-up"></i></td>
-            <td><i class="fas fa-chart-line"></i></td>
+    <table title="card price table" aria-label="card price table" class="prices">
+        <tr title="card price row" aria-label="card price row">
+            <td id="td1" title="lowest transacted price" aria-label="lowest transacted price"><i class="fas fa-arrow-down"></i></td>
+            <td id="td2" title="median transacted price" aria-label="median transacted price"><i class="fas fa-minus"></i></td>
+            <td id="td3" title="highest transacted price"aria-label="highest transacted price"><i class="fas fa-arrow-up"></i></td>
+            <td id="td4" title="market price" aria-label="market price"><i class="fas fa-chart-line"></i></td>
         </tr>
         <tr>
-            <td>${{$ctrl.price.lowPrice}}</td>
-            <td>${{$ctrl.price.midPrice}}</td>
-            <td>${{$ctrl.price.highPrice}}</td>
-            <td>${{$ctrl.price.marketPrice}}</td>
+            <td aria-labelledby="td1">${{$ctrl.price.lowPrice}}</td>
+            <td aria-labelledby="td2">${{$ctrl.price.midPrice}}</td>
+            <td aria-labelledby="td3">${{$ctrl.price.highPrice}}</td>
+            <td aria-labelledby="td4">${{$ctrl.price.marketPrice}}</td>
         </tr>
     </table>
 </section>

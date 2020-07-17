@@ -44,6 +44,7 @@ const comp2 = {
                 vm.bots2 = data[1];
                 vm.bots3 = data[2];
                 vm.bots4 = data[3];
+                vm.bots5 = data[4];
                 vm.pricemodal = data[4];
                 vm.helpmodal = data[5];
                 vm.podcastmodal = data[6];

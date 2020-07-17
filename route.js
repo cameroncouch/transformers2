@@ -28,5 +28,11 @@ tfdb.get("/tfdb4", (req, res) => {
     console.log("GET req made");
   });
 });
+tfdb.get("/tfdb5", (req, res) => {
+  pool.query("select * from CHARACTERS_WAVE_FIVE order by name").then(function (result) {
+    res.send(result.rows);
+    console.log("GET req made");
+  });
+});
 
 module.exports = tfdb;

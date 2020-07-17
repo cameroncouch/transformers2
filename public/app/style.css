@@ -134,6 +134,16 @@ h1:nth-of-type(4) {
     margin: 0;
     padding: 2vh 2vw;
 }
+h1:nth-of-type(5) {
+    cursor: pointer;
+    font-family: 'deceptibots', sans-serif;
+    text-align: center;
+    background-color: rgb(108, 255, 237);
+    color: rgb(255, 44, 44);
+    border: 2px solid rgb(255, 44, 44);
+    margin: 0;
+    padding: 2vh 2vw;
+}
 .hidelist {
     /* background: linear-gradient(to bottom, rgb(255,255,255)20%, #ea1926); */
     background-color:#ea1926;

@@ -4,7 +4,7 @@ const comp = {
     controller:['TransformerService', 'PricingService','$rootScope', function(TransformerService, PricingService,$rootScope){
         const vm = this;
         vm.clicked = true;
-        vm.clickedBots = [false, false, false, false]
+        vm.clickedBots = [false, false, false, false,false]
         vm.podcastmodal = false;
         vm.helpmodal = false;
         vm.pricemodal = false;
@@ -17,6 +17,7 @@ const comp = {
         vm.bots2 = undefined;
         vm.bots3 = undefined;
         vm.bots4 = undefined;
+        vm.bots5 = undefined;
         vm.morph = 'shrink';
         vm.morph2 = 'grow2'
         vm.wave;
@@ -30,7 +31,7 @@ const comp = {
         //when user clicks the add button, add that transformer to the field. Limit 6 bots in the field, no duplicates.
         vm.add = function(bot) {
             for (let i = 0; i < vm.botArr.length; i++) {
-                if (bot.title === vm.botArr[i].title) {
+                if (bot.wave == vm.botArr[i].wave && bot.id == vm.botArr[i].id) {
                     alert("This Transformer is already on your team.");
                 return;
                 }
@@ -107,7 +108,7 @@ const comp = {
         // }
         //when user clicks damage button, increment the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterAdd = function(bot) {
-            if (bot.attr4 === "Aerialbot" || bot.attr4 === "Constructicon" || bot.attr4 === "Dreadwing" || bot.attr4 === "Sentinel" || bot.attr4 === "Dinobot" || bot.attr4 === "Predacon" || bot.attr4 === "Stunticon" || bot.attr4alt === "Omega Supreme" || bot.attr4alt === "Skytread") {
+            if (bot.iscombiner) {
                 vm.isCombiner = true
                 for(let i = 0; i < vm.botArr.length; i++) {
                     if(vm.botArr[i].name === bot.name) {
@@ -121,7 +122,7 @@ const comp = {
         }
         //when user clicks heal button, decrement the combinercounter. This counter is used to damage a combiner when it comes into play
         vm.counterMin = function(bot) {
-            if (bot.attr4 === "Aerialbot" || bot.attr4 === "Constructicon" || bot.attr4 === "Dreadwing" || bot.attr4 === "Sentinel" || bot.attr4 === "Dinobot" || bot.attr4 === "Predacon" || bot.attr4 === "Stunticon" || bot.attr4alt === "Omega Supreme" || bot.attr4alt === "Skytread") {
+            if (bot.iscombiner) {
                 vm.isCombiner = true
                 if (vm.combCounter !== 0) {
                     vm.combCounter--
@@ -341,6 +342,20 @@ const comp = {
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
+                else if(vm.botArr[i].attr4alt == 'Sky Shadow' && vm.botArr[i+1].attr4alt == 'Sky Shadow') {
+                    vm.botArr = vm.botArr.filter(bot => bot.attr4alt !== "Sky Shadow");
+                    let saveBot = vm.botArr;
+                    console.log(vm.botArr[i].name);
+                    console.log("Sky Shadow has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    for (let j = 0; j < saveBot.length; j++) {
+                        vm.add(saveBot[j]);
+                    }
+                    vm.add(vm.bots5[39]);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
+                }
                 else if (vm.botArr[i].attr4 === "Dreadwing" && vm.botArr[i+1].attr4 === "Dreadwing") {
                     vm.botArr = vm.botArr.filter(bot => bot.attr4 !== "Dreadwing");
                     let saveBot = vm.botArr;
@@ -376,7 +391,15 @@ const comp = {
                     //math for combiner minus damage from component bots
                     vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
                 }
-                
+                else if(vm.botArr[i].attr4alt == 'Tidal Wave'  && vm.botArr[i+1].attr4alt == 'Tidal Wave'  && vm.botArr[i+2].attr4alt == 'Tidal Wave' ) {
+                    console.log(vm.botArr[i].name);
+                    console.log("Tidal Wave has been formed");
+                    vm.botArr = [];
+                    vm.healthArr = [];
+                    vm.add(vm.bots5[44]);
+                    //math for combiner minus damage from component bots
+                    vm.botArr[vm.botArr.length - 1].health -= vm.combCounter;
+                }
                 else {
                     continue;
                 }  
@@ -408,6 +431,12 @@ const comp = {
             vm.bots4 = TransformerService.tfdbresults4;
             }
         }
+        vm.transformersGet5 = async () => {
+            if (vm.bots5 == undefined) {
+            await TransformerService.getTF5();
+            vm.bots5 = TransformerService.tfdbresults5;
+            }
+        }
         $rootScope.$on('comp2ToComp1', (event,data) => {
             console.log(data);
             vm.pricemodal = data;
@@ -415,7 +444,7 @@ const comp = {
         vm.sendBots = () => {
             vm.helpmodal = vm.helpmodal ? !vm.helpmodal : vm.helpmodal;
             vm.podcastmodal = vm.podcastmodal ? !vm.podcastmodal : vm.podcastmodal;
-            $rootScope.$broadcast('comp1ToComp2', [vm.bots1,vm.bots2,vm.bots3,vm.bots4,vm.pricemodal,vm.helpmodal,vm.podcastmodal]);
+            $rootScope.$broadcast('comp1ToComp2', [vm.bots1,vm.bots2,vm.bots3,vm.bots4,vm.bots5,vm.pricemodal,vm.helpmodal,vm.podcastmodal]);
         }
     }]
 }

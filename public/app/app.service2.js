@@ -18,7 +18,14 @@ function PricingService($http, $location) {
         method:"GET",
         url: `/cardPrice/${sku}`,
       }).then((response) => {
-        self.pricing = response.data.results[1];
+        for(let i = 0;i < response.data.results.length;i++) {
+          if(response.data.results[i].lowPrice == null) {
+            continue;
+          }
+          else if (response.data.results[i].lowPrice) {
+            self.pricing = response.data.results[i];
+          }
+        }
         return self.pricing;
       }).catch(error => console.log(error));;
     };

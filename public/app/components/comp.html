@@ -1,4 +1,4 @@
-<div class="app" ng-init="$ctrl.transformersGet();$ctrl.transformersGet3();$ctrl.transformersGet4();$ctrl.transformersGet2();">
+<div class="app" ng-init="$ctrl.transformersGet();$ctrl.transformersGet3();$ctrl.transformersGet4();$ctrl.transformersGet2();$ctrl.transformersGet5();">
     <div ng-class="$ctrl.morph">
         <h1 ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
         <div ng-show="$ctrl.clickedBots[0]" class="botlist">
@@ -24,12 +24,18 @@
                 <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2] || $ctrl.clickedBots[3] || $ctrl.clicked" class="hint">Click above to choose a bot..</p>
+        <h1 ng-click="$ctrl.hideBots(4)">Wave 5</h1>
+        <div ng-show="$ctrl.clickedBots[4]" class="botlist">
+            <div ng-repeat="bot in $ctrl.bots5">
+                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+            </div>
+        </div>
+        <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2] || $ctrl.clickedBots[3] || $ctrl.clickedBots[4] || $ctrl.clicked" class="hint">Click above to choose a bot..</p>
     </div>
     <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
     <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
     <div class="field">
-            <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by bot.title">
+            <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by [bot.id,bot.wave]">
                 <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
                 <section class="health">
                     <p>{{bot.name}}</p>
