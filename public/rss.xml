@@ -24,7 +24,7 @@
 <width>144</width>
 <height>144</height>
 </image>
-<lastBuildDate>Sun, 12 Jul 2020 00:00:00 EST</lastBuildDate>
+<lastBuildDate>Thu, 30 Jul 2020 00:00:00 EST</lastBuildDate>
     <item>
     <title>Transformers TCG Intro!</title>
     <pubDate>Fri, 12 Jul 2019 00:00:00 EST</pubDate>
@@ -619,6 +619,24 @@
     <itunes:duration>01:00:55</itunes:duration>
     <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
     <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_33.mp3" length="60550000" type="audio/mpeg"/>
+    </item>
+    <item>
+    <title>The End?</title>
+    <pubDate>Thu, 12 Jul 2020 00:00:00 EST</pubDate>
+    <itunes:episode>34</itunes:episode>
+    <link>https://transformers-tcg-dmgctr.herokuapp.com/</link>
+    <itunes:image href="https://transformers-tcg-dmgctr.herokuapp.com/podcast/doublepip.png"></itunes:image>
+    <description><![CDATA[Use our damage counter <a href="https://transformers-tcg-dmgctr.herokuapp.com/">here</a>]]>
+    </description>
+    <itunes:category text="Games &amp; Hobbies">
+        <itunes:category text="Other Games"/>
+    </itunes:category>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:subtitle>The crew assembled to discuss an announcement from Wizards of the Coast confirming that official support for the Transformers Trading Card Game has ended.</itunes:subtitle>
+    <itunes:summary>The crew assembled to discuss an announcement from Wizards of the Coast confirming that official support for the Transformers Trading Card Game has ended.</itunes:summary>
+    <itunes:duration>01:31:17</itunes:duration>
+    <itunes:keywords>Transformers, Trading Card Games, Double Pipcast</itunes:keywords>
+    <enclosure url="https://s3.us-east-2.amazonaws.com/pipcastmp3files/dbpipcast_ep_34.mp3" length="91170000" type="audio/mpeg"/>
     </item>
 </channel>
 </rss> 
