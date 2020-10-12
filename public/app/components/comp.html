@@ -1,57 +1,57 @@
 <div class="app" ng-init="$ctrl.transformersGet();$ctrl.transformersGet3();$ctrl.transformersGet4();$ctrl.transformersGet2();$ctrl.transformersGet5();">
     <div ng-class="$ctrl.morph">
-        <h1 ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
+        <h1 title="Wave 1 Characters" aria-label="Wave 1 Characters" ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
         <div ng-show="$ctrl.clickedBots[0]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
-                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+                <p aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.hideBots(1)">Wave 2</h1>
+        <h1 title="Wave 2 Characters" aria-label="Wave 2 Characters" ng-click="$ctrl.hideBots(1)">Wave 2</h1>
         <div ng-show="$ctrl.clickedBots[1]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots2">
-                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+                <p aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.hideBots(2)">Wave 3</h1>
+        <h1 title="Wave 3 Characters" aria-label="Wave 3 Characters" ng-click="$ctrl.hideBots(2)">Wave 3</h1>
         <div ng-show="$ctrl.clickedBots[2]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots3">
-                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+                <p aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.hideBots(3)">Wave 4</h1>
+        <h1 title="Wave 4 Characters" aria-label="Wave 4 Characters" ng-click="$ctrl.hideBots(3)">Wave 4</h1>
         <div ng-show="$ctrl.clickedBots[3]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots4">
-                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+                <p aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
-        <h1 ng-click="$ctrl.hideBots(4)">Wave 5</h1>
+        <h1 title="Wave 5 Characters" aria-label="Wave 5 Characters" ng-click="$ctrl.hideBots(4)">Wave 5</h1>
         <div ng-show="$ctrl.clickedBots[4]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots5">
-                <p>{{bot.name}} <i ng-click="$ctrl.add(bot)" class="fas fa-plus-circle"></i></p>
+                <p aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2] || $ctrl.clickedBots[3] || $ctrl.clickedBots[4] || $ctrl.clicked" class="hint">Click above to choose a bot..</p>
     </div>
-    <div ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
-    <div ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
+    <div aria-label="Hide choose bots menu" ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
+    <div aria-label="Show choose bots menu" ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
     <div class="field">
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by [bot.id,bot.wave]">
-                <button ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
+                <button aria-label="Add damage to bot.name" ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
                 <section class="health">
-                    <p>{{bot.name}}</p>
+                    <p aria-label="bot.name">{{bot.name}}</p>
                         <section class="subHealth">
                             <!-- <span class="healthsym" ng-click="$ctrl.upgradeHealthMin(bot)">-</span> -->
-                            <i class="far fa-heart"><span class="healthnum">{{bot.health}}</span></i>
+                            <i aria-label="Health for bot.name" class="far fa-heart"><span class="healthnum">{{bot.health}}</span></i>
                             <!-- <span class="healthsym" ng-click="$ctrl.upgradeHealthAdd(bot)">+</span> -->
                         </section>
-                    <button ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
+                    <button aria-label="Remove bot.name from your team" ng-click="$ctrl.remove(bot)"><i class="fas fa-window-close"></i></button>
                 </section>
-                <button ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
+                <button aria-label="Heal bot.name" ng-click="$ctrl.mathAdd(bot); $ctrl.counterMin(bot); $ctrl.dreadMin(bot);$ctrl.skyMin(bot)"><i class="fas fa-first-aid"></i></button>
             </div>
     </div>
 
     <section class="buttonwrapper">
-        <i ng-click="$ctrl.hideButtons()" class="fas fa-ellipsis-h"></i>
+        <i title="Toggle bar" aria-label="Click to toggle options bar" ng-click="$ctrl.hideButtons()" class="fas fa-ellipsis-h"></i>
         <section ng-class="$ctrl.morph2">
             <i ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
             <i ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
@@ -63,7 +63,7 @@
     
     <section class='podcast modal' ng-show="$ctrl.podcastmodal">
                 
-        <i class="fas fa-times" ng-click="$ctrl.show()"></i>
+        <i title="Close" aria-label="Click to close modal" class="fas fa-times" ng-click="$ctrl.show()"></i>
         <section class="podcast">
             <p class="podcastfont">Listen to the Double Pipcast!</p>
             <img class="podcastimg" src="./podcast/doublepip.png">
@@ -79,7 +79,7 @@
     <comp2 ng-show="$ctrl.pricemodal" class="modal"></comp2>
 
     <section class="help modal" ng-show="$ctrl.helpmodal">
-        <i class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
+        <i title="Help" aria-label="Click to open help menu" class="fas fa-times" ng-click="$ctrl.showHelp()"></i>
         <section class="helpIcons">
             <i class="fas fa-first-aid"></i>
             <i class="fas fa-car-crash"></i>
