@@ -3,37 +3,37 @@
         <h1 title="Wave 1 Characters" aria-label="Wave 1 Characters" ng-click="$ctrl.hideBots(0)" >Wave 1</h1>
         <div ng-show="$ctrl.clickedBots[0]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots1">
-                <p title="bot.name" aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
+                <p title="{{bot.name}}" aria-label="{{bot.name}}">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <h1 title="Wave 2 Characters" aria-label="Wave 2 Characters" ng-click="$ctrl.hideBots(1)">Wave 2</h1>
         <div ng-show="$ctrl.clickedBots[1]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots2">
-                <p title="bot.name" aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
+                <p title="{{bot.name}}" aria-label="{{bot.name}}">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <h1 title="Wave 3 Characters" aria-label="Wave 3 Characters" ng-click="$ctrl.hideBots(2)">Wave 3</h1>
         <div ng-show="$ctrl.clickedBots[2]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots3">
-                <p title="bot.name" aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
+                <p title="{{bot.name}}" aria-label="{{bot.name}}">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <h1 title="Wave 4 Characters" aria-label="Wave 4 Characters" ng-click="$ctrl.hideBots(3)">Wave 4</h1>
         <div ng-show="$ctrl.clickedBots[3]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots4">
-                <p title="bot.name"aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
+                <p title="{{bot.name}}"aria-label="b{{ot.name"}}>{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <h1 title="Wave 5 Characters" aria-label="Wave 5 Characters" ng-click="$ctrl.hideBots(4)">Wave 5</h1>
         <div ng-show="$ctrl.clickedBots[4]" class="botlist">
             <div ng-repeat="bot in $ctrl.bots5">
-                <p title="bot.name" aria-label="bot.name">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
+                <p title="{{bot.name}}" aria-label="{{bot.name}}">{{bot.name}} <i ng-click="$ctrl.add(bot)" title="Add Bot" aria-label="Add bot to your team" class="fas fa-plus-circle"></i></p>
             </div>
         </div>
         <p ng-hide="$ctrl.clickedBots[0] || $ctrl.clickedBots[1] || $ctrl.clickedBots[2] || $ctrl.clickedBots[3] || $ctrl.clickedBots[4] || $ctrl.clicked" class="hint">Click above to choose a bot..</p>
     </div>
-    <div title="Hide bots menu" aria-label="Hide choose bots menu" ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
-    <div title="Show bots menu" aria-label="Show choose bots menu" ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
+    <div title="Show bots menu" aria-label="Hide choose bots menu" ng-hide="!$ctrl.clicked" ng-click="$ctrl.hide()" class="hidelist"><i class="fas fa-angle-double-left"></i></div>
+    <div title="Hide bots menu" aria-label="Show choose bots menu" ng-hide="$ctrl.clicked" ng-click="$ctrl.hide();$ctrl.hideBots()" class="hidelist"><i class="fas fa-angle-double-right"></i></div>
     <div class="field">
             <div class="fieldbot" ng-repeat="bot in $ctrl.botArr track by [bot.id,bot.wave]">
                 <button title="Damage" aria-label="Add damage to bot.name" ng-click="$ctrl.mathMin(bot); $ctrl.counterAdd(bot); $ctrl.dreadAdd(bot);$ctrl.skyAdd(bot)"><i class="fas fa-car-crash"></i></button>
