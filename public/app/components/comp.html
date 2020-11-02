@@ -56,12 +56,12 @@
             <i title="Start over" aria-label="Click to restart the game state" ng-click="$ctrl.clear()" class="clear fas fa-undo-alt"></i>
             <i title="Combine bots" aria-label="Click to combine eligible bots" ng-click="$ctrl.combine(); $ctrl.optMaxCombine();$ctrl.volcanicusCombine()" class="fas fa-compress-arrows-alt"></i>
             <i title="Help legend" aria-label="Click to show help legend" ng-click="$ctrl.showHelp()" class="fas fa-question-circle"></i>
-            <i title="Podcast links" aria-label="Click to show podcast links" ng-click="$ctrl.show();" class="fas fa-podcast"></i>
+            <!-- <i title="Podcast links" aria-label="Click to show podcast links" ng-click="$ctrl.show();" class="fas fa-podcast"></i> -->
             <i title="Pricing tool" aria-label="Click to load card pricing tool, powered by T C G Player" ng-click="$ctrl.showPrice();$ctrl.sendBots();" class="fas fa-search-dollar"></i>
         </section>
     </section>
     
-    <section class='podcast modal' ng-show="$ctrl.podcastmodal">
+    <!-- <section class='podcast modal' ng-show="$ctrl.podcastmodal">
                 
         <i title="Close" aria-label="Click to close modal" class="fas fa-times" ng-click="$ctrl.show()"></i>
         <section class="podcast">
@@ -74,7 +74,7 @@
             </div>
             
         </section>
-    </section>
+    </section> -->
 
     <comp2 ng-show="$ctrl.pricemodal" class="modal"></comp2>
 

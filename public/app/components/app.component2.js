@@ -12,7 +12,6 @@ const comp2 = {
         }
 
         vm.getCard = async (query) => {
-            debugger;
             query = vm.regExReplace(query);
             await PricingService.getCard(query).then(() => vm.setCard(PricingService.card));
         }
