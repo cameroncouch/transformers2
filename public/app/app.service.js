@@ -15,7 +15,6 @@ function TransformerService($http, $location) {
           method: "GET",
           url: `/tfdb`
         }).then(function (response) {
-          console.log(response);
           self.tfdbresults = response.data;
           return self.tfdbresults;
         });
@@ -56,12 +55,6 @@ function TransformerService($http, $location) {
           return self.tfdbresults5;
         });
       };
-      if (!('indexedDB' in window)) {
-        console.log('This browser doesn\'t support IndexedDB');
-        return;
-      }
-      self.db = indexedDB.open('test', 1);
-      console.log(self.db);
 }
 
 angular.module('App').service('TransformerService', TransformerService);
