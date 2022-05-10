@@ -38,3 +38,8 @@
 .fa-chart-line {
     color: rgb(103, 0, 134)
 }
+
+#pricingErr {
+    font-weight: bold;
+    color: #ea1926;
+}

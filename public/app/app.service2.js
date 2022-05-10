@@ -8,9 +8,12 @@ function PricingService($http, $location) {
         method:"GET",
         url: `/cardName/${query}`,
       }).then((response) => {
-        self.card = response.data.results[0]
+        self.card = (!!response.data && !!response.data.results && response.data.results[0]) || !!response.data && !!response.data.error && response.data;
+        if (self.card.error) {
+          throw self.card;
+        }
         return self.card;
-      }).catch(error => console.log(error));
+      }).catch(error => { console.log(error); return error; });
     };
 
     self.getPrice = (sku) => {
