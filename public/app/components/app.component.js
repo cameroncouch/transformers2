@@ -1,7 +1,7 @@
 "use strict";
 const comp = {
     templateUrl:"app/components/comp.html",
-    controller:['TransformerService', 'PricingService','IDBService','$rootScope', function(TransformerService, PricingService, IDBService, $rootScope){
+    controller:['TransformerService', 'PricingService','$rootScope', function(TransformerService, PricingService, $rootScope){
         const vm = this;
         vm.clicked = true;
         vm.clickedBots = [false, false, false, false,false]
@@ -408,12 +408,6 @@ const comp = {
             await TransformerService.getTF();
             vm.bots1 = TransformerService.tfdbresults;
             }
-            // do an IDB transaction
-            //create IDB
-            //post vm.bots1
-            console.log(vm.bots1[0]);
-            await IDBService.getNotes();
-            vm.bots1.forEach((bot)=>IDBService.saveNotes(bot));
         }
         vm.transformersGet2 = async () => {
             if (vm.bots2 == undefined) {
