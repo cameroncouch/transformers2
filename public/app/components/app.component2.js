@@ -20,7 +20,15 @@ const comp2 = {
                     if (data.error) {
                         throw data.error
                     }
-                    else { vm.setCard(PricingService.card); }
+                    else {
+                        return vm.card = data;
+                    }
+                })
+                .then(card => {
+                    return PricingService.getPrice(card.productId);
+                })
+                .then(pricing => {
+                    return vm.price = pricing;
                 })
                 .catch(error => {
                     vm.errorMsg = error;
@@ -28,22 +36,6 @@ const comp2 = {
                 });
         }
 
-        vm.setCard = async (val) => {
-            if (PricingService.card) {
-                await vm.getPrice(PricingService.card.productId).then(vm.card = val).catch((error) => console.log(error));
-                return vm.card;
-            }
-        }
-
-        vm.getPrice = async (sku) => {
-            await PricingService.getPrice(sku).then(() => vm.setPrice(PricingService.pricing)).catch((error) => console.log(error));
-            let id = sku;
-            return id;
-        }
-
-        vm.setPrice = (price) => {
-            return vm.price = price;
-        }
         vm.showPrice = function () {
             vm.pricemodal = !vm.pricemodal;
             $rootScope.$broadcast('comp2ToComp1', vm.pricemodal);

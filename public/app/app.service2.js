@@ -7,21 +7,22 @@ function PricingService($http, $location) {
        return $http({
         method:"GET",
         url: `/cardName/${query}`,
-      }).then((response) => {
-        self.card = (!!response.data && !!response.data.results && response.data.results[0]) || !!response.data && !!response.data.error && response.data;
-        if (self.card.error) {
-          throw self.card;
-        }
-        return self.card;
-      }).catch(error => { console.log(error); return error; });
+      })
+      .then(response => {
+        return !!response.data && !!response.data.results && response.data.results[0] || !!response.data && !!response.data.error && response.data;
+      })
+      .catch(error => {
+        return error; 
+      });
     };
 
     self.getPrice = (sku) => {
       return $http({
         method:"GET",
         url: `/cardPrice/${sku}`,
-      }).then((response) => {
-        for(let i = 0;i < response.data.results.length;i++) {
+      })
+      .then(response => {
+        for(let i = 0; i < response.data.results.length;i++) {
           if(response.data.results[i].lowPrice == null) {
             continue;
           }
@@ -30,7 +31,8 @@ function PricingService($http, $location) {
           }
         }
         return self.pricing;
-      }).catch(error => console.log(error));;
+      })
+      .catch(error => error);
     };
   }
 

@@ -35,11 +35,11 @@
     </section>
 
     <section class="cardInfo">
-        <p>{{$ctrl.card.name}}</p>
         <p id="pricingErr" ng-if="$ctrl.errorMsg">Sorry, {{$ctrl.errorMsg}}</p>
+        <p>{{$ctrl.card.name}}</p>
         <img src="{{$ctrl.card.imageUrl}}">
     </section>
-
+    
     <table ng-if="$ctrl.card" title="card price table" aria-label="card price table" class="prices">
         <tr title="card price row" aria-label="card price row">
             <td id="td1" title="lowest transacted price" aria-label="lowest transacted price"><i class="fas fa-arrow-down"></i></td>
