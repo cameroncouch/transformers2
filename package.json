@@ -11,7 +11,7 @@
   "author": "Cam Couch",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.27.2",
     "express": "^4.16.4",
     "nodemon": "^2.0.16",
     "pg": "~8.6.0"
