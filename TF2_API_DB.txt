@@ -1,0 +1,50 @@
+
+
+Public Key: 07C72463-048A-475A-BE24-FA134391744D
+Private Key: C094A6AB-61DD-49CD-9BCA-3D3B05EB9359
+Application ID: 5587
+
+curl --include --request POST \
+--header "application/x-www-form-urlencoded" \
+--data-binary "grant_type=client_credentials&client_id=07C72463-048A-475A-BE24-FA134391744D&client_secret=C094A6AB-61DD-49CD-9BCA-3D3B05EB9359" \
+'https://api.tcgplayer.com/token'
+
+{"access_token":"BYXMqcPCRCPthjntXlTXZOQFohJQeKfyXftajBYjvngwGwVapT4Lbu3XmhBhTJ-2XoljGLFyHJYWa4yHqGZqWm8aliXLd7-21qcT2p-sJE1p1C3KFyviRPxBgdkfUm3XYLcK5Rpdste3LT7fXYGEmRSSPIUkBEMYOyKnH7FgG1WOj1brL8Ua3-H6ZwPGQ1Q3NSVIEUQDXrG3rBOKU4ICd_bqMwlkxu3GN7pYN9Ip3i0xXDyTFD2jKTivaQHmHqG09qS-NLbALOpS_04FBxa0sDjHcsYAwZrOD630eldrzRdHuNJR630G6_Z7lMiDrBF1F_mSdQ","token_type":"bearer","expires_in":1209599,"userName":"07c72463-048a-475a-be24-fa134391744d",".issued":"Sun, 19 Jan 2020 14:04:52 GMT",".expires":"Sun, 02 Feb 2020 14:04:52 GMT"}
+
+curl --include --request GET \
+--header "Accept: application/json" \
+--header "Authorization: bearer BYXMqcPCRCPthjntXlTXZOQFohJQeKfyXftajBYjvngwGwVapT4Lbu3XmhBhTJ-2XoljGLFyHJYWa4yHqGZqWm8aliXLd7-21qcT2p-sJE1p1C3KFyviRPxBgdkfUm3XYLcK5Rpdste3LT7fXYGEmRSSPIUkBEMYOyKnH7FgG1WOj1brL8Ua3-H6ZwPGQ1Q3NSVIEUQDXrG3rBOKU4ICd_bqMwlkxu3GN7pYN9Ip3i0xXDyTFD2jKTivaQHmHqG09qS-NLbALOpS_04FBxa0sDjHcsYAwZrOD630eldrzRdHuNJR630G6_Z7lMiDrBF1F_mSdQ" http://api.tcgplayer.com/v1.32.0/catalog/categories/57/search/manifest
+
+curl --request POST \
+  --url http://api.tcgplayer.com/v1.36.0/app/authorize/5587
+
+http://api.tcgplayer.com/v1.32.0/catalog/categories/57/search/manifest
+
+GET CARD NAME AND SKU - ALSO COMES WITH IMG!
+http://api.tcgplayer.com/v1.32.0/catalog/products?categoryId=57&productName=Aerial%20Recon
+
+GET REQ BY PRODUCT ID
+http://api.tcgplayer.com/v1.32.0/pricing/product/178353
+
+<input>TYPE HERE</input>
+<PASS ^VAL^ INTO catalog GET, pass productID from catalog GET into pricing GET
+<button>GET PRICE</button>
+<-----CARD IMG----->
+Low $
+Mid $
+High $
+Market $
+
+Pbxd9zXIm86FfPcoq1FiVRu_aRG-J131FyhbvXmT6GrulWc7VS1GHZYiPzR6wT6BUcdl8wizcvVYb694ZjqRljX5WNPsaG2uqQ8y8ktK-2ycEznP5wc5R0dy3d3ai8tyf2UitCBQggQ7z78qccuP9nZZZeZeDG1EpdIYn9INiVKk9I-1im8fcAcviVw-KvgUYcP-LBViXUvkkYRwHCQI_5wJDdw3gGTSkAI8eV_mrf6ksH9OjX4HUdllu_t9RPwCCwmdTogZBv0h3ZVFAqOztG0IOhbz3HSQ7Esuxz7H48Etgmm6S5oFwBvnwZetjM0V5NPANw
+
+Couch__DB12
+
+curl --include --request POST ^
+--header "application/x-www-form-urlencoded" ^
+--data-binary "grant_type=client_credentials&client_id=07C72463-048A-475A-BE24-FA134391744D&client_secret=C094A6AB-61DD-49CD-9BCA-3D3B05EB9359" ^
+"https://api.tcgplayer.com/token"
+
+curl --include --request POST ^
+--header "application/x-www-form-urlencoded" ^
+--data-binary "grant_type=client_credentials&client_id=07C72463-048A-475A-BE24-FA134391744D&client_secret=C094A6AB-61DD-49CD-9BCA-3D3B05EB9359" ^
+"https://api.tcgplayer.com/token"
